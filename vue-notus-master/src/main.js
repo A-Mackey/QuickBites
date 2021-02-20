@@ -32,6 +32,7 @@ import Register from "@/views/auth/Register.vue";
 import Landing from "@/views/Landing.vue";
 import Profile from "@/views/Profile.vue";
 import Index from "@/views/Index.vue";
+import Recipe from "@/views/Recipe.vue";
 
 // routes
 
@@ -81,6 +82,10 @@ const routes = [
   {
     path: "/profile",
     component: Profile,
+  },
+  {
+    path: "/recipe",
+    component: Recipe,
   },
   {
     path: "/",

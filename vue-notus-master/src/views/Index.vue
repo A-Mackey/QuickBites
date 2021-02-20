@@ -8,36 +8,26 @@
         <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
           <div class="pt-32 sm:pt-0">
             <h2 class="font-semibold text-4xl text-gray-700">
-              Vue Notus - A beautiful extension for Tailwind CSS.
+              Quick Bites - less planning, more eating!
             </h2>
-            <p class="mt-4 text-lg leading-relaxed text-gray-600">
-              Vue Notus is Free and Open Source. It does not change or add any
-              CSS to the already one from
+            <p class="mt-5 text-2xl leading-relaxed text-gray-700">
+              A community that fosters the sharing of simple, affordable, and time-conscious meal ideas. 
               <a
                 href="https://tailwindcss.com/?ref=creativetim"
                 class="text-gray-700"
                 target="_blank"
               >
-                Tailwind CSS
+                
               </a>
-              . It features multiple HTML elements and it comes with dynamic
-              components for ReactJS, Vue and Angular.
+              
             </p>
             <div class="mt-12">
-              <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
-                target="_blank"
-                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+              <router-link
+                to="/admin/dashboard"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
-                Get started
-              </a>
-              <a
-                href="https://github.com/creativetimofficial/vue-notus?ref=vn-index"
-                class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
-                target="_blank"
-              >
-                Github Star
-              </a>
+                Get Started
+              </router-link>
             </div>
           </div>
         </div>
@@ -45,7 +35,7 @@
 
       <img
         class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
-        :src="patternVue"
+        :src="tastingCupcake"
         alt="..."
       />
     </section>
@@ -76,11 +66,11 @@
             class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32"
           >
             <div
-              class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-600"
+              class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-indigo-500"
             >
               <img
                 alt="..."
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                src="https://img.delicious.com.au/6nfRPUUS/del/2015/10/quick-chicken-roast-13852-1.jpg"
                 class="w-full align-middle rounded-t-lg"
               />
               <blockquote class="relative p-8 mb-4">
@@ -92,16 +82,14 @@
                 >
                   <polygon
                     points="-30,95 583,95 583,65"
-                    class="text-green-600 fill-current"
+                    class="bg-indigo-500 fill-current"
                   ></polygon>
                 </svg>
                 <h4 class="text-xl font-bold text-white">
-                  Great for your awesome project
+                  Quick chicken roast
                 </h4>
-                <p class="text-md font-light mt-2 text-white">
-                  Putting together a page has never been easier than matching
-                  together pre-made components. From landing pages presentation
-                  to login areas, you can easily customise and built your pages.
+                <p class="text-lg font-light mt-2 text-white">
+                  Serve up a golden roasted chicken with this simple one-tray bake recipe.
                 </p>
               </blockquote>
             </div>
@@ -115,14 +103,13 @@
                     <div
                       class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                     >
-                      <i class="fas fa-sitemap"></i>
+                      <i class="fas fa-money-check-alt"></i>
                     </div>
                     <h6 class="text-xl mb-1 font-semibold">
-                      CSS Components
+                      Affordable
                     </h6>
                     <p class="mb-4 text-gray-600">
-                      Vue Notus comes with a huge number of Fully Coded CSS
-                      components.
+                      Quick Bites helps you find ingredients that fit your budget.
                     </p>
                   </div>
                 </div>
@@ -131,14 +118,13 @@
                     <div
                       class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                     >
-                      <i class="fas fa-drafting-compass"></i>
+                      <i class="fas fa-bolt"></i>
                     </div>
                     <h6 class="text-xl mb-1 font-semibold">
-                      JavaScript Components
+                      Quick
                     </h6>
                     <p class="mb-4 text-gray-600">
-                      We also feature many dynamic components for React, NextJS,
-                      Vue and Angular.
+                      With your schedule in mind, we believe that there is always a recipe for any time-frame.
                     </p>
                   </div>
                 </div>
@@ -149,12 +135,11 @@
                     <div
                       class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                     >
-                      <i class="fas fa-newspaper"></i>
+                      <i class="fas fa-hamburger"></i>
                     </div>
-                    <h6 class="text-xl mb-1 font-semibold">Pages</h6>
+                    <h6 class="text-xl mb-1 font-semibold">Convenient</h6>
                     <p class="mb-4 text-gray-600">
-                      This extension also comes with 3 sample pages. They are
-                      fully coded so you can start working instantly.
+                      C
                     </p>
                   </div>
                 </div>
@@ -163,14 +148,13 @@
                     <div
                       class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                     >
-                      <i class="fas fa-file-alt"></i>
+                      <i class="fas fa-check"></i>
                     </div>
                     <h6 class="text-xl mb-1 font-semibold">
-                      Documentation
+                      Simple
                     </h6>
                     <p class="mb-4 text-gray-600">
-                      Built by developers for developers. You will love how easy
-                      is to to work with Vue Notus.
+                      We promise, you won't need a culinary degree for these recipes.
                     </p>
                   </div>
                 </div>
@@ -726,7 +710,7 @@
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
                 target="_blank"
-                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 Get started
               </a>
@@ -751,6 +735,8 @@
 import IndexNavbar from "@/components/Navbars/IndexNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
 
+import tastingCupcake from "@/assets/resources/tastingCupcake.svg";
+import eatingTogether from "@/assets/resources/eatingTogether.svg";
 import patternVue from "@/assets/img/pattern_vue.png";
 import componentBtn from "@/assets/img/component-btn.png";
 import componentProfileCard from "@/assets/img/component-profile-card.png";
@@ -766,6 +752,8 @@ import landing from "@/assets/img/landing.jpg";
 export default {
   data() {
     return {
+      tastingCupcake,
+      eatingTogether,
       patternVue,
       componentBtn,
       componentProfileCard,
