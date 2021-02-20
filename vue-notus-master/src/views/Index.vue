@@ -78,7 +78,7 @@
             >
               <img
                 alt="..."
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                src="https://img.delicious.com.au/6nfRPUUS/del/2015/10/quick-chicken-roast-13852-1.jpg"
                 class="w-full align-middle rounded-t-lg"
               />
               <blockquote class="relative p-8 mb-4">
@@ -94,12 +94,10 @@
                   ></polygon>
                 </svg>
                 <h4 class="text-xl font-bold text-white">
-                  Great for your awesome project
+                  Quick chicken roast
                 </h4>
-                <p class="text-md font-light mt-2 text-white">
-                  Putting together a page has never been easier than matching
-                  together pre-made components. From landing pages presentation
-                  to login areas, you can easily customise and built your pages.
+                <p class="text-lg font-light mt-2 text-white">
+                  Serve up a golden roasted chicken with this simple one-tray bake recipe.
                 </p>
               </blockquote>
             </div>
@@ -116,11 +114,10 @@
                       <i class="fas fa-sitemap"></i>
                     </div>
                     <h6 class="text-xl mb-1 font-semibold">
-                      CSS Components
+                      Affordable
                     </h6>
                     <p class="mb-4 text-gray-600">
-                      Vue Notus comes with a huge number of Fully Coded CSS
-                      components.
+                      Quick Bites helps you find ingredients that fit your budget.
                     </p>
                   </div>
                 </div>
@@ -132,11 +129,10 @@
                       <i class="fas fa-drafting-compass"></i>
                     </div>
                     <h6 class="text-xl mb-1 font-semibold">
-                      JavaScript Components
+                      Quick
                     </h6>
                     <p class="mb-4 text-gray-600">
-                      We also feature many dynamic components for React, NextJS,
-                      Vue and Angular.
+                      With your schedule in mind, we believe that there is always a recipe for any time-frame.
                     </p>
                   </div>
                 </div>
@@ -149,10 +145,9 @@
                     >
                       <i class="fas fa-newspaper"></i>
                     </div>
-                    <h6 class="text-xl mb-1 font-semibold">Pages</h6>
+                    <h6 class="text-xl mb-1 font-semibold">Convenient</h6>
                     <p class="mb-4 text-gray-600">
-                      This extension also comes with 3 sample pages. They are
-                      fully coded so you can start working instantly.
+                      C
                     </p>
                   </div>
                 </div>
@@ -164,11 +159,10 @@
                       <i class="fas fa-file-alt"></i>
                     </div>
                     <h6 class="text-xl mb-1 font-semibold">
-                      Documentation
+                      Simple
                     </h6>
                     <p class="mb-4 text-gray-600">
-                      Built by developers for developers. You will love how easy
-                      is to to work with Vue Notus.
+                      We promise, you won't need a culinary degree for these recipes.
                     </p>
                   </div>
                 </div>
