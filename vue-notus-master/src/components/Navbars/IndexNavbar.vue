@@ -13,7 +13,7 @@
             class="text-gray-800 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
             href="#pablo"
           >
-            Vue Notus
+            Meal It
           </a>
         </router-link>
         <button
@@ -46,46 +46,23 @@
           <li class="flex items-center">
             <index-dropdown />
           </li>
+
           <li class="flex items-center">
-            <a
-              class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fvue-notus%2F%23%2F"
-              target="_blank"
+            <router-link
+              to="/auth/login"
+              class="text-black text-xs font-bold uppercase px-4 py-2 rounded outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
             >
-              <i class="text-gray-500 fab fa-facebook text-lg leading-lg" />
-              <span class="lg:hidden inline-block ml-2">Share</span>
-            </a>
+              <i class=""></i> Log In
+            </router-link>
           </li>
 
           <li class="flex items-center">
-            <a
-              class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdemos.creative-tim.com%2Fvue-notus%2F%23%2F&text=Start%20your%20development%20with%20a%20Free%20Tailwind%20CSS%20and%20VueJS%20UI%20Kit%20and%20Admin.%20Let%20Vue%20Notus%20amaze%20you%20with%20its%20cool%20features%20and%20build%20tools%20and%20get%20your%20project%20to%20a%20whole%20new%20level.%20"
-              target="_blank"
+            <router-link
+              to="/auth/register"
+              class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
             >
-              <i class="text-gray-500 fab fa-twitter text-lg leading-lg" />
-              <span class="lg:hidden inline-block ml-2">Tweet</span>
-            </a>
-          </li>
-
-          <li class="flex items-center">
-            <a
-              class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://github.com/creativetimofficial/vue-notus?ref=vn-index-navbar"
-              target="_blank"
-            >
-              <i class="text-gray-500 fab fa-github text-lg leading-lg" />
-              <span class="lg:hidden inline-block ml-2">Star</span>
-            </a>
-          </li>
-
-          <li class="flex items-center">
-            <button
-              class="bg-green-500 text-white active:bg-green-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-              type="button"
-            >
-              <i class="fas fa-arrow-alt-circle-down"></i> Download
-            </button>
+              <i class=""></i> Register
+            </router-link>
           </li>
         </ul>
       </div>

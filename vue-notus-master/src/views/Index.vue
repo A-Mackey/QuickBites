@@ -25,7 +25,7 @@
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
                 target="_blank"
-                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 Get started
               </a>
@@ -43,7 +43,7 @@
 
       <img
         class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
-        :src="patternVue"
+        :src="eatingTogether"
         alt="..."
       />
     </section>
@@ -724,7 +724,7 @@
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
                 target="_blank"
-                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 Get started
               </a>
@@ -749,6 +749,7 @@
 import IndexNavbar from "@/components/Navbars/IndexNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
 
+import eatingTogether from "@/assets/resources/eatingTogether.svg";
 import patternVue from "@/assets/img/pattern_vue.png";
 import componentBtn from "@/assets/img/component-btn.png";
 import componentProfileCard from "@/assets/img/component-profile-card.png";
@@ -764,6 +765,7 @@ import landing from "@/assets/img/landing.jpg";
 export default {
   data() {
     return {
+      eatingTogether,
       patternVue,
       componentBtn,
       componentProfileCard,
