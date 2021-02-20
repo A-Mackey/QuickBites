@@ -18,15 +18,9 @@
 </template>
 
 <script>
-export default {
-    name: "CardSearchHandler",
 
-    props: {
-        query: String,
-        price: Number,
-        people: Number,
-        time: Number,
-    },
+export default {
+  name: "CardSearchHandler",
 
     data() {
         return{
@@ -43,6 +37,19 @@ export default {
 
     mounted() {
         console.log("Called");
-    }
-}
+        this.queryDatabase();
+    },
+    props: {
+        query: String,
+        price: Number,
+        people: Number,
+        time: Number,
+    },
+
+  methods: {
+    async queryDatabase() {
+        
+    },
+  },
+};
 </script>
