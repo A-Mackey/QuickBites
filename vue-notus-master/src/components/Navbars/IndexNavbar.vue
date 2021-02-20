@@ -13,7 +13,7 @@
             class="text-gray-800 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
             href="#pablo"
           >
-            Meal It
+            Quick Bites
           </a>
         </router-link>
         <button
