@@ -31,7 +31,7 @@
       <p>Input: {{search}}</p>
 
 
-    <CardSearchHandler v-bind:query="searchQuery" v-bind:price="price" v-bind:people="people" v-bind:time="time"/>
+    <CardSearchHandler v-bind:key="searchQuery" v-bind:query="searchQuery" v-bind:price="price" v-bind:people="people" v-bind:time="time"/>
   
   
   </div>
@@ -82,9 +82,9 @@ export default {
   methods: {
     callSearch() {
       this.searchQuery = this.search;
-      this.price = 10;
-      this.people = 10;
-      this.time = 10;
+      this.price = Math.random() * 10;
+      this.people = Math.random() * 10;
+      this.time = Math.random() * 10;
     }
   }
 };
