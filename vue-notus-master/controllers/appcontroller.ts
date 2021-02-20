@@ -26,13 +26,11 @@ export class AppController {
         const body = request.body;
         console.log(`Received Body ${JSON.stringify(body)}`);
         const product = new ProductDetails(
-            body.ProductId,
-            body.ProductName,
-            body.CategoryName,
-            body.SubCategory,
-            body.Description,
-            body.Manyfacturer,
-            body.Price
+            body.Includes,
+            body.MaxTime,
+            body.Equipment,
+            body.MaxBudget,
+            body.MinPeople
         );
         console.log(`Product ${JSON.stringify(product)}`);
         let data = await this.dao.addProduct(product);
@@ -44,13 +42,11 @@ export class AppController {
         const id = request.params.id;
         console.log(`Received Body ${JSON.stringify(body)}`);
         const product = new ProductDetails(
-            body.ProductId,
-            body.ProductName,
-            body.CategoryName,
-            body.SubCategory,
-            body.Description,
-            body.Manyfacturer,
-            body.Price
+            body.Includes,
+            body.MaxTime,
+            body.Equipment,
+            body.MaxBudget,
+            body.MinPeople
         );
         console.log(`Product ${JSON.stringify(product)}`);
         let data = await this.dao.updateProduct(id,product);

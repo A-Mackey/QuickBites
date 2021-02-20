@@ -12,7 +12,6 @@
   </div>
 </template>
 <script>
-
 export default {
   name: "CardSearchHandler",
 
@@ -25,20 +24,10 @@ export default {
 
   methods: {
     async queryDatabase() {
-      //request for recipe
-      await axios
-        .request({
-          method: "GET",
-          url: `http://localhost:9078/api/products`,
-          dataType: "json",
-        })
-        .then((res) => {
-          console.log(res);
-          return res;
-        })
-        .catch((err) => {
-          console.log("api call failed", err);
-        });
+      fetch("http://localhost:9078/api/products")
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .then((response) => console.log(response));
     },
   },
 };
