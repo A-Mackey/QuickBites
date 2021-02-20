@@ -8,7 +8,7 @@
         <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
           <div class="pt-32 sm:pt-0">
             <h2 class="font-semibold text-4xl text-gray-700">
-              Meal It - less planning, more eating!
+              Quick Bites - less planning, more eating!
             </h2>
             <p class="mt-5 text-2xl leading-relaxed text-gray-700">
               A community that fosters the sharing of simple, affordable, and time-conscious meal ideas. 
@@ -22,20 +22,12 @@
               
             </p>
             <div class="mt-12">
-              <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
-                target="_blank"
+              <router-link
+                to="/admin/dashboard"
                 class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
-                Get started
-              </a>
-              <a
-                href="https://github.com/creativetimofficial/vue-notus?ref=vn-index"
-                class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
-                target="_blank"
-              >
-                Github Star
-              </a>
+                Get Started
+              </router-link>
             </div>
           </div>
         </div>
@@ -43,7 +35,7 @@
 
       <img
         class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
-        :src="eatingTogether"
+        :src="tastingCupcake"
         alt="..."
       />
     </section>
@@ -74,7 +66,7 @@
             class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32"
           >
             <div
-              class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-600"
+              class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-indigo-500"
             >
               <img
                 alt="..."
@@ -90,7 +82,7 @@
                 >
                   <polygon
                     points="-30,95 583,95 583,65"
-                    class="text-green-600 fill-current"
+                    class="bg-indigo-500 fill-current"
                   ></polygon>
                 </svg>
                 <h4 class="text-xl font-bold text-white">
@@ -111,7 +103,7 @@
                     <div
                       class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                     >
-                      <i class="fas fa-sitemap"></i>
+                      <i class="fas fa-money-check-alt"></i>
                     </div>
                     <h6 class="text-xl mb-1 font-semibold">
                       Affordable
@@ -126,7 +118,7 @@
                     <div
                       class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                     >
-                      <i class="fas fa-drafting-compass"></i>
+                      <i class="fas fa-bolt"></i>
                     </div>
                     <h6 class="text-xl mb-1 font-semibold">
                       Quick
@@ -143,7 +135,7 @@
                     <div
                       class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                     >
-                      <i class="fas fa-newspaper"></i>
+                      <i class="fas fa-hamburger"></i>
                     </div>
                     <h6 class="text-xl mb-1 font-semibold">Convenient</h6>
                     <p class="mb-4 text-gray-600">
@@ -156,7 +148,7 @@
                     <div
                       class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                     >
-                      <i class="fas fa-file-alt"></i>
+                      <i class="fas fa-check"></i>
                     </div>
                     <h6 class="text-xl mb-1 font-semibold">
                       Simple
@@ -743,6 +735,7 @@
 import IndexNavbar from "@/components/Navbars/IndexNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
 
+import tastingCupcake from "@/assets/resources/tastingCupcake.svg";
 import eatingTogether from "@/assets/resources/eatingTogether.svg";
 import patternVue from "@/assets/img/pattern_vue.png";
 import componentBtn from "@/assets/img/component-btn.png";
@@ -759,6 +752,7 @@ import landing from "@/assets/img/landing.jpg";
 export default {
   data() {
     return {
+      tastingCupcake,
       eatingTogether,
       patternVue,
       componentBtn,
