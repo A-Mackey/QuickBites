@@ -7,9 +7,16 @@
     <p>Price: {{price}}</p>
     <p>People: {{people}}</p>
     <p>Time: {{time}}</p>
+    <p>Meals:</p>
+    <ul>
+        <li v-for="item in items" :key="item.index">
+            {{item.name}}
+        </li>
+    </ul>
 
   </div>
 </template>
+
 <script>
 export default {
     name: "CardSearchHandler",
@@ -21,10 +28,21 @@ export default {
         time: Number,
     },
 
-    methods: {
-        queryDatabase() {
-
+    data() {
+        return{
+            items: [
+                { index: 1, name: "steak & eggs"},
+                { index: 2, name: "Cereal"},
+                { index: 3, name: "Mac & Cheese"},
+                { index: 4, name: "Tacos"},
+                { index: 5, name: "steak & eggs"},
+                { index: 6, name: "steak & eggs"},
+            ]
         }
+    },
+
+    mounted() {
+        console.log("Called");
     }
 }
 </script>
