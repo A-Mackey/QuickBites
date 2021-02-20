@@ -8,26 +8,24 @@
         <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
           <div class="pt-32 sm:pt-0">
             <h2 class="font-semibold text-4xl text-gray-700">
-              Vue Notus - A beautiful extension for Tailwind CSS.
+              Meal It - less planning, more eating!
             </h2>
-            <p class="mt-4 text-lg leading-relaxed text-gray-600">
-              Vue Notus is Free and Open Source. It does not change or add any
-              CSS to the already one from
+            <p class="mt-5 text-2xl leading-relaxed text-gray-700">
+              A community that fosters the sharing of simple, affordable, and time-conscious meal ideas. 
               <a
                 href="https://tailwindcss.com/?ref=creativetim"
                 class="text-gray-700"
                 target="_blank"
               >
-                Tailwind CSS
+                
               </a>
-              . It features multiple HTML elements and it comes with dynamic
-              components for ReactJS, Vue and Angular.
+              
             </p>
             <div class="mt-12">
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
                 target="_blank"
-                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 Get started
               </a>
@@ -45,7 +43,7 @@
 
       <img
         class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
-        :src="patternVue"
+        :src="eatingTogether"
         alt="..."
       />
     </section>
@@ -726,7 +724,7 @@
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
                 target="_blank"
-                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 Get started
               </a>
@@ -751,6 +749,7 @@
 import IndexNavbar from "@/components/Navbars/IndexNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
 
+import eatingTogether from "@/assets/resources/eatingTogether.svg";
 import patternVue from "@/assets/img/pattern_vue.png";
 import componentBtn from "@/assets/img/component-btn.png";
 import componentProfileCard from "@/assets/img/component-profile-card.png";
@@ -766,6 +765,7 @@ import landing from "@/assets/img/landing.jpg";
 export default {
   data() {
     return {
+      eatingTogether,
       patternVue,
       componentBtn,
       componentProfileCard,
