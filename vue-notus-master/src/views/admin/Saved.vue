@@ -59,6 +59,7 @@
                   :price="recipe.price"
                   :time="recipe.time"
                   :people="recipe.people"
+                  :includeIcon="true"
                 />
               </div>
             </div>
@@ -86,36 +87,22 @@ export default {
           href:"https://www.budgetbytes.com/wp-content/uploads/2021/01/Honey-Mustard-Wings-dip.jpg",
           name:"Honey Mustard Wings with Broccoli",
           price:"8.04",
-          time:"60 mins",
-          people:"-2",
+          time:"60",
+          people:"2",
         },
         {
           href:"https://www.budgetbytes.com/wp-content/uploads/2019/11/Garlic-Noodles-with-Beef-and-Broccoli-close-fork-twirl.jpg",
           name:"Garlic Noodles with Beef and Broccoli",
           price:"13.10",
-          time:"40 mins",
-          people:"-8",
+          time:"40",
+          people:"8",
         },
         {
           href:"https://www.budgetbytes.com/wp-content/uploads/2020/07/Blackened-Salmon-with-Zucchini-fork.jpg",
           name:"Blackened Salmon with Zucchini",
           price:"13.30",
-          time:"30 mins",
-          people:"-4",
-        },
-        {
-          href:"https://www.budgetbytes.com/wp-content/uploads/2020/12/Tortilla-Baked-Eggs-V2.jpg",
-          name:"Tortilla Baked Eggs",
-          price:"1.22",
-          time:"30 mins",
-          people:"-2",
-        },
-        {
-          href:"https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-V1.jpg",
-          name:"One Pot Creamy Cajun Chicken Pasta",
-          price:"9.41",
-          time:"30 mins",
-          people:"-4",
+          time:"30",
+          people:"4",
         },
       ],
     };
