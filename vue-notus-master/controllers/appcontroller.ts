@@ -16,7 +16,7 @@ export class AppController {
         await this.dao.initDbAndContainer();
     }
    // 4.3 this method accepts queryData() method to return query result  
-    async getData(request: Request, response: Response) {
+    async getData(request: Request, response: Response) {//price people time contains
         const products = await this.dao.queryData();
 
         response.send({ data: products });

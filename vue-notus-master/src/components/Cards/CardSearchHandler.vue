@@ -2,7 +2,7 @@
   <div
     class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
   >
-    <button style="margin-top: 10px" v-on:click="controller()">
+    <button style="margin-top: 10px" v-on:click="controller(query)">
       <p>Search</p>
     </button>
     <p>Query: {{ query }}</p>
@@ -42,13 +42,13 @@ export default {
   },
 
   methods: {
-    async controller() {
-      var data = await this.queryDatabase();
+    async controller(query) {
+      var data = await this.queryDatabase(query);
       var out = await this.parseArray(data);
       console.log(out);
       return out;
     },
-    async queryDatabase() {
+    async queryDatabase(query) {
       var jsondata = fetch("http://localhost:9078/api/products")
         .then(function (u) {
           return u.json();
