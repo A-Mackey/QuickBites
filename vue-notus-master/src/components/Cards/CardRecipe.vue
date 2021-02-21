@@ -7,14 +7,15 @@
             class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-indigo-500"
             style="display: block; max-height:600px"
         >
-            <div style="display: block; max-height:500px">
-                <img
-                alt="..."
-                :src="this.image"
-                class="w-full align-middle rounded-t-lg"
-                style="max-height: 100%; max-width: 100%"
-                />
+            <div v-if="includeIcon == true" style="position: absolute">
+                <i class="fas fa-heart fa-2x ml-2 mt-2 w-12 h-12" style="position: absolute; color: rgba(255,255,255,0.9); background-color: rgba(0,0,0,0.5); border-width: 8px; border-color: rgba(0,0,0,0); border-radius: 50%;"></i>
             </div>
+
+            <img
+            alt="..."
+            :src="this.image"
+            class="w-full align-middle rounded-t-lg"
+            />
             <blockquote class="relative p-8 mb-4">
             <svg
                 preserveAspectRatio="none"
@@ -45,6 +46,15 @@
                 Serves {{people}} people
             </h1>
 
+            <div class="mt-4">
+            <router-link
+                to="/recipe"
+                class="get-started text-white mt-6 font-bold px-6 py-4 rounded outline-none focus:outline-none bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+              >
+                instructions
+              </router-link>
+            </div>
+
             </blockquote>
         </div>
     </div>
@@ -60,9 +70,11 @@ export default {
       price: String,
       time: String,
       people: String,
+      includeIcon: Boolean,
   },
 
   mounted() {
+      console.log("Include Icon: ", this.includeIcon)
       console.log("Image: " + this.image);
       return null
   },

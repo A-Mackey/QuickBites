@@ -19,6 +19,7 @@
                             :price="recipe.MaxBudget"
                             :time="recipe.MaxTime"
                             :people="recipe.MinPeople"
+                            :includeIcon="false"
                         />
                     </div>
                 </div>
