@@ -72,12 +72,12 @@ export class Dao {
         const record =  await this.container.item(id).read();
         console.log(`Record for update ${JSON.stringify(record.body)}`);
         // set the updated values
-        record.body.ProductName = product.ProductName;
-        record.body.CategoryName = product.CategoryName;
-        record.body.SubCategory = product.SubCategory;
-        record.body.Manufacturer = product.Manufacturer;
-        record.body.Description = product.Description;
-        record.body.Price = product.Price;
+        record.body.Includes = product.Includes;
+        record.body.MaxTime = product.MaxTime;
+        record.body.Equipment = product.Equipment;
+        record.body.MaxBudget = product.MaxBudget;
+        record.body.MinPeople = product.MinPeople;
+        record.body.Img = product.Img;
         console.log(`Record for update values ${JSON.stringify(record.body)}`);
 
         const updated = await this.container.item(id).replace(record.body);

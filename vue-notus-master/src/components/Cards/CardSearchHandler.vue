@@ -1,19 +1,10 @@
 <template>
   <div
-    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
+    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 mt-6 shadow-lg rounded"
   >
-    <button style="margin-top: 10px" v-on:click="controller(props)">
-      <p>Search</p>
-    </button>
-    <p>Query: {{ query }}</p>
-    <p>Price: {{ price }}</p>
-    <p>People: {{ people }}</p>
-    <p>Time: {{ time }}</p>
 
-    <p>Meals:</p>
-
-    <div v-if="this.doneFetching">
-        <div v-for="recipeRows in chunkedRecipes()" :key="recipeRows" class="inline-flex" style="width: 100%;">
+    <div v-if="this.doneFetching" class="mt-6">
+        <div v-for="(recipeRows, index) in chunkedRecipes()" :key="recipeRows[index].id" class="inline-flex" style="width: 100%;">
             <div v-for="recipe in recipeRows" :key="recipe.index" class="inline-flex justify-center text-center" style="width: 100%;">
             <CardRecipe 
                 :image="recipe.Img"
@@ -25,6 +16,7 @@
             </div>
         </div>
     </div>
+    
   </div>
 </template>
 <script>
@@ -41,9 +33,9 @@ export default {
 
   props: {
     query: String,
-    price: Number,
-    people: Number,
-    time: Number,
+    price: String,
+    people: String,
+    time: String,
   },
 
   data() {
@@ -85,10 +77,10 @@ export default {
       for (var i=0; i<n;i++){
         arr[i] = {
           Includes: JSON.parse(JSON.stringify(data.data[i].Includes)),
-          MaxTime: Number(JSON.parse(JSON.stringify(data.data[i].MaxTime))),
+          MaxTime: (JSON.parse(JSON.stringify(data.data[i].MaxTime))),
           Equipment: JSON.parse(JSON.stringify(data.data[i].Equipment)),
-          MaxBudget: Number(JSON.parse(JSON.stringify(data.data[i].MaxBudget))),
-          MinPeople: Number(JSON.parse(JSON.stringify(data.data[i].MinPeople))),
+          MaxBudget: (JSON.parse(JSON.stringify(data.data[i].MaxBudget))),
+          MinPeople: (JSON.parse(JSON.stringify(data.data[i].MinPeople))),
           Img: (JSON.parse(JSON.stringify(data.data[i].Img)))
         }
         // if (!arr[i].Includes.Search(this.props.Includes)) {

@@ -46,12 +46,11 @@
         >
           <div class="w-full text-center lg:w-8/12">
             <h3 class="font-semibold text-3xl">
-              100% of Proceeds go to the Disadvantaged
+              100% of Proceeds go to those In Need
             </h3>
             <p class="text-gray-600 text-lg leading-relaxed mt-4 mb-4">
-              We round up our purchases to the nearest dollar. This price difference
-              goes into a pool of money which is available for those who qualify on
-              our website. 
+              At Quick Bites, we believe that no household should go hungry. However, we need you to accomplish this goal. Support us by doing your grocery shopping on our site. We round up your purchases to the nearest dollar. 
+              Your purchases will help put food on the tables of low income families.
             </p>
             <div class="sm:block flex flex-col mt-10">
               <router-link
@@ -243,14 +242,13 @@
                 Weight Gain
               </span>
             </div>
-            <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vn-index"
-              target="_blank"
-              class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
-            >
-              View All
-              <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
-            </a>
+            <router-link
+                to="/admin/tables"
+                class="gfont-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
+              >
+                View All
+                <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
+              </router-link>
           </div>
 
           <div class="w-full md:w-6/12 px-4 mr-auto ml-auto mt-16">
@@ -399,14 +397,13 @@
                 European
               </span>
             </div>
-            <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vn-index"
-              target="_blank"
-              class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
-            >
-              View all
-              <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
-            </a>
+            <router-link
+                to="/admin/tables"
+                class="gfont-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
+              >
+                View All
+                <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
+              </router-link>
           </div>
         </div>
       </div>
@@ -467,7 +464,7 @@
                     </div>
                     <div>
                       <h4 class="text-gray-600">
-                        Cheaper Meals for Those Disadvantaged
+                        Cheaper Meals for Those In Need
                       </h4>
                     </div>
                   </div>

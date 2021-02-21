@@ -20,9 +20,9 @@
             class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10"
           />
 
-          <div class="inline-flex mt-3">
+          <div class="inline-flex mt-3 w-auto">
             <span
-              class="z-10 leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3"
+              class="z-10 leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center pl-3 py-3"
             >
               <i class="fas fa-dollar-sign"></i>
             </span>
@@ -30,7 +30,7 @@
               type="text"
               v-model="price"
               placeholder="Max Price"
-              class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-3/12 pl-10"
+              class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline pl-10"
             />
 
             <div class="ml-3">
@@ -43,7 +43,7 @@
               type="text"
               v-model="people"
               placeholder="Min # of People"
-              class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-3/12 pl-10"
+              class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline pl-10"
             />
             </div>
 
@@ -57,21 +57,24 @@
                 type="text"
                 v-model="time"
                 placeholder="Max Time"
-                class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-3/12 pl-10"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline pl-10"
               />
             </div>
-          </div>
-
-          <button style="margin-top: 10px;" v-on:click="callSearch">
+            <button style="" v-on:click="callSearch"
+            class="get-started text-white font-bold px-6 py-3 rounded outline-none focus:outline-none ml-3 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+          >
             <p>Search</p>
           </button>
+          </div>
+
+          
         </div>
       </form>
 
     </div>
       
       
-      <p>Input: {{search}}</p>
+      <!-- <p>Input: {{search}}</p> -->
 
 
     <CardSearchHandler v-bind:key="searchQuery" v-bind:query="searchQuery" v-bind:price="priceQuery" v-bind:people="peopleQuery" v-bind:time="timeQuery"/>
@@ -102,9 +105,9 @@ export default {
       people: "",
       time: "",
       searchQuery: "",
-      priceQuery: 0,
-      peopleQuery: 0,
-      timeQuery: 0,
+      priceQuery: "",
+      peopleQuery: "",
+      timeQuery: "",
       bootstrap,
       angular,
       sketch,

@@ -31,15 +31,7 @@
       >
         <ul class="flex flex-col lg:flex-row list-none mr-auto">
           <li class="flex items-center">
-            <a
-              class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index-navbar"
-            >
-              <i
-                class="text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
-              />
-              Docs
-            </a>
+
           </li>
         </ul>
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
@@ -50,8 +42,7 @@
           <li class="flex items-center">
             <router-link
               to="/auth/login"
-              class="bg-white text-black text-xs font-bold uppercase px-4 py-2 rounded shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-              style="color: #667eea"
+              class="bg-white-100 text-indigo active:bg-white-200 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
             >
               <i class=""></i> Log In
             </router-link>
