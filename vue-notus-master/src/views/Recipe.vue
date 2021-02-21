@@ -34,7 +34,7 @@
           </svg>
         </div>
       </section>
-      <section class="relative py-16 bg-gray-300">
+      <section class="relative py-16 bg-gray-200">
         <div class="container mx-auto px-4">
           <div
             class="relative flex flex-col min-w-0 break-words bg-white w-full mb-3 shadow-xl rounded-lg -mt-64"
@@ -44,13 +44,11 @@
                 <div
                   class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center"
                 >
-                  <div class="relative">
-                    <img
-                      alt="..."
-                      src="https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-pan-500x500.jpg"
-                      class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-200-px"
-                    />
-                  </div>
+                <img
+                    alt="..."
+                    src="https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-pan-500x500.jpg"
+                    class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-200-px"
+                />
                 </div>
                 <div
                   class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center"
@@ -65,14 +63,22 @@
                   </div>
                 </div>
                 <div class="w-full lg:w-4/12 px-4 lg:order-1">
-                  <div class="flex justify-center py-4 lg:pt-4 pt-8">
+                  <div class="flex justify py-4 lg:pt-4 pt-8">
+                      <div class="mr-4 p-3 text-center">
+                      <span
+                        class="text-xl font-bold block uppercase tracking-wide text-gray-700"
+                      >
+                        Time:
+                      </span>
+                      <span class="text-xs text-gray-500">(Minutes)</span>
+                    </div>
                     <div class="mr-4 p-3 text-center">
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
                         20
                       </span>
-                      <span class="text-sm text-gray-500">Cook Time (min)</span>
+                      <span class="text-sm text-gray-500">Cook Time</span>
                     </div>
                     <div class="mr-4 p-3 text-center">
                       <span
@@ -80,7 +86,7 @@
                       >
                         10
                       </span>
-                      <span class="text-sm text-gray-500">Prep</span>
+                      <span class="text-sm text-gray-500">Prep Time</span>
                     </div>
                     <div class="mr-4 p-3 text-center">
                       <span
@@ -88,7 +94,7 @@
                       >
                         30
                       </span>
-                      <span class="text-sm text-gray-500">Total Time (min)</span>
+                      <span class="text-sm text-gray-500">Total Time</span>
                     </div>
                   </div>
                 </div>
