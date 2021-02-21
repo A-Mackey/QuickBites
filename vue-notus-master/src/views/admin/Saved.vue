@@ -23,11 +23,14 @@
           </svg>
         </div>
       </section>
-      <section class="relative py-16 bg-gray-300">
+      <section class="relative py-12 bg-gray-300">
         <div class="container mx-auto px-4">
           <div
-            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg"
+            class="relative flex flex-col min-w-0 break-words bg-white w-full pt-12 mb-6 shadow-xl rounded-lg"
           >
+          <h1 class="text-gray-700 font-semibold text-5xl text-center">
+                  Saved Recipes
+            </h1>
             <div class="px-6">
               <div class="flex flex-wrap justify-center">
                 <div
@@ -37,7 +40,7 @@
                 <div
                   class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center"
                 >
-                  <div class="py-6 px-3 mt-6 sm:mt-6">
+                  <div class="py-4 px-3 mt-4 sm:mt-6">
                   </div>
                 </div>
                 <div class="w-full lg:w-4/12 px-4 lg:order-1">

@@ -1,6 +1,9 @@
 <template>
   <div class="flex flex-wrap">
-    <div class="w-full mb-24 px-4 mt-24">
+    <div class="w-full mb-12 px-4 mt-12">
+      <h1 class="text-gray-700 font-semibold text-5xl text-center mb-8">
+                  Search Recipes
+            </h1>
       <card-table />
 
     </div>

@@ -4,32 +4,29 @@
   >
     <!-- <p>{{query}}</p> -->
 
-    <div v-if="this.doneFetching" class="mt-6">
-      <p>{{ query }}</p>
-      <p>{{ price }}</p>
-      <p>{{ people }}</p>
-      <p>{{ time }}</p>
-      <div
-        v-for="(recipeRows, index) in chunkedRecipes()"
-        :key="recipeRows[index].id"
-        class="inline-flex"
-        style="width: 100%"
-      >
-        <div
-          v-for="recipe in recipeRows"
-          :key="recipe.index"
-          class="inline-flex justify-center text-center"
-          style="width: 100%"
-        >
-          <CardRecipe
-            :image="recipe.Img"
-            :name="recipe.Includes"
-            :price="recipe.MaxBudget"
-            :time="recipe.MaxTime"
-            :people="recipe.MinPeople"
-          />
-        </div>
-      </div>
+    <div v-if="this.doneFetching && this.hasResults" class="mt-6">
+            <!-- <p>{{query}}</p>
+            <p>{{price}}</p>
+            <p>{{people}}</p>
+            <p>{{time}}</p> -->
+
+                <div v-if="this.doneFetching" class="mt-6">
+                    <div v-for="(recipeRows, index) in chunkedRecipes()" :key="recipeRows[index].id" class="inline-flex" style="width: 100%;">
+                        <div v-for="recipe in recipeRows" :key="recipe.index" class="inline-flex justify-center text-center" style="width: 100%;">
+                        <CardRecipe 
+                            :image="recipe.Img"
+                            :name="recipe.Includes"
+                            :price="recipe.MaxBudget"
+                            :time="recipe.MaxTime"
+                            :people="recipe.MinPeople"
+                        />
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div v-if="!this.hasResults">
+        <p class="justify-center text-center" style="font-size: 4vh;">No results</p>
     </div>
   </div>
 </template>
@@ -55,20 +52,30 @@ export default {
     return {
       items: [[]],
       doneFetching: false,
+      hasResults: false,
+      called: false,
     };
   },
 
   async mounted() {
-    this.items = await this.controller().then(
-      (this.doneFetching = true),
-      console.log("Done Fetching")
-    );
+    this.called = true;
+    this.items = await this.controller()
+    .then(this.doneFetching = true);
+  },
+
+  watch: {
+      called: async function() {
+          console.log("Watched")
+          this.items = await this.controller();
+      },
   },
 
   methods: {
+
     async controller() {
       var data = await this.queryDatabase();
       var out = this.parseArray(data);
+      
       return out;
     },
 
@@ -125,7 +132,10 @@ export default {
         }
         include = 1;
       }
-      console.log("ARRAY  " + arr);
+
+      if (arr.length>0) {this.hasResults = true;}
+      console.log("Arr",arr);
+
       return arr;
     },
 
