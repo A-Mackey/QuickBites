@@ -6,7 +6,7 @@
       ref="btnDropdownRef"
       v-on:click="toggleDropdown($event)"
     >
-      Directory
+      <i class="fas fa-bars text-xl"></i>
     </a>
     <div
       ref="popoverDropdownRef"

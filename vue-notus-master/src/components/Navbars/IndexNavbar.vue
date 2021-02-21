@@ -33,9 +33,25 @@
           <li class="flex items-center">
             <div class="mx-4" style="border-left:1px solid #000;height:40px"></div>
           </li>
+            <router-link to="/admin/search">
+              <a
+                class="text-gray-800 text-sm font-bold leading-relaxed inline-block mr-6 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
+                href="#pablo"
+              >
+                Search
+              </a>
+            </router-link>
+            <router-link to="/admin/donate">
+              <a
+                class="text-gray-800 text-sm font-bold leading-relaxed inline-block mr-6 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
+                href="#pablo"
+              >
+                Donate
+              </a>
+            </router-link>
             <router-link to="/aboutus">
               <a
-                class="text-gray-800 text-sm font-bold leading-relaxed inline-block mr-4 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
+                class="text-gray-800 text-sm font-bold leading-relaxed inline-block mr-6 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
                 href="#pablo"
               >
                 About Us
