@@ -130,7 +130,7 @@
       >
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
           <div class="text-sm text-gray-600 font-semibold py-1">
-            Copyright © {{ date }} Meal Bites.
+            Copyright © {{ date }} Quick Bites.
           </div>
         </div>
       </div>

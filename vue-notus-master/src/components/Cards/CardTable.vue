@@ -60,11 +60,14 @@
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline pl-10"
               />
             </div>
-          </div>
-
-          <button style="margin-top: 10px;" v-on:click="callSearch">
+            <button style="" v-on:click="callSearch"
+            class="get-started text-white font-bold px-6 py-3 rounded outline-none focus:outline-none ml-3 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+          >
             <p>Search</p>
           </button>
+          </div>
+
+          
         </div>
       </form>
 
@@ -102,9 +105,9 @@ export default {
       people: "",
       time: "",
       searchQuery: "",
-      priceQuery: 0,
-      peopleQuery: 0,
-      timeQuery: 0,
+      priceQuery: "",
+      peopleQuery: "",
+      timeQuery: "",
       bootstrap,
       angular,
       sketch,
