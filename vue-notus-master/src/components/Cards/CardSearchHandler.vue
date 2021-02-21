@@ -2,7 +2,7 @@
   <div
     class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
   >
-    <button style="margin-top: 10px" v-on:click="controller()">
+    <button style="margin-top: 10px" v-on:click="controller(props)">
       <p>Search</p>
     </button>
     <p>Query: {{ query }}</p>
@@ -81,14 +81,19 @@ export default {
 
     parseArray(data) {
       var arr = new Array(data.data.length);
-      for (var i=0; i<data.data.length;i++){
+      var n = data.data.length;
+      for (var i=0; i<n;i++){
         arr[i] = {
           Includes: JSON.parse(JSON.stringify(data.data[i].Includes)),
-          MaxTime: JSON.parse(JSON.stringify(data.data[i].MaxTime)),
+          MaxTime: Number(JSON.parse(JSON.stringify(data.data[i].MaxTime))),
           Equipment: JSON.parse(JSON.stringify(data.data[i].Equipment)),
-          MaxBudget: JSON.parse(JSON.stringify(data.data[i].MaxBudget)),
-          MinPeople: JSON.parse(JSON.stringify(data.data[i].MinPeople))
+          MaxBudget: Number(JSON.parse(JSON.stringify(data.data[i].MaxBudget))),
+          MinPeople: Number(JSON.parse(JSON.stringify(data.data[i].MinPeople))),
+          Img: Number(JSON.parse(JSON.stringify(data.data[i].Img)))
         }
+        if (!arr[i].Includes.Search(this.props.Includes))
+          i--;
+          n--;
       }
       return arr;
     },
