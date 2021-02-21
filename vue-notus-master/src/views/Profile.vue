@@ -58,16 +58,16 @@
                   <div class="py-6 px-3 mt-6 sm:mt-6">
                     <button
                       style="background-color: #667eea"
-                      class="uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                      class="uppercase text-white font-bold hover:shadow-md shadow text-md px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
                       type="button"
                     >
-                      Follow
+                      Post Recipe
                     </button>
-                  </div>
+                    </div>
                 </div>
                 <div class="w-full lg:w-4/12 px-4 lg:order-1">
                   <div class="flex justify-center py-4 lg:pt-4 pt-8">
-                    <div class="mr-4 p-3 text-center mt-6">
+                    <div class="mr-4 p-3 text-center mt-8">
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
@@ -75,28 +75,28 @@
                       </span>
                       <span class="text-sm text-gray-500">Followers</span>
                     </div>
-                    <div class="mr-4 p-3 text-center mt-6">
+                    <div class="mr-4 p-3 text-center mt-8">
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
-                        10
+                        13
                       </span>
                       <span class="text-sm text-gray-500">Following</span>
                     </div>
-                    <div class="lg:mr-4 p-3 text-center mt-6">
+                    <div class="lg:mr-4 p-3 text-center mt-8">
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
-                        5
+                        6
                       </span>
                       <span class="text-sm text-gray-500">Recipies</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="text-center mt-12">
+              <div class="text-center mt-4">
                 <h3
-                  class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2"
+                  class="text-4xl font-semibold leading-normal mb-2 text-gray-800"
                 >
                   Stacy Reeves
                 </h3>
@@ -104,17 +104,17 @@
                   class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase"
                 >
                   <i
-                    class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"
+                    class="fas fa-map-marker-alt mr-2 mt-4 text-lg text-gray-500"
                   ></i>
                   Los Angeles, California
                 </div>
-                <div class="mb-2 text-gray-700 mt-10">
+                <div class="mb-2 text-gray-700 mt-4">
                   <i class="fas fa-briefcase mr-2 text-lg text-gray-500"></i>
                   Teacher - Hillview Elementary School
                 </div>
               </div>
 
-              <div class="mt-10 py-10 mb-12 border-t border-gray-300 text-center">
+              <div class="mt-10 py-10 border-t border-gray-300 text-center">
                 <div class="flex flex-wrap justify-center">
                   <div class="w-full lg:w-9/12 px-4">
                     <p class="mb-4 text-lg leading-relaxed text-gray-800">
@@ -197,6 +197,13 @@ export default {
           time:"30",
           people:"-4",
         },
+        {
+          href:"https://www.budgetbytes.com/wp-content/uploads/2021/02/Vegetable-Tofu-Scramble-bowl.jpg",
+          name:"Vegetable Tofu Scramble",
+          price:"14.00",
+          time:"35",
+          people:"-4",
+        }
       ],
     };
   },
