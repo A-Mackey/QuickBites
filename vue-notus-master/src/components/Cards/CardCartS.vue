@@ -195,12 +195,12 @@
                 class="block uppercase text-gray-700 text-xs font-bold mb-2"
                 htmlFor="grid-password"
               >
-                Exp Date
+                Exp Month
               </label>
               <input
                 type="email"
                 class="px-3 py-3 placeholder-gray-400 text-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="01"
+                value="06"
               />
             </div>
           </div>
@@ -210,12 +210,12 @@
                 class="block uppercase text-gray-700 text-xs font-bold mb-2"
                 htmlFor="grid-password"
               >
-                Exp Month
+                Exp Year
               </label>
               <input
                 type="text"
                 class="px-3 py-3 placeholder-gray-400 text-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="08"
+                value="23"
               />
             </div>
           </div>
