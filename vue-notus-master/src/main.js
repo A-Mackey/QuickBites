@@ -38,7 +38,7 @@ import Recipe from "@/views/Recipe.vue";
 import firebase from "firebase";//firebase/app
 import 'firebase/auth'
 import 'firebase/firestore'
-
+import store from './store'
 //firebase
 const configOptions = {
 apiKey: "AIzaSyCNgWZTJaF5qgCN5eW0go4Hmgy6pSDj_9c",
@@ -51,6 +51,10 @@ measurementId: "G-XLDCKEM615"
 };
 
 firebase.initializeApp(configOptions);
+
+firebase.auth().onAuthStateChanged(user => {
+  store.dispatch("fetchUser", user);
+});
 
 const auth = firebase.auth()
 const db = firebase.firestore()
@@ -140,5 +144,6 @@ export {
 }
 new Vue({
   router,
+  store,
   render: (h) => h(App),
 }).$mount("#app");
