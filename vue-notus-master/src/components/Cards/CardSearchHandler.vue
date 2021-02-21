@@ -80,9 +80,6 @@ export default {
           MinPeople: (JSON.parse(JSON.stringify(data.data[i].MinPeople))),
           Img: JSON.parse(JSON.stringify(data.data[i].Img))
         }
-        // console.log(this.query);
-        // console.log(arr[i].Includes.toLowerCase());
-        // console.log(arr[i].Includes.search(this.query));
 
         if (arr[i].Includes.toLowerCase().search(this.query.toLowerCase()) == -1 && this.Includes!="") {
           include=0;
