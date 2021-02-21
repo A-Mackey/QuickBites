@@ -51,20 +51,20 @@ export default {
     //     .then((data) => json(data)
     //     .then((response) => this.items = response);
 
-    Vue.prototype.$axios = axios;
+    // Vue.prototype.$axios = axios;
 
-        this.$axios
-        .get('http://localhost:9078/api/products')
+    //     this.$axios
+    //     .get('http://localhost:9078/api/products')
 
-        .then(response => {
-            this.items = response.data.results
-        })
+    //     .then(response => {
+    //         this.items = response.data.results
+    //     })
 
-        .catch(error => {
-            console.log(error)
-        })
+    //     .catch(error => {
+    //         console.log(error)
+    //     })
 
-        .finally(() => this.loading = false)
+    //     .finally(() => this.loading = false)
     },
   },
 };
