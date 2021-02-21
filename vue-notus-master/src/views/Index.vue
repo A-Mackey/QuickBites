@@ -243,14 +243,13 @@
                 Weight Gain
               </span>
             </div>
-            <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vn-index"
-              target="_blank"
-              class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
-            >
-              View All
-              <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
-            </a>
+            <router-link
+                to="/admin/tables"
+                class="gfont-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
+              >
+                View All
+                <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
+              </router-link>
           </div>
 
           <div class="w-full md:w-6/12 px-4 mr-auto ml-auto mt-16">
@@ -399,14 +398,13 @@
                 European
               </span>
             </div>
-            <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vn-index"
-              target="_blank"
-              class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
-            >
-              View all
-              <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
-            </a>
+            <router-link
+                to="/admin/tables"
+                class="gfont-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
+              >
+                View All
+                <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
+              </router-link>
           </div>
         </div>
       </div>
