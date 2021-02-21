@@ -5,7 +5,7 @@
       <section class="relative w-full h-full py-40 min-h-screen">
         <div
           class="absolute top-0 w-full h-full bg-gray-900 bg-no-repeat bg-full"
-          :style="`background-image: url('${registerBg2}');`"
+          :style="`background-image: url('https://www.bookhubpublishing.com/wp-content/uploads/revslider/the7-book-header/bg-slider-book.jpg);`"
         ></div>
         <router-view />
         <footer-small absolute />
