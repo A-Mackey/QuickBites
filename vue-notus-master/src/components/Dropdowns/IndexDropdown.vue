@@ -21,18 +21,6 @@
       >
         General
       </span>
-      <router-link
-        to="/aboutus"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-      >
-        About Us
-      </router-link>
-       <router-link
-        to="/admin/search"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-      >
-        Search
-      </router-link>
        <router-link
         to="/admin/cart"
         class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
@@ -44,12 +32,6 @@
         class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
       >
         Saved
-      </router-link>
-      <router-link
-        to="/admin/donate"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-      >
-        Donate
       </router-link>
       <router-link
         to="/admin/settings"
