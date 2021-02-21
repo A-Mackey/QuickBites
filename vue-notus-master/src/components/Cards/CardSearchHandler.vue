@@ -11,16 +11,34 @@
     <p>Time: {{ time }}</p>
 
     <p>Meals:</p>
-    <ul>
-      <li v-for="item in items" :key="item.id">
-        {{ item }}
-      </li>
-    </ul>
+
+    <div v-if="this.doneFetching">
+        <p>Done Fetching</p>
+        <div v-for="recipeRows in chunkedRecipes()" :key="recipeRows" class="inline-flex" style="width: 100%;">
+            <div v-for="recipe in recipeRows" :key="recipe.index" class="inline-flex justify-center text-center" style="width: 100%;">
+            <CardRecipe 
+                :image="recipe.Equipment"
+                :name="recipe.Includes"
+                :price="recipe.MaxBudget"
+                :time="recipe.MaxTime"
+                :people="recipe.MinPeople"
+            />
+            </div>
+        </div>
+    </div>
   </div>
 </template>
 <script>
+import CardRecipe from "@/components/Cards/CardRecipe.vue";
+import chunk from 'chunk';
+
+
 export default {
   name: "CardSearchHandler",
+
+  components: {
+      CardRecipe
+  },
 
   props: {
     query: String,
@@ -34,20 +52,26 @@ export default {
       items: [
         []
       ],
+      doneFetching: false,
     };
   },
 
   async mounted() {
-    this.items = await this.controller();
+    if (this.query != "") {
+        console.log("yoooo")
+        this.items = await this.controller()
+        .then(this.doneFetching = true, console.log("Done Fetching"));
+    }
   },
 
   methods: {
     async controller() {
       var data = await this.queryDatabase();
       var out = await this.parseArray(data);
-      console.log(out);
+      console.log("Out:", out);
       return out;
     },
+
     async queryDatabase() {
       var jsondata = fetch("http://localhost:9078/api/products")
         .then(function (u) {
@@ -55,6 +79,7 @@ export default {
         });
       return jsondata;
     },
+
     parseArray(data) {
       var arr = new Array(data.data.length);
       for (var i=0; i<data.data.length;i++){
@@ -70,6 +95,12 @@ export default {
           i--;
       }
       return arr;
+    },
+
+    chunkedRecipes() {
+        var arr = chunk(this.items, 3);
+        console.log("Chunked Array: ", arr);
+        return arr;
     },
   },
 };
