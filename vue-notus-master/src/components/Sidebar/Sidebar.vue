@@ -132,8 +132,8 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/settings"
-              v-slot="{ href, navigate, isActive }"
+              to="/admin/cart"
+              v-slot="{ href, route, navigate, isActive }"
             >
               <a
                 :href="href"
