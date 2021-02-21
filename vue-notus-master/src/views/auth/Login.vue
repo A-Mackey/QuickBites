@@ -128,7 +128,7 @@ export default {
         .signInWithEmailAndPassword(this.form.email, this.form.password)
         .then(data => {
           data.user; //this was so data was used but is a bad fix
-          this.$router.push({ name: "/admin/tables" });
+          this.$router.push('/admin/tables')
         })
         .catch(err => {
           this.error = err.message;
