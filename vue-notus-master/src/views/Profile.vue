@@ -79,7 +79,7 @@
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
-                        10
+                        13
                       </span>
                       <span class="text-sm text-gray-500">Following</span>
                     </div>
@@ -87,7 +87,7 @@
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
-                        5
+                        6
                       </span>
                       <span class="text-sm text-gray-500">Recipies</span>
                     </div>
