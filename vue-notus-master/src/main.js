@@ -34,6 +34,21 @@ import Profile from "@/views/Profile.vue";
 import Index from "@/views/Index.vue";
 import Recipe from "@/views/Recipe.vue";
 
+//firebase 
+import firebase from "firebase";
+
+//firebase
+const configOptions = {
+apiKey: "AIzaSyCNgWZTJaF5qgCN5eW0go4Hmgy6pSDj_9c",
+authDomain: "quickbitesproject.firebaseapp.com",
+projectId: "quickbitesproject",
+storageBucket: "quickbitesproject.appspot.com",
+messagingSenderId: "359911649540",
+appId: "1:359911649540:web:b13c3991d9b4157e436051",
+measurementId: "G-XLDCKEM615"
+};
+
+firebase.initializeApp(configOptions);
 // routes
 
 const routes = [
