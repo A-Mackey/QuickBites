@@ -1,16 +1,7 @@
 <template>
   <div
-    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
+    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 mt-6 shadow-lg rounded"
   >
-    <button style="margin-top: 10px" v-on:click="controller(props)">
-      <p>Search</p>
-    </button>
-    <p>Query: {{ query }}</p>
-    <p>Price: {{ price }}</p>
-    <p>People: {{ people }}</p>
-    <p>Time: {{ time }}</p>
-
-    <p>Meals:</p>
 
     <div v-if="this.doneFetching">
         <div v-for="recipeRows in chunkedRecipes()" :key="recipeRows" class="inline-flex" style="width: 100%;">
