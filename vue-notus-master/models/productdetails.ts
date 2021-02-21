@@ -4,6 +4,7 @@ export class ProductDetails {
         public MaxTime: string,
         public Equipment: string,
         public MaxBudget: BigInteger,
-        public MinPeople: BigInteger
+        public MinPeople: BigInteger,
+        public Img: string
     ){}
 }
