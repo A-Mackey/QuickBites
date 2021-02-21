@@ -10,6 +10,7 @@
             alt="..."
             :src="this.image"
             class="w-full align-middle rounded-t-lg"
+            style="max-"
             />
             <blockquote class="relative p-8 mb-4">
             <svg
