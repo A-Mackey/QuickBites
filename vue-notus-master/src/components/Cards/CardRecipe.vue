@@ -34,7 +34,7 @@
             </h1>
 
             <h1 class="text-white">
-                Time: {{time}}
+                Time: {{time}} mins
             </h1>
 
             <h1 class="text-white">
@@ -58,10 +58,9 @@ export default {
       people: String,
   },
 
-  data() {},
-
   mounted() {
       console.log("Image: " + this.image);
+      return null
   },
 
   methods: {},
