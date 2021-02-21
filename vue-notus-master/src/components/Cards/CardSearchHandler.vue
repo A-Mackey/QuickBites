@@ -82,7 +82,8 @@ export default {
 
     parseArray(data) {
       var arr = new Array(data.data.length);
-      for (var i=0; i<data.data.length;i++){
+      var n = data.data.length;
+      for (var i=0; i<n;i++){
         arr[i] = {
           Includes: JSON.parse(JSON.stringify(data.data[i].Includes)),
           MaxTime: Number(JSON.parse(JSON.stringify(data.data[i].MaxTime))),
@@ -93,6 +94,7 @@ export default {
         }
         if (!arr[i].Includes.Search(this.props.Includes))
           i--;
+          n--;
       }
       return arr;
     },
