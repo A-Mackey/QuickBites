@@ -34,13 +34,13 @@
       </div>
 
       <img
-        class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
-        :src="tastingCupcake"
+        class="absolute top-0 b-auto right-0 px-12 pt-6 sm:w-6/12 mt-32 w-10/12 max-h-860-px"
+        :src="eatingTogether"
         alt="..."
       />
     </section>
 
-      <div class="container mx-auto">
+      <div class="container mx-auto -mt-28">
         <div
           class="flex flex-wrap justify-center bg-white pt-24 px-12 relative z-10"
         >
@@ -495,6 +495,7 @@ import FooterComponent from "@/components/Footers/Footer.vue";
 
 import specialEvent from "@/assets/resources/specialEvent.svg";
 import breakfast from "@/assets/resources/breakfast.svg";
+import MobileGroceries from "@/assets/resources/MobileGroceries.svg"
 import tastingCupcake from "@/assets/resources/tastingCupcake.svg";
 import eatingTogether from "@/assets/resources/eatingTogether.svg";
 import patternVue from "@/assets/img/pattern_vue.png";
@@ -515,6 +516,7 @@ export default {
       specialEvent,
       breakfast,
       tastingCupcake,
+      MobileGroceries,
       eatingTogether,
       patternVue,
       componentBtn,
