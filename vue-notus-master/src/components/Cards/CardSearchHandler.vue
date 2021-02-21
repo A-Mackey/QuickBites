@@ -13,7 +13,6 @@
     <p>Meals:</p>
 
     <div v-if="this.doneFetching">
-        <p>Done Fetching</p>
         <div v-for="recipeRows in chunkedRecipes()" :key="recipeRows" class="inline-flex" style="width: 100%;">
             <div v-for="recipe in recipeRows" :key="recipe.index" class="inline-flex justify-center text-center" style="width: 100%;">
             <CardRecipe 
