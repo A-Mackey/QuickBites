@@ -5,13 +5,16 @@
         >
         <div
             class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-indigo-500"
+            style="display: block; max-height:600px"
         >
-            <img
-            alt="..."
-            :src="this.image"
-            class="w-full align-middle rounded-t-lg"
-            style="max-"
-            />
+            <div style="display: block; max-height:500px">
+                <img
+                alt="..."
+                :src="this.image"
+                class="w-full align-middle rounded-t-lg"
+                style="max-height: 100%; max-width: 100%"
+                />
+            </div>
             <blockquote class="relative p-8 mb-4">
             <svg
                 preserveAspectRatio="none"
