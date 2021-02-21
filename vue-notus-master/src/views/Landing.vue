@@ -217,7 +217,7 @@ export default {
           role: "Full Stack Web Developer", 
           github: "https://github.com/A-Mackey", 
           linkedin: "https://www.linkedin.com/in/aidanmackey",
-          picture: "@/src/assets/resources/profilepics/aidan.jfif",
+          picture: "https://media-exp1.licdn.com/dms/image/C5603AQH4J8WLgPWNtw/profile-displayphoto-shrink_800_800/0/1598221957751?e=1619654400&v=beta&t=e6xhlYOnsDcuiwLYjwyBHmRGLDkHLV7-XEXJdaU1yTg",
         },
         {
           name: "Stephen Mistele", 
