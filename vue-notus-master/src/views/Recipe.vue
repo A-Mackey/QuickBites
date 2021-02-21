@@ -71,45 +71,6 @@
                   ONE POT CREAMY CAJUN CHICKEN PASTA
                 </h3>
 
-                
-                <div class="w-full pr-4 lg:order-1">
-                  <div class="flex justify-center py-4 lg:pt-4 pt-8">
-                    <div class="mx-2 p-3 text-right">
-                      <span
-                        class="text-xl font-bold block uppercase tracking-wide text-gray-700"
-                      >
-                        Time:
-                      </span>
-                      <span class="text-sm text-gray-500">(minutes)</span>
-                    </div>
-                    <div class="mx-2 p-3 text-center">
-                      <span
-                        class="text-xl font-bold block uppercase tracking-wide text-gray-700"
-                      >
-                        20
-                      </span>
-                      <span class="text-sm text-gray-500">Cook Time</span>
-                    </div>
-                    <div class="mx-2 p-3 text-center">
-                      <span
-                        class="text-xl font-bold block uppercase tracking-wide text-gray-700"
-                      >
-                        10
-                      </span>
-                      <span class="text-sm text-gray-500">Prep Time</span>
-                    </div>
-                    <div class="mx-2 p-3 text-center">
-                      <span
-                        class="text-xl font-bold block uppercase tracking-wide text-gray-700"
-                      >
-                        30
-                      </span>
-                      <span class="text-sm text-gray-500">Total Time</span>
-                    </div>
-                  </div>
-                </div>
-
-
                 <div class="mb-2 text-gray-700 mt-10">
                   <i class="fas fa-utensils mr-2 text-lg text-gray-500"></i>
                   Prep Time - 10 min
@@ -121,7 +82,7 @@
                   <i class="fas fa-money-bill-wave mr-2 text-lg text-gray-500"></i>
                   Cost - $9.41
                 </div>
-                <div class="mb-2 text-gray-700 mt-10">
+                <div class="mb-6 text-gray-700 mt-10">
                   4-quart Deep Skillet・Cutting Board・Mixing Bowls
                 </div>                
               </div>
