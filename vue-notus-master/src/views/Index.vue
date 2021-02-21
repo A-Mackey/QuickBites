@@ -62,8 +62,8 @@
       </div>
       <div class="container mx-auto">
         <div class="flex flex-wrap items-center">
-          <!-- <div
-            class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32"
+          <div
+            class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-24"
           >
             <div
               class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-indigo-500"
@@ -94,7 +94,7 @@
                 </p>
               </blockquote>
             </div>
-          </div> -->
+          </div>
 
           <div class="w-full md:w-6/12 px-4">
             <div class="flex flex-wrap">
@@ -165,9 +165,155 @@
         </div>
       </div>
 
-      <div class="container mx-auto overflow-hidden pb-10">
+      <div class="container mx-auto overflow-hidden">
         <div class="flex flex-wrap items-center">
           <div class="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-12">
+            <h3 class="text-3xl mb-2 font-semibold leading-normal">
+              Perfect For Any Occassion
+            </h3>
+            <p
+              class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+            >
+              Our large variety of recipies are good for any occassion. Whether you need a cheap, 
+              fast meal for a lazy night, or a fancy dish for an anniversary dinner, we've got you covered.
+
+            </p>
+            <div class="block pb-6">
+              <span
+                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
+              >
+                Lazy Nights
+              </span>
+              <span
+                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
+              >
+                Date Nights
+              </span>
+              <span
+                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
+              >
+                Holidays
+              </span>
+              <span
+                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
+              >
+                Parties
+              </span>
+              <span
+                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
+              >
+                Snack Time
+              </span>
+              <span
+                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
+              >
+                Dieting
+              </span>
+              <span
+                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
+              >
+                Weight Gain
+              </span>
+            </div>
+            <a
+              href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vn-index"
+              target="_blank"
+              class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
+            >
+              View All
+              <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
+            </a>
+          </div>
+
+          <div class="w-full md:w-6/12 px-4 mr-auto ml-auto mt-16">
+            <div
+              class="relative flex flex-col min-w-0 w-full mb-6 mt-48 md:mt-0"
+            >
+              <img
+                alt="..."
+                :src="breakfast"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center -mt-18">
+          <div class="w-full md:w-6/12 px-4 mr-auto ml-auto mt-32">
+            <div class="justify-center flex flex-wrap relative">
+              <div class="my-4 w-full lg:w-6/12 px-4">
+                <a
+                  href="https://www.creative-tim.com/learning-lab/tailwind/svelte/alerts/notus?ref=vn-index"
+                  target="_blank"
+                >
+                  <div class="bg-red-600 shadow-lg rounded-lg text-center p-8">
+                    <img
+                      alt="..."
+                      class="shadow-md rounded-full max-w-full w-17 mx-auto p-2 bg-white"
+                      src="https://everylittlecrumb.com/wp-content/uploads/2019/01/FrenchToastSourdough-500x500.jpg"
+                    />
+                    <p class="text-lg text-white mt-4 font-semibold">
+                      Sourdough French Toast
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-pan-500x500.jpg"
+                  target="_blank"
+                >
+                  <div
+                    class="bg-blue-500 shadow-lg rounded-lg text-center p-8 mt-8"
+                  >
+                    <img
+                      alt="..."
+                      class="shadow-md rounded-full max-w-full w-18 mx-auto p-2 bg-white"
+                      src="https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-pan-500x500.jpg"
+                    />
+                    <p class="text-lg text-white mt-4 font-semibold">
+                      Creamy Cajun Chicken Pasta
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
+                <a
+                  href="https://www.creative-tim.com/learning-lab/tailwind/js/alerts/notus?ref=vn-index"
+                  target="_blank"
+                >
+                  <div
+                    class="bg-yellow-500 shadow-lg rounded-lg text-center p-8"
+                  >
+                    <img
+                      alt="..."
+                      class="shadow-md rounded-full max-w-full w-18 mx-auto p-2 bg-white"
+                      src="https://static.onecms.io/wp-content/uploads/sites/44/2019/08/26231058/4578875.jpg"
+                    />
+                    <p class="text-lg text-white mt-4 font-semibold">
+                      Greek Salad Nachos
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vn-index"
+                  target="_blank"
+                >
+                  <div
+                    class="bg-green-500 shadow-lg rounded-lg text-center p-8 mt-8"
+                  >
+                    <img
+                      alt="..."
+                      class="shadow-md rounded-full max-w-full w-18 mx-auto p-2 bg-white"
+                      src="https://www.jessicagavin.com/wp-content/uploads/2018/06/ribeye-steak-with-red-wine-sauce-3-1200.jpg"
+                    />
+                    <p class="text-lg text-white mt-4 font-semibold">
+                      Red Wine Ribeye
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
             <h3 class="text-3xl mb-2 font-semibold leading-normal">
               Plentiful Recipies
             </h3>
@@ -177,7 +323,11 @@
               We believe that there is a recipe for every occassion. All featured 
               recipies are hand-picked to ensure that the quality, healthiness, and 
               flavor are unmatched. You won't be dissapointed. 
-
+            </p>
+            <p
+              class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+            >
+              Our user experience is unique and entirely catered towards personal preference.
             </p>
             <div class="block pb-6">
               <span
@@ -215,201 +365,10 @@
               >
                 Asian
               </span>
-            </div>
-            <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vn-index"
-              target="_blank"
-              class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
-            >
-              View All
-              <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
-            </a>
-          </div>
-
-          <div class="w-full md:w-6/12 px-4 mr-auto ml-auto mt-12">
-            <div
-              class="relative flex flex-col min-w-0 w-full mb-6 mt-48 md:mt-0"
-            >
-              <img
-                alt="..."
-                :src="breakfast"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap items-center pt-32">
-          <div class="w-full md:w-6/12 px-4 mr-auto ml-auto mt-32">
-            <div class="justify-center flex flex-wrap relative">
-              <div class="my-4 w-full lg:w-6/12 px-4">
-                <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/svelte/alerts/notus?ref=vn-index"
-                  target="_blank"
-                >
-                  <div class="bg-red-600 shadow-lg rounded-lg text-center p-8">
-                    <img
-                      alt="..."
-                      class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/svelte.jpg"
-                    />
-                    <p class="text-lg text-white mt-4 font-semibold">
-                      Svelte
-                    </p>
-                  </div>
-                </a>
-                <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/react/alerts/notus?ref=vn-index"
-                  target="_blank"
-                >
-                  <div
-                    class="bg-blue-500 shadow-lg rounded-lg text-center p-8 mt-8"
-                  >
-                    <img
-                      alt="..."
-                      class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react.jpg"
-                    />
-                    <p class="text-lg text-white mt-4 font-semibold">
-                      ReactJS
-                    </p>
-                  </div>
-                </a>
-                <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=vn-index"
-                  target="_blank"
-                >
-                  <div
-                    class="bg-gray-800 shadow-lg rounded-lg text-center p-8 mt-8"
-                  >
-                    <img
-                      alt="..."
-                      class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/nextjs.jpg"
-                    />
-                    <p class="text-lg text-white mt-4 font-semibold">
-                      NextJS
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
-                <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/js/alerts/notus?ref=vn-index"
-                  target="_blank"
-                >
-                  <div
-                    class="bg-yellow-500 shadow-lg rounded-lg text-center p-8"
-                  >
-                    <img
-                      alt="..."
-                      class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/js.png"
-                    />
-                    <p class="text-lg text-white mt-4 font-semibold">
-                      JavaScript
-                    </p>
-                  </div>
-                </a>
-                <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/angular/alerts/notus?ref=vn-index"
-                  target="_blank"
-                >
-                  <div
-                    class="bg-red-700 shadow-lg rounded-lg text-center p-8 mt-8"
-                  >
-                    <img
-                      alt="..."
-                      class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/angular.jpg"
-                    />
-                    <p class="text-lg text-white mt-4 font-semibold">
-                      Angular
-                    </p>
-                  </div>
-                </a>
-                <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vn-index"
-                  target="_blank"
-                >
-                  <div
-                    class="bg-green-500 shadow-lg rounded-lg text-center p-8 mt-8"
-                  >
-                    <img
-                      alt="..."
-                      class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue.jpg"
-                    />
-                    <p class="text-lg text-white mt-4 font-semibold">
-                      Vue.js
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
-            <div
-              class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
-            >
-              <i class="fas fa-drafting-compass text-xl"></i>
-            </div>
-            <h3 class="text-3xl mb-2 font-semibold leading-normal">
-              Javascript Components
-            </h3>
-            <p
-              class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
-            >
-              In order to create a great User Experience some components require
-              JavaScript. In this way you can manipulate the elements on the
-              page and give more options to your users.
-            </p>
-            <p
-              class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
-            >
-              We created a set of Components that are dynamic and come to help
-              you.
-            </p>
-            <div class="block pb-6">
               <span
                 class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
               >
-                Alerts
-              </span>
-              <span
-                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
-              >
-                Dropdowns
-              </span>
-              <span
-                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
-              >
-                Menus
-              </span>
-              <span
-                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
-              >
-                Modals
-              </span>
-              <span
-                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
-              >
-                Navbars
-              </span>
-              <span
-                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
-              >
-                Popovers
-              </span>
-              <span
-                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
-              >
-                Tabs
-              </span>
-              <span
-                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
-              >
-                Tooltips
+                European
               </span>
             </div>
             <a
