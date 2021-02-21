@@ -17,9 +17,9 @@ import Auth from "@/layouts/Auth.vue";
 
 // views for Admin layout
 
-import Dashboard from "@/views/admin/Dashboard.vue";
+import Donate from "@/views/admin/Donate.vue";
 import Settings from "@/views/admin/Settings.vue";
-import Tables from "@/views/admin/Tables.vue";
+import Search from "@/views/admin/Search.vue";
 import Saved from "@/views/admin/Saved.vue";
 
 // views for Auth layout
@@ -38,7 +38,7 @@ import Recipe from "@/views/Recipe.vue";
 import firebase from "firebase";//firebase/app
 import 'firebase/auth'
 import 'firebase/firestore'
-
+import store from './store'
 //firebase
 const configOptions = {
 apiKey: "AIzaSyCNgWZTJaF5qgCN5eW0go4Hmgy6pSDj_9c",
@@ -51,6 +51,10 @@ measurementId: "G-XLDCKEM615"
 };
 
 firebase.initializeApp(configOptions);
+
+firebase.auth().onAuthStateChanged(user => {
+  store.dispatch("fetchUser", user);
+});
 
 const auth = firebase.auth()
 const db = firebase.firestore()
@@ -65,20 +69,20 @@ const likesCollection = db.collection('likes')
 const routes = [
   {
     path: "/admin",
-    redirect: "/admin/dashboard",
+    redirect: "/admin/donate",
     component: Admin,
     children: [
       {
-        path: "/admin/dashboard",
-        component: Dashboard,
+        path: "/admin/donate",
+        component: Donate,
       },
       {
         path: "/admin/settings",
         component: Settings,
       },
       {
-        path: "/admin/tables",
-        component: Tables,
+        path: "/admin/search",
+        component: Search,
       },
       {
         path: "/admin/saved",
@@ -140,5 +144,6 @@ export {
 }
 new Vue({
   router,
+  store,
   render: (h) => h(App),
 }).$mount("#app");

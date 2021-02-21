@@ -28,10 +28,10 @@
         About Us
       </router-link>
        <router-link
-        to="/admin/tables"
+        to="/admin/search"
         class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
       >
-        Order
+        Search
       </router-link>
        <router-link
         to="/admin/maps"
@@ -46,7 +46,7 @@
         Saved
       </router-link>
       <router-link
-        to="/admin/saved"
+        to="/admin/donate"
         class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
       >
         Donate

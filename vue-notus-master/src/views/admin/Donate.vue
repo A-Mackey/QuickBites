@@ -7,10 +7,16 @@
 </template>
 <script>
 import CardDonate from "@/components/Cards/CardDonate.vue";
-
+import { mapGetters } from "vuex";
 export default {
   components: {
     CardDonate,
   },
+  computed: {
+    // map `this.user` to `this.$store.getters.user`
+    ...mapGetters({
+      user: "user"
+    })
+  }
 };
 </script>

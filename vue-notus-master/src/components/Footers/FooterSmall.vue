@@ -12,7 +12,7 @@
           <div
             class="text-sm text-gray-600 font-semibold py-1 text-center md:text-left"
           >
-            Copyright © {{ date }} Meal Bites.
+            Copyright © {{ date }} Quick Bites.
           </div>
         </div>
         <div class="w-full md:w-8/12 px-4">

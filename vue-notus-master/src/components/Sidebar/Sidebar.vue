@@ -84,17 +84,16 @@
 
           <li class="items-center">
           <router-link
-            to="/admin/tables"
+            to="/admin/search"
             v-slot="{ href, navigate, isActive }"
           >
             <a
               :href="href"
               @click="navigate"
               class="text-xs uppercase py-3 font-bold block"
-              style="color: #667eea"
               :class="[
                 isActive
-                  ? 'text-green-500 hover:text-green-600'
+                  ? 'button-active hover:button-active'
                   : 'text-gray-800 hover:text-gray-600',
               ]"
             >
@@ -116,10 +115,9 @@
                 :href="href"
                 @click="navigate"
                 class="text-xs uppercase py-3 font-bold block"
-                style="color: #667eea"
                 :class="[
                   isActive
-                    ? 'text-green-500 hover:text-green-600'
+                    ? 'button-active hover:button-active'
                     : 'text-gray-800 hover:text-gray-600',
                 ]"
               >
@@ -141,35 +139,9 @@
                 :href="href"
                 @click="navigate"
                 class="text-xs uppercase py-3 font-bold block"
-                style="color: #667eea"
                 :class="[
                   isActive
-                    ? 'text-green-500 hover:text-green-600'
-                    : 'text-gray-800 hover:text-gray-600',
-                ]"
-              >
-                <i
-                  class="fas fa-table mr-2 text-sm"
-                  :class="[isActive ? 'opacity-75' : 'text-gray-400']"
-                ></i>
-                Order
-              </a>
-            </router-link>
-          </li>
-
-          <li class="items-center">
-            <router-link
-              to="/admin/settings"
-              v-slot="{ href, navigate, isActive }"
-            >
-              <a
-                :href="href"
-                @click="navigate"
-                class="text-xs uppercase py-3 font-bold block"
-                style="color: #667eea"
-                :class="[
-                  isActive
-                    ? 'text-green-500 hover:text-green-600'
+                    ? 'button-active hover:button-active'
                     : 'text-gray-800 hover:text-gray-600',
                 ]"
               >
@@ -184,17 +156,16 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/dashboard"
+              to="/admin/donate"
               v-slot="{ href, navigate, isActive }"
             >
               <a
                 :href="href"
                 @click="navigate"
                 class="text-xs uppercase py-3 font-bold block"
-                style="color: #667eea"
                 :class="[
                   isActive
-                    ? 'text-green-500 hover:text-green-600' 
+                    ? 'button-active hover:button-active'
                     : 'text-gray-800 hover:text-gray-600',
                 ]"
               >
@@ -207,6 +178,17 @@
             </router-link>
           </li>
 
+          <ul class="md:flex-col md:min-w-full flex flex-col list-none">
+          <li class="items-center">
+            <router-link
+              class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
+              to="/landing"
+            >
+              <i class="fas fa-newspaper text-gray-400 mr-2 text-sm"></i>
+              About Us
+            </router-link>
+          </li>
+
           <li class="items-center">
             <router-link
               to="/admin/settings"
@@ -216,10 +198,9 @@
                 :href="href"
                 @click="navigate"
                 class="text-xs uppercase py-3 font-bold block"
-                style="color: #667eea"
                 :class="[
                   isActive
-                    ? 'text-green-500 hover:text-green-600'
+                    ? 'button-active hover:button-active'
                     : 'text-gray-800 hover:text-gray-600',
                 ]"
               >
@@ -231,6 +212,7 @@
               </a>
             </router-link>
           </li>
+          </ul>
 
         <!-- Divider -->
         <hr class="my-4 md:min-w-full" />
@@ -301,3 +283,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  .button-active {
+    color: #667eea;
+  }
+</style>
