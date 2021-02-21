@@ -84,7 +84,7 @@
 
           <li class="items-center">
           <router-link
-            to="/admin/tables"
+            to="/admin/search"
             v-slot="{ href, navigate, isActive }"
           >
             <a
@@ -156,7 +156,7 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/dashboard"
+              to="/admin/donate"
               v-slot="{ href, route, navigate, isActive }"
             >
               <a

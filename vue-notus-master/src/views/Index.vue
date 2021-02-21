@@ -243,7 +243,7 @@
               </span>
             </div>
             <router-link
-                to="/admin/tables"
+                to="/admin/search"
                 class="gfont-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
               >
                 View All
@@ -398,7 +398,7 @@
               </span>
             </div>
             <router-link
-                to="/admin/tables"
+                to="/admin/search"
                 class="gfont-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
               >
                 View All

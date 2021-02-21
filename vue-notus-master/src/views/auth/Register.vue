@@ -143,7 +143,7 @@ export default {
               displayName: this.form.name
             })
             .then(() => {
-              this.$router.push('/admin/tables')
+              this.$router.push('/admin/search')
             });
         })
         .catch(err => {
