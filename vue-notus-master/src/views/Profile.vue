@@ -58,16 +58,16 @@
                   <div class="py-6 px-3 mt-6 sm:mt-6">
                     <button
                       style="background-color: #667eea"
-                      class="uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                      class="uppercase text-white font-bold hover:shadow-md shadow text-md px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
                       type="button"
                     >
-                      Follow
+                      Post Recipe
                     </button>
-                  </div>
+                    </div>
                 </div>
                 <div class="w-full lg:w-4/12 px-4 lg:order-1">
                   <div class="flex justify-center py-4 lg:pt-4 pt-8">
-                    <div class="mr-4 p-3 text-center mt-6">
+                    <div class="mr-4 p-3 text-center mt-8">
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
@@ -75,7 +75,7 @@
                       </span>
                       <span class="text-sm text-gray-500">Followers</span>
                     </div>
-                    <div class="mr-4 p-3 text-center mt-6">
+                    <div class="mr-4 p-3 text-center mt-8">
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
@@ -83,7 +83,7 @@
                       </span>
                       <span class="text-sm text-gray-500">Following</span>
                     </div>
-                    <div class="lg:mr-4 p-3 text-center mt-6">
+                    <div class="lg:mr-4 p-3 text-center mt-8">
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
