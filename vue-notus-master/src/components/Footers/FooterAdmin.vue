@@ -9,13 +9,7 @@
           <div
             class="text-sm text-gray-600 font-semibold py-1 text-center md:text-left"
           >
-            Copyright © {{ date }}
-            <a
-              href="https://www.creative-tim.com?ref=vn-footer-admin"
-              class="text-gray-600 hover:text-gray-800 text-sm font-semibold py-1"
-            >
-              Creative Tim
-            </a>
+            Copyright © {{ date }} Meal Bites.
           </div>
         </div>
         <div class="w-full md:w-8/12 px-4">

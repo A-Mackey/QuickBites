@@ -42,25 +42,24 @@
 
       <div class="container mx-auto">
         <div
-          class="flex flex-wrap justify-center bg-white pt-12 px-12 relative z-10"
+          class="flex flex-wrap justify-center bg-white pt-24 px-12 relative z-10"
         >
           <div class="w-full text-center lg:w-8/12">
             <h3 class="font-semibold text-3xl">
-              Do you love this Starter Kit?
+              100% of Proceeds go to the Disadvantaged
             </h3>
             <p class="text-gray-600 text-lg leading-relaxed mt-4 mb-4">
-              Cause if you do, it can be yours now. Hit the buttons below to
-              navigate to get the Free version for your next project. Build a
-              new web app or give an old project a new look!
+              We round up our purchases to the nearest dollar. This price difference
+              goes into a pool of money which is available for those who qualify on
+              our website. 
             </p>
             <div class="sm:block flex flex-col mt-10">
-              <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
-                target="_blank"
-                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+              <router-link
+                to="/admin/dashboard"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
-                Get started
-              </a>
+                Donate Now
+              </router-link>
             </div>
             <div class="text-center mt-16"></div>
           </div>
@@ -69,7 +68,7 @@
 
       
 
-    <section class="mt-48 md:mt-48 pb-40 relative bg-gray-200">
+    <section class="pt-16 mt-24 md:mt-48 pb-40 relative bg-gray-200">
       <div
         class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
         style="transform: translateZ(0);"
@@ -412,23 +411,17 @@
         </div>
       </div>
 
-      <div class="container mx-auto px-4 pb-32 pt-48">
+      <div class="container mx-auto px-4 pb-0 mt-12 pt-16">
         <div class="items-center flex flex-wrap">
           <div class="w-full md:w-5/12 ml-auto px-12 md:px-4">
             <div class="md:pr-12">
-              <div
-                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
-              >
-                <i class="fas fa-file-alt text-xl"></i>
-              </div>
               <h3 class="text-3xl font-semibold">
-                Complex Documentation
+                How Does It Work?
               </h3>
               <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                This extension comes a lot of fully coded examples that help you
-                get started faster. You can adjust the colors and also the
-                programming language. You can change the text and images and
-                you're good to go.
+                On every purchase someone makes on our site, we round up to the nearest dollar.
+                All proceeds go towards users who apply and qualify on our website for benefits. 
+
               </p>
               <ul class="list-none mt-6">
                 <li class="py-2">
@@ -437,12 +430,12 @@
                       <span
                         class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 mr-3"
                       >
-                        <i class="fas fa-fingerprint"></i>
+                        <i class="fas fa-heartbeat"></i>
                       </span>
                     </div>
                     <div>
                       <h4 class="text-gray-600">
-                        Built by Developers for Developers
+                        Large Variety of Healthy Alternatives
                       </h4>
                     </div>
                   </div>
@@ -453,12 +446,12 @@
                       <span
                         class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 mr-3"
                       >
-                        <i class="fab fa-html5"></i>
+                        <i class="fas fa-lightbulb"></i>
                       </span>
                     </div>
                     <div>
                       <h4 class="text-gray-600">
-                        Carefully crafted code for Components
+                        Great Meals for Any Occasion
                       </h4>
                     </div>
                   </div>
@@ -469,12 +462,12 @@
                       <span
                         class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 mr-3"
                       >
-                        <i class="far fa-paper-plane"></i>
+                        <i class="fas fa-coins"></i>
                       </span>
                     </div>
                     <div>
                       <h4 class="text-gray-600">
-                        Dynamic Javascript Components
+                        Cheaper Meals for Those Disadvantaged
                       </h4>
                     </div>
                   </div>
@@ -486,142 +479,16 @@
           <div class="w-full md:w-6/12 mr-auto px-4 pt-24 md:pt-0">
             <img
               alt="..."
-              class="max-w-full rounded-lg shadow-xl"
-              style="
-                transform: scale(1) perspective(1040px) rotateY(-11deg)
-                  rotateX(2deg) rotate(2deg);
-              "
-              :src="documentation"
+              class=""
+              :src="specialEvent"
             />
           </div>
         </div>
       </div>
 
-      <div class="justify-center text-center flex flex-wrap mt-24">
-        <div class="w-full md:w-6/12 px-12 md:px-4">
-          <h2 class="font-semibold text-4xl">Beautiful Example Pages</h2>
-          <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
-            Vue Notus is a completly new product built using our past experience
-            in web templates. Take the examples we made for you and start
-            playing with them.
-          </p>
-        </div>
-      </div>
     </section>
 
-    <section class="block relative z-1 bg-gray-700">
-      <div class="container mx-auto">
-        <div class="justify-center flex flex-wrap">
-          <div class="w-full lg:w-12/12 px-4 -mt-24">
-            <div class="flex flex-wrap">
-              <div class="w-full lg:w-4/12 px-4">
-                <h5 class="text-xl font-semibold pb-4 text-center">
-                  Login Page
-                </h5>
-                <router-link to="/auth/login">
-                  <div
-                    class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
-                  >
-                    <img
-                      alt="..."
-                      class="align-middle border-none max-w-full h-auto rounded-lg"
-                      :src="login"
-                    />
-                  </div>
-                </router-link>
-              </div>
-
-              <div class="w-full lg:w-4/12 px-4">
-                <h5 class="text-xl font-semibold pb-4 text-center">
-                  Profile Page
-                </h5>
-                <router-link to="/profile">
-                  <div
-                    class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
-                  >
-                    <img
-                      alt="..."
-                      class="align-middle border-none max-w-full h-auto rounded-lg"
-                      :src="profile"
-                    />
-                  </div>
-                </router-link>
-              </div>
-
-              <div class="w-full lg:w-4/12 px-4">
-                <h5 class="text-xl font-semibold pb-4 text-center">
-                  Landing Page
-                </h5>
-                <router-link to="/landing">
-                  <div
-                    class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
-                  >
-                    <img
-                      alt="..."
-                      class="align-middle border-none max-w-full h-auto rounded-lg"
-                      :src="landing"
-                    />
-                  </div>
-                </router-link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-20 bg-gray-700 overflow-hidden">
-      <div class="container mx-auto pb-64">
-        <div class="flex flex-wrap justify-center">
-          <div class="w-full md:w-5/12 px-12 md:px-4 ml-auto mr-auto md:mt-64">
-            <div
-              class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
-            >
-              <i class="fas fa-code-branch text-xl"></i>
-            </div>
-            <h3 class="text-3xl mb-2 font-semibold leading-normal text-white">
-              Open Source
-            </h3>
-            <p
-              class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-500"
-            >
-              Since
-              <a
-                href="https://tailwindcss.com/?ref=creativetim"
-                class="text-gray-400"
-                target="_blank"
-              >
-                Tailwind CSS
-              </a>
-              is an open source project we wanted to continue this movement too.
-              You can give this version a try to feel the design and also test
-              the quality of the code!
-            </p>
-            <p
-              class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-500"
-            >
-              Get it free on Github and please help us spread the news with a
-              Star!
-            </p>
-            <a
-              href="https://github.com/creativetimofficial/vue-notus?ref=vn-index"
-              target="_blank"
-              class="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
-            >
-              Github Star
-            </a>
-          </div>
-
-          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto mt-32 relative">
-            <i
-              class="fab fa-github text-gray-800 text-55 absolute -top-150-px -right-100 left-auto opacity-80"
-            ></i>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="pb-16 bg-gray-300 relative pt-32">
+    <section class="pb-16 bg-gray-300 relative pt-0">
       <div
         class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
         style="transform: translateZ(0);"
@@ -641,46 +508,6 @@
           ></polygon>
         </svg>
       </div>
-
-      <div class="container mx-auto">
-        <div
-          class="flex flex-wrap justify-center bg-white shadow-xl rounded-lg -mt-64 py-16 px-12 relative z-10"
-        >
-          <div class="w-full text-center lg:w-8/12">
-            <p class="text-4xl text-center">
-              <span role="img" aria-label="love">
-                😍
-              </span>
-            </p>
-            <h3 class="font-semibold text-3xl">
-              Do you love this Starter Kit?
-            </h3>
-            <p class="text-gray-600 text-lg leading-relaxed mt-4 mb-4">
-              Cause if you do, it can be yours now. Hit the buttons below to
-              navigate to get the Free version for your next project. Build a
-              new web app or give an old project a new look!
-            </p>
-            <div class="sm:block flex flex-col mt-10">
-              <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
-                target="_blank"
-                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
-              >
-                Get started
-              </a>
-              <a
-                href="https://github.com/creativetimofficial/vue-notus?ref=vn-index"
-                target="_blank"
-                class="github-star sm:ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
-              >
-                <i class="fab fa-github text-lg mr-1"></i>
-                <span>Help With a Star</span>
-              </a>
-            </div>
-            <div class="text-center mt-16"></div>
-          </div>
-        </div>
-      </div>
     </section>
     <footer-component />
   </div>
@@ -689,6 +516,7 @@
 import IndexNavbar from "@/components/Navbars/IndexNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
 
+import specialEvent from "@/assets/resources/specialEvent.svg";
 import breakfast from "@/assets/resources/breakfast.svg";
 import tastingCupcake from "@/assets/resources/tastingCupcake.svg";
 import eatingTogether from "@/assets/resources/eatingTogether.svg";
@@ -707,6 +535,7 @@ import landing from "@/assets/img/landing.jpg";
 export default {
   data() {
     return {
+      specialEvent,
       breakfast,
       tastingCupcake,
       eatingTogether,
