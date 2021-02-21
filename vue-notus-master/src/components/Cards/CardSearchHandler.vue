@@ -3,6 +3,8 @@
     class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 mt-6 shadow-lg rounded"
   >
 
+    <!-- <p>{{query}}</p> -->
+
     <div v-if="this.doneFetching" class="mt-6">
       <p>{{query}}</p>
       <p>{{price}}</p>
