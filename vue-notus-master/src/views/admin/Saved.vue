@@ -84,10 +84,10 @@ export default {
     return {
       recipes: [
         {
-          href:"https://www.budgetbytes.com/wp-content/uploads/2021/01/Honey-Mustard-Wings-dip.jpg",
-          name:"Honey Mustard Wings with Broccoli",
-          price:"8.04",
-          time:"60",
+          href:"https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-pan-500x500.jpg",
+          name:"One Pot Creamy Cajun Chicken Pasta",
+          price:"9.41",
+          time:"30",
           people:"2",
         },
         {
