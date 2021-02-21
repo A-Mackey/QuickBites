@@ -24,14 +24,12 @@
                   About Us
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                  Over 10% of households in the U.S.
-                  are food insecure. We believe that we
-                  have a responsibility to 
-                  uplift those around us in need.
+                  More than 10% of households in the U.S. struggle to put food on the table. 
+                  Join us in our stand against food insecurity and help us subsidize meals for low-income families.
                 </p>
 
                 <p class="mt-4 text-lg text-gray-300">
-                  There are many ways that you can help!
+                  Here's how you can help us in our mission:
                 </p>
               </div>
             </div>
@@ -73,8 +71,8 @@
                   </div>
                   <h6 class="text-xl font-semibold">Post Affordable Recipes</h6>
                   <p class="mt-2 mb-4 text-gray-600">
-                    We appreciate the community that is being built here.
-                    We want this to be a place to find affordable and delicious home-made meals for all families.
+                    We're building a community of recipe enthusiasts.
+                    Our platform is a place for people from all backgrounds to post and consume affordable, convienent and delicious home-made meals.
                   </p>
                 </div>
               </div>
@@ -110,7 +108,7 @@
                   </div>
                   <h6 class="text-xl font-semibold">Make a Donation</h6>
                   <p class="mt-2 mb-4 text-gray-600">
-                    All money will go directly into our benefits program fund to further discount family meals for qualifying low-income households.
+                    All money will go directly into our benefits program to subsidize meals for qualifying low-income individuals.
                   </p>
                 </div>
               </div>
@@ -219,11 +217,11 @@ export default {
           role: "Full Stack Web Developer", 
           github: "https://github.com/A-Mackey", 
           linkedin: "https://www.linkedin.com/in/aidanmackey",
-          picture: "https://media-exp1.licdn.com/dms/image/C5603AQH4J8WLgPWNtw/profile-displayphoto-shrink_400_400/0/1598221957751?e=1619654400&v=beta&t=ISFdXREIWhUIOxWgsdPTjlJM8xFIk43XzcIx3YMY1lQ",
+          picture: "@/src/assets/resources/profilepics/aidan.jfif",
         },
         {
           name: "Stephen Mistele", 
-          role: "Back Web & Database Developer", 
+          role: "Back/Front End Web & Database Developer", 
           github: "https://github.com/StephenMistele", 
           linkedin: "https://www.linkedin.com/in/stephenmistele/",
           picture: "https://media-exp1.licdn.com/dms/image/C5603AQFBmP-MXjDj0w/profile-displayphoto-shrink_400_400/0/1571954741327?e=1619654400&v=beta&t=DQ8UiokLj5F0ZvVxi8jdQmE4n1vhkU-s3pffVCFG5fE",
