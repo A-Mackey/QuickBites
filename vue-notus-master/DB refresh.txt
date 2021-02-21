@@ -1,0 +1,40 @@
+{
+    "Includes":"Honey Mustard Wings with Broccoli",
+    "MaxTime":"60",
+    "Equipment":"Oven",
+    "MaxBudget":"8",
+    "MinPeople":"2",
+    "Img":"https://www.budgetbytes.com/wp-content/uploads/2021/01/Honey-Mustard-Wings-dip.jpg"
+}
+{
+    "Includes":"Garlic Noodles with Beef and Broccoli",
+    "MaxTime":"40",
+    "Equipment":"Stove",
+    "MaxBudget":"13",
+    "MinPeople":"8",
+    "Img":"https://www.budgetbytes.com/wp-content/uploads/2019/11/Garlic-Noodles-with-Beef-and-Broccoli-close-fork-twirl.jpg"
+}
+{
+    "Includes":"Blackened Salmon with Zucchini",
+    "MaxTime":"30",
+    "Equipment":"Stove and Oven",
+    "MaxBudget":"13",
+    "MinPeople":"4",
+    "Img":"https://www.budgetbytes.com/wp-content/uploads/2020/07/Blackened-Salmon-with-Zucchini-fork.jpg"
+}
+{
+    "Includes":"Tortilla Baked Eggs",
+    "MaxTime":"30",
+    "Equipment":"Stove",
+    "MaxBudget":"1",
+    "MinPeople":"2",
+    "Img":"https://www.budgetbytes.com/wp-content/uploads/2020/12/Tortilla-Baked-Eggs-V2.jpg"
+}
+{
+    "Includes":"One Pot Creamy Cajun Chicken Pasta",
+    "MaxTime":"30",
+    "Equipment":"Stove and Oven",
+    "MaxBudget":"10",
+    "MinPeople":"4",
+    "Img":"https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-V1.jpg"
+}
