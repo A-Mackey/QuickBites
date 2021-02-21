@@ -170,8 +170,8 @@
                 rows="4"
               >
                   Single-mother of three.  As a working mom, providing my children with inexpensive, 
-                   quality meals is one of my top priorities.  I hope these recipes can help you and
-                   your busy lives!
+                  quality meals is one of my top priorities.  I hope these recipes can help you and
+                  your busy lives!
                   </textarea
               >
             </div>
