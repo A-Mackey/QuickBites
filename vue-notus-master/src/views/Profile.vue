@@ -94,9 +94,9 @@
                   </div>
                 </div>
               </div>
-              <div class="text-center mt-12">
+              <div class="text-center mt-4">
                 <h3
-                  class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2"
+                  class="text-4xl font-semibold leading-normal mb-2 text-gray-800"
                 >
                   Stacy Reeves
                 </h3>
@@ -104,11 +104,11 @@
                   class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase"
                 >
                   <i
-                    class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"
+                    class="fas fa-map-marker-alt mr-2 mt-4 text-lg text-gray-500"
                   ></i>
                   Los Angeles, California
                 </div>
-                <div class="mb-2 text-gray-700 mt-10">
+                <div class="mb-2 text-gray-700 mt-4">
                   <i class="fas fa-briefcase mr-2 text-lg text-gray-500"></i>
                   Teacher - Hillview Elementary School
                 </div>
