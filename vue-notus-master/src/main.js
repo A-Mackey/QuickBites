@@ -17,7 +17,7 @@ import Auth from "@/layouts/Auth.vue";
 
 // views for Admin layout
 
-import Dashboard from "@/views/admin/Dashboard.vue";
+import Donate from "@/views/admin/Donate.vue";
 import Settings from "@/views/admin/Settings.vue";
 import Tables from "@/views/admin/Tables.vue";
 import Saved from "@/views/admin/Saved.vue";
@@ -69,12 +69,12 @@ const likesCollection = db.collection('likes')
 const routes = [
   {
     path: "/admin",
-    redirect: "/admin/dashboard",
+    redirect: "/admin/donate",
     component: Admin,
     children: [
       {
-        path: "/admin/dashboard",
-        component: Dashboard,
+        path: "/admin/donate",
+        component: Donate,
       },
       {
         path: "/admin/settings",
