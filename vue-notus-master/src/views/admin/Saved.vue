@@ -2,18 +2,7 @@
   <div>
     <navbar />
     <main class="profile-page">
-      <section class="relative block h-500-px">
-        <div
-          class="absolute top-0 w-full h-full bg-center bg-cover"
-          style="
-            background-image: url('https://i.ytimg.com/vi/jZXsSas4lcU/maxresdefault.jpg');
-          "
-        >
-          <span
-            id="blackOverlay"
-            class="w-full h-full absolute opacity-50 bg-black"
-          ></span>
-        </div>
+      <section class="relative block">
         <div
           class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
           style="transform: translateZ(0);"
@@ -37,16 +26,32 @@
       <section class="relative py-16 bg-gray-300">
         <div class="container mx-auto px-4">
           <div
-            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
+            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg"
           >
             <div class="px-6">
+              <div class="flex flex-wrap justify-center">
+                <div
+                  class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center"
+                >
+                </div>
+                <div
+                  class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center"
+                >
+                  <div class="py-6 px-3 mt-6 sm:mt-6">
+                  </div>
+                </div>
+                <div class="w-full lg:w-4/12 px-4 lg:order-1">
+                  <div class="flex justify-center py-4 lg:pt-4 pt-8">
+                  </div>
+                </div>
+              </div>
 
               <!-- CARDS -->
               
             <div v-for="recipeRows in chunkedRecipes()" :key="recipeRows" class="inline-flex" style="width: 100%;">
               <div v-for="recipe in recipeRows" :key="recipe" class="inline-flex justify-center text-center" style="width: 100%;">
                 <CardRecipe 
-                  :image="recipe.img"
+                  :image="recipe.href"
                   :name="recipe.name"
                   :price="recipe.price"
                   :time="recipe.time"
@@ -64,18 +69,15 @@
   </div>
 </template>
 <script>
-import Navbar from "@/components/Navbars/AuthNavbar.vue";
+
 import FooterComponent from "@/components/Footers/Footer.vue";
 import CardRecipe from "@/components/Cards/CardRecipe.vue";
-
-import team2 from "@/assets/img/team-2-800x800.jpg";
 
 import chunk from 'chunk';
 
 export default {
   data() {
     return {
-      team2,
       recipes: [
         {
           href:"https://www.budgetbytes.com/wp-content/uploads/2021/01/Honey-Mustard-Wings-dip.jpg",
@@ -116,7 +118,6 @@ export default {
     };
   },
   components: {
-    Navbar,
     FooterComponent,
     CardRecipe
   },
