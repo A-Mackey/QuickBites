@@ -8,7 +8,7 @@
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
           style="
-            background-image: url('https://images.pexels.com/photos/4262002/pexels-photo-4262002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 ');
+            background-image: url('https://cdn.appthemes.com/wp-content/uploads/2016/09/veggies-cutting-board.jpeg');
           "
         >
           <span
@@ -24,7 +24,7 @@
                   About Us
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                  More than 10% of households in the U.S. struggle to put food on the table. 
+                  More than 25% of households in the U.S. struggle to put food on the table. The Covid-19 has only made the matter worse.
                   Join us in our stand against food insecurity and help us subsidize meals for low-income families.
                 </p>
 

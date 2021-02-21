@@ -149,7 +149,7 @@
   </div>
 </template>
 <script>
-import Navbar from "@/components/Navbars/AuthNavbar.vue";
+import Navbar from "@/components/Navbars/ProfileNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
 import CardRecipe from "@/components/Cards/CardRecipe.vue";
 

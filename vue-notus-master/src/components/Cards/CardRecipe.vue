@@ -14,10 +14,10 @@
             alt="..."
             :src="this.image"
             class="align-middle rounded-t-lg z-0"
-            style="width:100%; max-height:189px; object-fit: cover; overflow:hidden"
+            style="width:100%; max-height:250px; object-fit: cover; overflow:hidden"
             />
             <blockquote class="relative p-8 mb-4 z-10">
-                <div style="display:block; min-height:200px">
+                <div style="display:block; min-height:175px">
                     <svg
                         preserveAspectRatio="none"
                         xmlns="http://www.w3.org/2000/svg"

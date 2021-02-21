@@ -9,7 +9,7 @@
         class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
       >
         <router-link
-          class="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
+          class="text-white text-md font-bold leading-relaxed inline-block mr-4 pr-4 py-2 whitespace-no-wrap uppercase"
           to="/"
         >
           Quick Bites
@@ -29,38 +29,38 @@
       >
         <ul class="flex flex-col lg:flex-row list-none mr-auto">
           <li class="flex items-center">
-            <a
-              class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-auth-navbar"
-            >
-              <i
-                class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
-              />
-              Docs
-            </a>
+            <div class="mx-4" style="border-left:1px solid #FFFF;height:40px"></div>
           </li>
+          <router-link to="/admin/search">
+              <a
+                class="text-white text-sm font-bold leading-relaxed inline-block mr-6 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
+                href="#pablo"
+              >
+                Search
+              </a>
+            </router-link>
+            <router-link to="/admin/donate">
+              <a
+                class="text-white text-sm font-bold leading-relaxed inline-block mr-6 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
+                href="#pablo"
+              >
+                Donate
+              </a>
+            </router-link>
+            <router-link to="/aboutus">
+              <a
+                class="text-white text-sm font-bold leading-relaxed inline-block mr-6 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
+                href="#pablo"
+              >
+                About Us
+              </a>
+            </router-link>
         </ul>
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
           <li class="flex items-center">
-            <pages-dropdown />
-          </li>
-
-          <li class="flex items-center">
-            <router-link
-              to="/auth/login"
-              class="text-white text-xs font-bold uppercase px-4 py-2 rounded outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-            >
-              <i class=""></i> Log In
-            </router-link>
-          </li>
-
-          <li class="flex items-center">
-            <router-link
-              to="/auth/register"
-              class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-            >
-              <i class=""></i> Register
-            </router-link>
+            <div class="mx-4">
+              <pages-dropdown />
+            </div>
           </li>
         </ul>
       </div>
