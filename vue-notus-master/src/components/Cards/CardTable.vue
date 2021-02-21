@@ -66,11 +66,8 @@
             <p>Search</p>
           </button>
           </div>
-
-          
         </div>
       </form>
-
     </div>
       
       
