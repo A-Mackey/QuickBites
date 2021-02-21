@@ -46,3 +46,66 @@
     "MinPeople":"4",
     "Img":"https://www.budgetbytes.com/wp-content/uploads/2021/02/Vegetable-Tofu-Scramble-bowl.jpg"
 }
+
+{
+    "Includes":"Creamy Tomato Pasta with Sausage",
+    "MaxTime":"25",
+    "Equipment":"Stove",
+    "MaxBudget":"5.75",
+    "MinPeople":"4",
+    "Img":"https://www.budgetbytes.com/wp-content/uploads/2021/01/Creamy-Tomato-Pasta-with-Sausage-bowl.jpg"
+}
+
+{
+    "Includes":"Vegan Creamy Mushroom Ramen",
+    "MaxTime":"20",
+    "Equipment":"Stove",
+    "MaxBudget":"2.75",
+    "MinPeople":"1",
+    "Img":"https://www.budgetbytes.com/wp-content/uploads/2019/09/Vegan-Creamy-Mushroom-Ramen-garnished.jpg"
+}
+
+{
+    "Includes":"Homemade Chicken Yakioba",
+    "MaxTime":"30",
+    "Equipment":"Stove",
+    "MaxBudget":"5.63",
+    "MinPeople":"4",
+    "Img":"https://www.budgetbytes.com/wp-content/uploads/2012/03/Chicken-Yakisoba-fork-bowl.jpg"
+}
+
+{
+    "Includes":"Slow Cooker Taco Chicken Bowls",
+    "MaxTime":"45",
+    "Equipment":"Stove",
+    "MaxBudget":"10.31",
+    "MinPeople":"8",
+    "Img":"https://www.budgetbytes.com/wp-content/uploads/2011/07/Taco-Chicken-Bowls-forkful.jpg"
+}
+
+{
+    "Includes":"Spicy Peanut Butter Ramen",
+    "MaxTime":"10",
+    "Equipment":"Stove",
+    "MaxBudget":"0.83",
+    "MinPeople":"1",
+    "Img":"https://www.budgetbytes.com/wp-content/uploads/2021/01/Spicy-Peanut-Butter-Ramen-fork-853x640.jpg"
+}
+
+{
+    "Includes":"Yogurt Marinated Chicken",
+    "MaxTime":"15",
+    "Equipment":"Stove",
+    "MaxBudget":"7.29",
+    "MinPeople":"5",
+    "Img":"https://www.budgetbytes.com/wp-content/uploads/2021/01/Yogurt-Marinated-Chicken-V2.jpg"
+}
+
+{
+    "Includes":"Garlic Marinated Chicken",
+    "MaxTime":"35",
+    "Equipment":"Stove",
+    "MaxBudget":"3.37",
+    "MinPeople":"2",
+    "Img":"https://www.budgetbytes.com/wp-content/uploads/2020/12/Garlic-Marinated-Chicken-fork-853x640.jpg"
+}

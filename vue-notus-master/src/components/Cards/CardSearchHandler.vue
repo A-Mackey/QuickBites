@@ -11,8 +11,9 @@
             <p>{{time}}</p> -->
 
                 <div v-if="this.doneFetching" class="mt-6">
-                    <div v-for="(recipeRows, index) in chunkedRecipes()" :key="recipeRows[index].id" class="inline-flex" style="width: 100%;">
-                        <div v-for="recipe in recipeRows" :key="recipe.index" class="inline-flex justify-center text-center" style="width: 100%;">
+                    <div v-for="(recipeRows, index) in chunkedRecipes()" :key="recipeRows[index]" class="inline-flex" style="width: 100%;">
+                        <div v-for="recipe in recipeRows" :key="recipe.Includes" class="inline-flex justify-center text-center" style="width: 100%;">
+                        <!-- <p>{{recipe.Includes}}</p> -->
                         <CardRecipe 
                             :image="recipe.Img"
                             :name="recipe.Includes"
@@ -142,7 +143,7 @@ export default {
 
     chunkedRecipes() {
       var arr = chunk(this.items, 3);
-      //console.log("Chunked Array: ", arr);
+      console.log("Chunked Array: ", arr);
       return arr;
     },
   },
