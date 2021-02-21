@@ -44,7 +44,7 @@
                 class="md:block text-left md:pb-2 text-gray-700 mr-0 inline-block whitespace-no-wrap text-sm uppercase font-bold p-4 px-0"
                 to="/"
               >
-                Vue Notus
+                Quick Bites
               </router-link>
             </div>
             <div class="w-6/12 flex justify-end">
@@ -75,7 +75,7 @@
         <h6
           class="md:min-w-full text-gray-600 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
         >
-          Admin Layout Pages
+          General
         </h6>
         <!-- Navigation -->
 
@@ -207,6 +207,18 @@
             </router-link>
           </li>
 
+          <ul class="md:flex-col md:min-w-full flex flex-col list-none">
+          <li class="items-center">
+            <router-link
+              class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
+              style="color: #667eea"
+              to="/landing"
+            >
+              <i class="fas fa-newspaper text-gray-400 mr-2 text-sm"></i>
+              About Us
+            </router-link>
+          </li>
+
           <li class="items-center">
             <router-link
               to="/admin/settings"
@@ -232,6 +244,7 @@
             </router-link>
           </li>
 
+
         </ul>
 
         <!-- Divider -->
@@ -240,7 +253,7 @@
         <h6
           class="md:min-w-full text-gray-600 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
         >
-          Auth Layout Pages
+          User
         </h6>
         <!-- Navigation -->
 
@@ -264,28 +277,6 @@
               Register
             </router-link>
           </li>
-        </ul>
-
-        <!-- Divider -->
-        <hr class="my-4 md:min-w-full" />
-        <!-- Heading -->
-        <h6
-          class="md:min-w-full text-gray-600 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
-        >
-          No Layout Pages
-        </h6>
-        <!-- Navigation -->
-
-        <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
-          <li class="items-center">
-            <router-link
-              class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
-              to="/landing"
-            >
-              <i class="fas fa-newspaper text-gray-400 mr-2 text-sm"></i>
-              Landing Page
-            </router-link>
-          </li>
 
           <li class="items-center">
             <router-link
@@ -293,11 +284,11 @@
               to="/profile"
             >
               <i class="fas fa-user-circle text-gray-400 mr-2 text-sm"></i>
-              Profile Page
+              Profile
             </router-link>
           </li>
         </ul>
-n
+        </ul>
       </div>
     </div>
   </nav>
