@@ -11,7 +11,7 @@
               Quick Bites - less planning, more eating!
             </h2>
             <p class="mt-5 text-2xl leading-relaxed text-gray-700">
-              A community that fosters the sharing of simple, affordable, and time-conscious meal ideas. 
+              A community that fosters the sharing of simple, affordable, and time-conscious recipes. 
               <a
                 href="https://tailwindcss.com/?ref=creativetim"
                 class="text-gray-700"
@@ -62,7 +62,7 @@
       </div>
       <div class="container mx-auto">
         <div class="flex flex-wrap items-center">
-          <div
+          <!-- <div
             class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32"
           >
             <div
@@ -94,7 +94,7 @@
                 </p>
               </blockquote>
             </div>
-          </div>
+          </div> -->
 
           <div class="w-full md:w-6/12 px-4">
             <div class="flex flex-wrap">
@@ -140,7 +140,7 @@
                     </div>
                     <h6 class="text-xl mb-1 font-semibold">Convenient</h6>
                     <p class="mb-4 text-gray-600">
-                      C
+                      Choose a meal that suits your lifestyle.
                     </p>
                   </div>
                 </div>

@@ -6,7 +6,7 @@
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
           style="
-            background-image: url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80');
+            background-image: url('https://i.ytimg.com/vi/jZXsSas4lcU/maxresdefault.jpg');
           "
         >
           <span
@@ -47,7 +47,7 @@
                   <div class="relative">
                     <img
                       alt="..."
-                      :src="team2"
+                      src="https://i.dailymail.co.uk/1s/2020/10/01/00/33835806-8791353-image-a-119_1601509729801.jpg"
                       class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                     />
                   </div>
@@ -55,40 +55,41 @@
                 <div
                   class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center"
                 >
-                  <div class="py-6 px-3 mt-32 sm:mt-0">
+                  <div class="py-6 px-3 mt-6 sm:mt-6">
                     <button
-                      class="bg-green-500 active:bg-green-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                      style="background-color: #667eea"
+                      class="uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
                       type="button"
                     >
-                      Connect
+                      Follow
                     </button>
                   </div>
                 </div>
                 <div class="w-full lg:w-4/12 px-4 lg:order-1">
                   <div class="flex justify-center py-4 lg:pt-4 pt-8">
-                    <div class="mr-4 p-3 text-center">
+                    <div class="mr-4 p-3 text-center mt-6">
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
                         20
                       </span>
-                      <span class="text-sm text-gray-500">Cook Time</span>
+                      <span class="text-sm text-gray-500">Followers</span>
                     </div>
-                    <div class="mr-4 p-3 text-center">
+                    <div class="mr-4 p-3 text-center mt-6">
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
                         10
                       </span>
-                      <span class="text-sm text-gray-500">Prep</span>
+                      <span class="text-sm text-gray-500">Following</span>
                     </div>
-                    <div class="lg:mr-4 p-3 text-center">
+                    <div class="lg:mr-4 p-3 text-center mt-6">
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
-                        89
+                        3
                       </span>
-                      <span class="text-sm text-gray-500">Comments</span>
+                      <span class="text-sm text-gray-500">Recipies</span>
                     </div>
                   </div>
                 </div>
@@ -97,7 +98,7 @@
                 <h3
                   class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2"
                 >
-                  Jenna Stones
+                  Stacy Reeves
                 </h3>
                 <div
                   class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase"
@@ -109,32 +110,121 @@
                 </div>
                 <div class="mb-2 text-gray-700 mt-10">
                   <i class="fas fa-briefcase mr-2 text-lg text-gray-500"></i>
-                  Solution Manager - Creative Tim Officer
-                </div>
-                <div class="mb-2 text-gray-700">
-                  <i class="fas fa-university mr-2 text-lg text-gray-500"></i>
-                  University of Computer Science
+                  Teacher - Hillview Elementary School
                 </div>
               </div>
-              <div class="mt-10 py-10 border-t border-gray-300 text-center">
+
+              <div class="mt-10 py-10 mb-12 border-t border-gray-300 text-center">
                 <div class="flex flex-wrap justify-center">
                   <div class="w-full lg:w-9/12 px-4">
                     <p class="mb-4 text-lg leading-relaxed text-gray-800">
-                      An artist of considerable range, Jenna the name taken by
-                      Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                      performs and records all of his own music, giving it a
-                      warm, intimate feel with a solid groove structure. An
-                      artist of considerable range.
+                      Single-mother of three.  As a working mom, providing my children with inexpensive, 
+                      quality meals is one of my top priorities.  I hope these recipies can help you and
+                      your busy lives!
                     </p>
-                    <a
-                      href="javascript:void(0)"
-                      class="font-normal text-green-500"
-                    >
-                      Show more
-                    </a>
                   </div>
                 </div>
               </div>
+
+
+
+            <div class="inline-flex space-x-4">
+              <div
+                class="flex-1 w-10/12 md:w-6/12 lg:w-4/12 px-12 mr-10 md:px-4 -mt-6 mb-6"
+              >
+                <div
+                  class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-indigo-500"
+                >
+                  <img
+                    alt="..."
+                    src="https://everylittlecrumb.com/wp-content/uploads/2019/01/FrenchToastSourdough-500x500.jpg"
+                    class="w-full align-middle rounded-t-lg"
+                  />
+                  <blockquote class="relative p-8 mb-4">
+                    <svg
+                      preserveAspectRatio="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 583 95"
+                      class="absolute left-0 w-full block h-95-px -top-94-px"
+                    >
+                      <polygon
+                        points="-30,95 583,95 583,65"
+                        class="fill-current"
+                        style="color: #667eea"
+                      ></polygon>
+                    </svg>
+                    <h4 class="text-center text-xl font-bold text-white">
+                      Sourdough French Toast
+                    </h4>
+                  </blockquote>
+                </div>
+              </div>
+
+              <div
+                class="flex-1 w-10/12 md:w-6/12 lg:w-4/12 px-12 mr-auto ml-auto md:px-4 -mt-6 mb-6"
+              >
+                <div
+                  class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-indigo-500"
+                >
+                  <img
+                    alt="..."
+                    src="https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-pan-500x500.jpg"
+                    class="w-full align-middle rounded-t-lg"
+                  />
+                  <blockquote class="relative p-8 mb-4">
+                    <svg
+                      preserveAspectRatio="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 583 95"
+                      class="absolute left-0 w-full block h-95-px -top-94-px"
+                    >
+                      <polygon
+                        points="-30,95 583,95 583,65"
+                        class="fill-current"
+                        style="color: #667eea"
+                      ></polygon>
+                    </svg>
+                    <h4 class="text-center text-xl font-bold text-white">
+                      Creamy Cajun Chicken Pasta
+                    </h4>
+                  </blockquote>
+                </div>
+              </div>
+
+
+              <div
+                class="flex-1 w-10/12 md:w-6/12 lg:w-4/12 px-12 mr-10 ml-auto md:px-4 -mt-6 mb-6"
+              >
+                <div
+                  class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-indigo-500"
+                >
+                  <img
+                    alt="..."
+                    src="https://static.onecms.io/wp-content/uploads/sites/44/2019/08/26231058/4578875.jpg"
+                    class="w-full align-middle rounded-t-lg"
+                  />
+                  <blockquote class="relative p-8 mb-4">
+                    <svg
+                      preserveAspectRatio="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 583 95"
+                      class="absolute left-0 w-full block h-95-px -top-94-px"
+                    >
+                      <polygon
+                        points="-30,95 583,95 583,65"
+                        class="fill-current"
+                        style="color: #667eea"
+                      ></polygon>
+                    </svg>
+                    <h4 class="text-center text-xl font-bold text-white">
+                      Greek Salad Nachos
+                    </h4>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+
             </div>
           </div>
         </div>
