@@ -84,8 +84,8 @@
 
           <li class="items-center">
           <router-link
-            to="/admin/tables"
-            v-slot="{ href, route, navigate, isActive }"
+            to="/admin/search"
+            v-slot="{ href, navigate, isActive }"
           >
             <a
               :href="href"
@@ -146,30 +146,6 @@
                 ]"
               >
                 <i
-                  class="fas fa-table mr-2 text-sm"
-                  :class="[isActive ? 'opacity-75' : 'text-gray-400']"
-                ></i>
-                Order
-              </a>
-            </router-link>
-          </li>
-
-          <li class="items-center">
-            <router-link
-              to="/admin/settings"
-              v-slot="{ href, route, navigate, isActive }"
-            >
-              <a
-                :href="href"
-                @click="navigate"
-                class="text-xs uppercase py-3 font-bold block"
-                :class="[
-                  isActive
-                    ? 'button-active hover:button-active'
-                    : 'text-gray-800 hover:text-gray-600',
-                ]"
-              >
-                <i
                   class="fas fa-shopping-cart mr-2 text-sm"
                   :class="[isActive ? 'opacity-75' : 'text-gray-400']"
                 ></i>
@@ -180,7 +156,7 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/dashboard"
+              to="/admin/donate"
               v-slot="{ href, route, navigate, isActive }"
             >
               <a
