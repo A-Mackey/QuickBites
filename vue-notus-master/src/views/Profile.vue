@@ -87,7 +87,7 @@
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
-                        3
+                        5
                       </span>
                       <span class="text-sm text-gray-500">Recipies</span>
                     </div>
@@ -131,7 +131,7 @@
             <div v-for="recipeRows in chunkedRecipes()" :key="recipeRows" class="inline-flex" style="width: 100%;">
               <div v-for="recipe in recipeRows" :key="recipe" class="inline-flex justify-center text-center" style="width: 100%;">
                 <CardRecipe 
-                  :image="recipe.href"
+                  :image="recipe.img"
                   :name="recipe.name"
                   :price="recipe.price"
                   :time="recipe.time"
