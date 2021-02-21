@@ -42,6 +42,7 @@
                   Name
                 </label>
                 <input
+                  v-model="form.name"
                   type="email"
                   class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                   placeholder="Name"
@@ -56,6 +57,7 @@
                   Email
                 </label>
                 <input
+                v-model="form.email"
                   type="email"
                   class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                   placeholder="Email"
@@ -70,6 +72,7 @@
                   Password
                 </label>
                 <input
+                  v-model="form.password"
                   type="password"
                   class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                   placeholder="Password"
@@ -96,6 +99,7 @@
                 <button
                   class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                   type="button"
+                  v-on:click="submit"
                 >
                   Create Account
                 </button>
@@ -177,12 +181,16 @@
 import github from "@/assets/img/github.svg";
 import google from "@/assets/img/google.svg";
 import firebase from "firebase";
+import 'firebase/auth'
+import 'firebase/firestore'
+require('firebase/auth')
 
 export default {
   data() {
     return {
       github,
       google,
+      firebase,
       form: {
         name: "",
         email: "",
@@ -191,8 +199,15 @@ export default {
       error: null
     };
   },
+  components: {
+    
+  },
   methods: {
     submit() {
+      console.log("submitting");
+      console.log(this.form.name);
+      console.log(this.form.email);
+      console.log(this.form.password);
       firebase
         .auth()
         .createUserWithEmailAndPassword(this.form.email, this.form.password)
