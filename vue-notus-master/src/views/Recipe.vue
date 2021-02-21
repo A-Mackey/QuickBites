@@ -126,26 +126,7 @@
                     Chicken Pasta:
                   </p>
                   <p class="mt-2 mb-2 text-black-600">
-                    ・1 Tbsp olive oi <br/>・1 Tbsp butter<br/>・1lb. boneless, skinless chicken breast<br/>・1 yellow onion, diced<br/>・1/2 lb. penne pasta<br/>・15 oz. fire roasted diced tomatoes<br/>・2 cups chicken broth<br/>・2 oz. cream cheese<br/>・3 green onions, sliced
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex display: flex min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
-                  >
-                    <i class="fas fa-retweet"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Free Revisions</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Keep you user engaged by providing meaningful information.
-                    Remember that by this time, the user is curious.
+                    ・1 Tbsp olive oi <br/>・1 Tbsp butter<br/>・1lb. boneless, skinless chicken breast<br/>・1 yellow onion, diced<br/>・1/2 lb. penne pasta<br/>・15 oz. fire roasted diced tomatoes<br/>・2 cups chicken broth<br/>・2 oz. cream cheese<br/>・3 green onions, sliced<br/>
                   </p>
                 </div>
               </div>
