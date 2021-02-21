@@ -40,7 +40,36 @@
       />
     </section>
 
-    <section class="mt-48 md:mt-40 pb-40 relative bg-gray-200">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-wrap justify-center bg-white pt-12 px-12 relative z-10"
+        >
+          <div class="w-full text-center lg:w-8/12">
+            <h3 class="font-semibold text-3xl">
+              Do you love this Starter Kit?
+            </h3>
+            <p class="text-gray-600 text-lg leading-relaxed mt-4 mb-4">
+              Cause if you do, it can be yours now. Hit the buttons below to
+              navigate to get the Free version for your next project. Build a
+              new web app or give an old project a new look!
+            </p>
+            <div class="sm:block flex flex-col mt-10">
+              <a
+                href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
+                target="_blank"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+              >
+                Get started
+              </a>
+            </div>
+            <div class="text-center mt-16"></div>
+          </div>
+        </div>
+      </div>
+
+      
+
+    <section class="mt-48 md:mt-48 pb-40 relative bg-gray-200">
       <div
         class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
         style="transform: translateZ(0);"
