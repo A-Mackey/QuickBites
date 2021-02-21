@@ -1,6 +1,8 @@
 import Vue from "vue";
 import App from "./App.vue";
-import * as firebase from "firebase";
+import firebase from "firebase";
+import 'firebase/auth'
+import 'firebase/firestore'
 
 Vue.config.productionTip = false;
 
@@ -15,7 +17,22 @@ const configOptions = {
 };
 
 firebase.initializeApp(configOptions);
+const auth = firebase.auth()
+const db = firebase.firestore()
 
+const usersCollection = db.collection('users')
+const postsCollection = db.collection('posts')
+const commentsCollection = db.collection('comments')
+const likesCollection = db.collection('likes')
+
+export {
+    db,
+    auth,
+    usersCollection,
+    postsCollection,
+    commentsCollection,
+    likesCollection
+  }
 new Vue({
   render: h => h(App)
 }).$mount("#app");
