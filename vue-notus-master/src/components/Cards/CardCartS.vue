@@ -168,9 +168,7 @@
           </div>
         </div>
 
-                <hr class="mt-6 border-b-1 border-gray-400" />
-
-        <h6 class="text-gray-500 text-sm mt-3 mb-6 font-bold uppercase">
+ <h6 class="text-gray-500 text-sm mt-3 mb-6 font-bold uppercase">
           Payment Information
         </h6>
         <div class="flex flex-wrap">

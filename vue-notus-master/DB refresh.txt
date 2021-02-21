@@ -38,3 +38,11 @@
     "MinPeople":"4",
     "Img":"https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-V1.jpg"
 }
+{
+    "Includes":"Vegtable Tofu Scramble",
+    "MaxTime":"35",
+    "Equipment":"Stove",
+    "MaxBudget":"14",
+    "MinPeople":"4",
+    "Img":"https://www.budgetbytes.com/wp-content/uploads/2021/02/Vegetable-Tofu-Scramble-bowl.jpg"
+}
