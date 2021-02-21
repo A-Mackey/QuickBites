@@ -81,7 +81,7 @@ export default {
     },
 
     async queryDatabase() {
-      var jsondata = fetch("http://localhost:9078/api/products").then(function (
+      var jsondata = fetch("http://panterix.com:9078/api/products").then(function (
         u
       ) {
         return u.json();
