@@ -13,7 +13,7 @@
         >
           <span
             id="blackOverlay"
-            class="w-full h-full absolute opacity-75 bg-black"
+            class="w-full h-full absolute opacity-50 bg-black"
           ></span>
         </div>
         <div class="container relative mx-auto">
@@ -67,7 +67,7 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
                   >
-                <i class="fas fa-retweet"></i>
+                <i class="fas fa-shopping-cart"></i>
                   </div>
                   <h6 class="text-xl font-semibold">Shop Using Our Site</h6>
                   <p class="mt-2 mb-4 text-gray-600">
@@ -85,7 +85,7 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
                   >
-                  <i class="fas fa-award"></i>
+                  <i class="fas fa-utensils"></i>
                   </div>
                   <h6 class="text-xl font-semibold">Post Affordable Recipes</h6>
                   <p class="mt-2 mb-4 text-gray-600">
@@ -104,7 +104,7 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
                   >
-                    <i class="fas fa-fingerprint"></i>
+                    <i class="fas fa-hand-holding-usd"></i>
                   </div>
                   <h6 class="text-xl font-semibold">Make a Donation</h6>
                   <p class="mt-2 mb-4 text-gray-600">
@@ -217,21 +217,21 @@ export default {
           role: "Full Stack Developer", 
           github: "https://github.com/A-Mackey", 
           linkedin: "https://www.linkedin.com/in/aidanmackey",
-          picture: "@/src/assets/resources/profilepics/aidan.jfif",
+          picture: "https://webpages.scu.edu/ftp/smistele/img/profilepics/aidan.jfif",
         },
         {
           name: "Stephen Mistele", 
           role: "Full Stack & Database Developer", 
           github: "https://github.com/StephenMistele", 
           linkedin: "https://www.linkedin.com/in/stephenmistele/",
-          picture: "https://media-exp1.licdn.com/dms/image/C5603AQFBmP-MXjDj0w/profile-displayphoto-shrink_400_400/0/1571954741327?e=1619654400&v=beta&t=DQ8UiokLj5F0ZvVxi8jdQmE4n1vhkU-s3pffVCFG5fE",
+          picture: "https://webpages.scu.edu/ftp/smistele/img/profilepics/stephen.jfif",
         },
         {
           name: "Kevin Rooney", 
           role: "Full Stack Developer", 
           github: "https://github.com/kevinrooney", 
           linkedin: "https://www.linkedin.com/in/kevintrooney/",
-          picture: "https://media-exp1.licdn.com/dms/image/C5603AQF0J3mG7wk35Q/profile-displayphoto-shrink_400_400/0/1613522666260?e=1619654400&v=beta&t=H6AvbdZgEGYocgUEICMpKGh4DoufK4uVAkzVOpE3Nt4",
+          picture: "https://webpages.scu.edu/ftp/smistele/img/profilepics/kevin.jfif",
         },
       ],
       [
@@ -240,21 +240,21 @@ export default {
           role: "Back End & Database Developer", 
           github: "https://github.com/NicholasTallis", 
           linkedin: "https://www.linkedin.com/in/nicholastallis/",
-          picture: "https://media-exp1.licdn.com/dms/image/C5603AQHNmjZfj2NyDQ/profile-displayphoto-shrink_400_400/0/1593729589081?e=1619654400&v=beta&t=8FuwHn0SEyAweNP5xav_Am7YcGH1H_hT7BnpKGd-E3E",
+          picture: "https://webpages.scu.edu/ftp/smistele/img/profilepics/nick.jfif",
         },
         {
-          name: "Lucca Voron", 
+          name: "Lucas Voron", 
           role: "Front End Developer & Designer", 
           github: "https://github.com/lucasvoron", 
           linkedin: "https://www.linkedin.com/in/lucas-voron-435073198/",
-          picture: "https://media-exp1.licdn.com/dms/image/C4E03AQFogBu97EHvAw/profile-displayphoto-shrink_400_400/0/1575489692749?e=1619654400&v=beta&t=PhTQ9qDBuQyHkO86AxgZoig91-19X_x1cNphlW3Q7Jo",
+          picture: "https://webpages.scu.edu/ftp/smistele/img/profilepics/luca.jfif",
           },
         {
           name: "Kim Do", 
           role: "Front End Developer & Designer", 
           github: "https://github.com/ktdo01", 
           linkedin: "https://www.linkedin.com/in/kimtdo23/",
-          picture: "https://media-exp1.licdn.com/dms/image/C5603AQEsZCxNll4pMw/profile-displayphoto-shrink_400_400/0/1558029682997?e=1619654400&v=beta&t=yH5UtvV7d9RQa2Wqx3j5VjNOUN7pln-KykbUGrIZ_Mk",
+          picture: "https://webpages.scu.edu/ftp/smistele/img/profilepics/kim.jfif",
           },
       ]
       ]
