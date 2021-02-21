@@ -24,9 +24,9 @@
         </div>
       </section>
       <section class="relative py-12 bg-gray-300">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto w-screen">
           <div
-            class="relative flex flex-col min-w-0 break-words bg-white w-full pt-12 mb-6 shadow-xl rounded-lg"
+            class="relative flex flex-col min-w-full break-words bg-white w-full pt-12 mb-6 shadow-xl rounded-lg"
           >
           <h1 class="text-gray-700 font-semibold text-5xl text-center">
                   Saved Recipes
@@ -69,12 +69,10 @@
         </div>
       </section>
     </main>
-    <footer-component />
   </div>
 </template>
 <script>
 
-import FooterComponent from "@/components/Footers/Footer.vue";
 import CardRecipe from "@/components/Cards/CardRecipe.vue";
 
 import chunk from 'chunk';
@@ -108,7 +106,6 @@ export default {
     };
   },
   components: {
-    FooterComponent,
     CardRecipe
   },
 
