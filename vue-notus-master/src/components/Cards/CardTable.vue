@@ -12,13 +12,56 @@
           >
             <i class="fas fa-search"></i>
           </span>
+
           <input
             type="text"
             v-model="search"
             placeholder="Find a Recipe..."
             class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10"
-            style="margin-right: 100px"
           />
+
+          <div class="inline-flex mt-3">
+            <span
+              class="z-10 leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3"
+            >
+              <i class="fas fa-dollar-sign"></i>
+            </span>
+            <input
+              type="text"
+              v-model="price"
+              placeholder="Max Price"
+              class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-3/12 pl-10"
+            />
+
+            <div class="ml-3">
+            <span
+              class="z-10 leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3"
+            >
+              <i class="fas fa-user-friends"></i>
+            </span>
+            <input
+              type="text"
+              v-model="people"
+              placeholder="Min # of People"
+              class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-3/12 pl-10"
+            />
+            </div>
+
+            <div class="ml-3">
+              <span
+                class="z-10 leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3"
+              >
+                <i class="fas fa-clock"></i>
+              </span>
+              <input
+                type="text"
+                v-model="time"
+                placeholder="Max Time"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-3/12 pl-10"
+              />
+            </div>
+          </div>
+
           <button style="margin-top: 10px;" v-on:click="callSearch">
             <p>Search</p>
           </button>
@@ -31,7 +74,7 @@
       <p>Input: {{search}}</p>
 
 
-    <CardSearchHandler v-bind:key="searchQuery" v-bind:query="searchQuery" v-bind:price="price" v-bind:people="people" v-bind:time="time"/>
+    <CardSearchHandler v-bind:key="searchQuery" v-bind:query="searchQuery" v-bind:price="priceQuery" v-bind:people="peopleQuery" v-bind:time="timeQuery"/>
   
   
   </div>
@@ -55,10 +98,13 @@ export default {
   data() {
     return {
       search: "",
-      price: -1,
-      people: -1,
-      time: -1,
+      price: "",
+      people: "",
+      time: "",
       searchQuery: "",
+      priceQuery: 0,
+      peopleQuery: 0,
+      timeQuery: 0,
       bootstrap,
       angular,
       sketch,
@@ -82,9 +128,9 @@ export default {
   methods: {
     callSearch() {
       this.searchQuery = this.search;
-      this.price = Math.random() * 10;
-      this.people = Math.random() * 10;
-      this.time = Math.random() * 10;
+      this.priceQuery = this.price;
+      this.peopleQuery = this.people;
+      this.timeQuery = this.time;
     }
   }
 };

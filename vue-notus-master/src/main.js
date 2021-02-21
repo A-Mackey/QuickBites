@@ -35,7 +35,9 @@ import Index from "@/views/Index.vue";
 import Recipe from "@/views/Recipe.vue";
 
 //firebase 
-import firebase from "firebase";
+import firebase from "firebase";//firebase/app
+import 'firebase/auth'
+import 'firebase/firestore'
 
 //firebase
 const configOptions = {
@@ -49,6 +51,15 @@ measurementId: "G-XLDCKEM615"
 };
 
 firebase.initializeApp(configOptions);
+
+const auth = firebase.auth()
+const db = firebase.firestore()
+
+const usersCollection = db.collection('users')
+const postsCollection = db.collection('posts')
+const commentsCollection = db.collection('comments')
+const likesCollection = db.collection('likes')
+
 // routes
 
 const routes = [
@@ -119,6 +130,14 @@ const router = new VueRouter({
   routes,
 });
 
+export {
+  db,
+  auth,
+  usersCollection,
+  postsCollection,
+  commentsCollection,
+  likesCollection
+}
 new Vue({
   router,
   render: (h) => h(App),

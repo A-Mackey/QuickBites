@@ -2,7 +2,7 @@
   <div
     class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
   >
-    <button style="margin-top: 10px" v-on:click="controller()">
+    <button style="margin-top: 10px" v-on:click="controller(props)">
       <p>Search</p>
     </button>
     <p>Query: {{ query }}</p>
@@ -11,16 +11,33 @@
     <p>Time: {{ time }}</p>
 
     <p>Meals:</p>
-    <ul>
-      <li v-for="item in items" :key="item.id">
-        {{ item }}
-      </li>
-    </ul>
+
+    <div v-if="this.doneFetching">
+        <div v-for="recipeRows in chunkedRecipes()" :key="recipeRows" class="inline-flex" style="width: 100%;">
+            <div v-for="recipe in recipeRows" :key="recipe.index" class="inline-flex justify-center text-center" style="width: 100%;">
+            <CardRecipe 
+                :image="recipe.Img"
+                :name="recipe.Includes"
+                :price="recipe.MaxBudget"
+                :time="recipe.MaxTime"
+                :people="recipe.MinPeople"
+            />
+            </div>
+        </div>
+    </div>
   </div>
 </template>
 <script>
+import CardRecipe from "@/components/Cards/CardRecipe.vue";
+import chunk from 'chunk';
+
+
 export default {
   name: "CardSearchHandler",
+
+  components: {
+      CardRecipe
+  },
 
   props: {
     query: String,
@@ -34,20 +51,26 @@ export default {
       items: [
         []
       ],
+      doneFetching: false,
     };
   },
 
   async mounted() {
-    this.items = await this.controller();
+    if (this.query != "") {
+        console.log("yoooo")
+        this.items = await this.controller()
+        .then(this.doneFetching = true, console.log("Done Fetching"));
+    }
   },
 
   methods: {
     async controller() {
       var data = await this.queryDatabase();
       var out = await this.parseArray(data);
-      console.log(out);
+      console.log("Out:", out);
       return out;
     },
+
     async queryDatabase() {
       var jsondata = fetch("http://localhost:9078/api/products")
         .then(function (u) {
@@ -55,18 +78,31 @@ export default {
         });
       return jsondata;
     },
+
     parseArray(data) {
       var arr = new Array(data.data.length);
-      for (var i=0; i<data.data.length;i++){
+      var n = data.data.length;
+      for (var i=0; i<n;i++){
         arr[i] = {
           Includes: JSON.parse(JSON.stringify(data.data[i].Includes)),
-          MaxTime: JSON.parse(JSON.stringify(data.data[i].MaxTime)),
+          MaxTime: Number(JSON.parse(JSON.stringify(data.data[i].MaxTime))),
           Equipment: JSON.parse(JSON.stringify(data.data[i].Equipment)),
-          MaxBudget: JSON.parse(JSON.stringify(data.data[i].MaxBudget)),
-          MinPeople: JSON.parse(JSON.stringify(data.data[i].MinPeople))
+          MaxBudget: Number(JSON.parse(JSON.stringify(data.data[i].MaxBudget))),
+          MinPeople: Number(JSON.parse(JSON.stringify(data.data[i].MinPeople))),
+          Img: (JSON.parse(JSON.stringify(data.data[i].Img)))
         }
+        // if (!arr[i].Includes.Search(this.props.Includes)) {
+        //   i--;
+        //   n--;
+        // }
       }
       return arr;
+    },
+
+    chunkedRecipes() {
+        var arr = chunk(this.items, 3);
+        console.log("Chunked Array: ", arr);
+        return arr;
     },
   },
 };
