@@ -2,7 +2,7 @@
   <div>
     <navbar />
     <main class="profile-page">
-      <section class="relative block">
+      <section class="w-full">
         <div
           class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
           style="transform: translateZ(0);"

@@ -4,7 +4,7 @@
     <div class="relative md:ml-64 mt-auto bg-gray-200">
       <admin-navbar />
       <!-- <header-stats /> -->
-      <div class="px-4 md:px-10 mx-auto mt-auto w-full">
+      <div class="mt-auto w-full">
     </div>
     </div>
     <div class="md:ml-64 bg-gray-200">
