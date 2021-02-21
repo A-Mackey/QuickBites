@@ -72,15 +72,25 @@
                     </a>
                   </router-link>
                 </li>
+                <li>
+                  <router-link to="/admin/search">
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="#pablo"
+                    >
+                      Search
+                    </a>
+                  </router-link>
+                </li>
               </ul>
             </div>
             <div class="w-full lg:w-4/12 px-4">
-              <span
+              <!-- <span
                 class="block uppercase text-gray-600 text-sm font-semibold mb-2"
               >
                 Other Resources
-              </span>
-              <ul class="list-unstyled">
+              </span> -->
+              <!-- <ul class="list-unstyled">
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
@@ -105,7 +115,7 @@
                     Contact Us
                   </a>
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
