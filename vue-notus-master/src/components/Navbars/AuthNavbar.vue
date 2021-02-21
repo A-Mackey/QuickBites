@@ -9,7 +9,7 @@
         class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
       >
         <router-link
-          class="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
+          class="text-white text-md font-bold leading-relaxed inline-block mr-4 pr-4 py-2 whitespace-no-wrap uppercase"
           to="/"
         >
           Quick Bites
@@ -29,13 +29,34 @@
       >
         <ul class="flex flex-col lg:flex-row list-none mr-auto">
           <li class="flex items-center">
-
+            <div class="mx-4" style="border-left:1px solid #FFFF;height:40px"></div>
           </li>
+          <router-link to="/admin/search">
+              <a
+                class="text-white text-sm font-bold leading-relaxed inline-block mr-6 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
+                href="#pablo"
+              >
+                Search
+              </a>
+            </router-link>
+            <router-link to="/admin/donate">
+              <a
+                class="text-white text-sm font-bold leading-relaxed inline-block mr-6 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
+                href="#pablo"
+              >
+                Donate
+              </a>
+            </router-link>
+            <router-link to="/aboutus">
+              <a
+                class="text-white text-sm font-bold leading-relaxed inline-block mr-6 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
+                href="#pablo"
+              >
+                About Us
+              </a>
+            </router-link>
         </ul>
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-          <li class="flex items-center">
-            <pages-dropdown />
-          </li>
 
           <li class="flex items-center">
             <router-link
@@ -54,6 +75,11 @@
             >
               <i class=""></i> Register
             </router-link>
+          </li>
+          <li class="flex items-center">
+            <div class="mx-4">
+              <pages-dropdown />
+            </div>
           </li>
         </ul>
       </div>
