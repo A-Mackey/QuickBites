@@ -9,20 +9,17 @@
   </div>
 </template>
 <script>
+
 import CardDonate from "@/components/Cards/CardDonate.vue";
 import CardDonateProfile from "@/components/Cards/CardDonateProfile.vue";
 
-import { mapGetters } from "vuex";
 export default {
   components: {
     CardDonate,
     CardDonateProfile,
   },
   computed: {
-    // map `this.user` to `this.$store.getters.user`
-    ...mapGetters({
-      user: "user"
-    })
+
   }
 };
 </script>
