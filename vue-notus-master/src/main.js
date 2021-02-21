@@ -30,7 +30,7 @@ import Register from "@/views/auth/Register.vue";
 
 // views without layouts
 
-import Landing from "@/views/Landing.vue";
+import AboutUs from "@/views/AboutUs.vue";
 import Profile from "@/views/Profile.vue";
 import Index from "@/views/Index.vue";
 import Recipe from "@/views/Recipe.vue";
@@ -111,8 +111,8 @@ const routes = [
     ],
   },
   {
-    path: "/landing",
-    component: Landing,
+    path: "/aboutus",
+    component: AboutUs,
   },
   {
     path: "/profile",
