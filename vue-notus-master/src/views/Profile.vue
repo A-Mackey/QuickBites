@@ -55,9 +55,10 @@
                 <div
                   class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center"
                 >
-                  <div class="py-6 px-3 mt-32 sm:mt-0">
+                  <div class="py-6 px-3 mt-6 sm:mt-6">
                     <button
-                      class="bg-green-500 active:bg-green-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                      style="background-color: #667eea"
+                      class="uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
                       type="button"
                     >
                       Follow
@@ -66,29 +67,29 @@
                 </div>
                 <div class="w-full lg:w-4/12 px-4 lg:order-1">
                   <div class="flex justify-center py-4 lg:pt-4 pt-8">
-                    <div class="mr-4 p-3 text-center">
+                    <div class="mr-4 p-3 text-center mt-6">
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
                         20
                       </span>
-                      <span class="text-sm text-gray-500">Cook Time</span>
+                      <span class="text-sm text-gray-500">Followers</span>
                     </div>
-                    <div class="mr-4 p-3 text-center">
+                    <div class="mr-4 p-3 text-center mt-6">
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
                         10
                       </span>
-                      <span class="text-sm text-gray-500">Prep</span>
+                      <span class="text-sm text-gray-500">Following</span>
                     </div>
-                    <div class="lg:mr-4 p-3 text-center">
+                    <div class="lg:mr-4 p-3 text-center mt-6">
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
-                        89
+                        3
                       </span>
-                      <span class="text-sm text-gray-500">Comments</span>
+                      <span class="text-sm text-gray-500">Recipies</span>
                     </div>
                   </div>
                 </div>
