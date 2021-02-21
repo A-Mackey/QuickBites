@@ -207,7 +207,6 @@ export default {
       console.log("submitting");
       console.log(this.form.name);
       console.log(this.form.email);
-      console.log(this.form.password);
       firebase
         .auth()
         .createUserWithEmailAndPassword(this.form.email, this.form.password)
