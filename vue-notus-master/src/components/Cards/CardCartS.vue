@@ -116,8 +116,8 @@
               </label>
               <input
                 type="text"
-                class="px-3 py-3 placeholder-gray-400 text-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="Lincoln Place Apartments, Apt. 09"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
+                placeholder="Lincoln Place Apartments, Apt. 09"
               />
             </div>
           </div>
@@ -131,8 +131,8 @@
               </label>
               <input
                 type="email"
-                class="px-3 py-3 placeholder-gray-400 text-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="Los Angeles"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
+                placeholder="Los Angeles"
               />
             </div>
           </div>
@@ -146,8 +146,8 @@
               </label>
               <input
                 type="text"
-                class="px-3 py-3 placeholder-gray-400 text-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="United States"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
+                placeholder="United States"
               />
             </div>
           </div>
@@ -161,8 +161,8 @@
               </label>
               <input
                 type="text"
-                class="px-3 py-3 placeholder-gray-400 text-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="90052"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
+                placeholder="90052"
               />
             </div>
           </div>
@@ -182,8 +182,8 @@
               </label>
               <input
                 type="text"
-                class="px-3 py-3 placeholder-gray-400 text-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="XXXX-XXXX-XXXX-XXXX"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
+                placeholder="XXXX-XXXX-XXXX-XXXX"
               />
             </div>
           </div>
@@ -197,8 +197,8 @@
               </label>
               <input
                 type="email"
-                class="px-3 py-3 placeholder-gray-400 text-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="06"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
+                placeholder="06"
               />
             </div>
           </div>
@@ -212,8 +212,8 @@
               </label>
               <input
                 type="text"
-                class="px-3 py-3 placeholder-gray-400 text-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="23"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
+                placeholder="23"
               />
             </div>
           </div>
@@ -227,8 +227,8 @@
               </label>
               <input
                 type="text"
-                class="px-3 py-3 placeholder-gray-400 text-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="XXX"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
+                placeholder="XXX"
               />
             </div>
           </div>
