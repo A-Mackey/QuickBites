@@ -91,10 +91,9 @@
               :href="href"
               @click="navigate"
               class="text-xs uppercase py-3 font-bold block"
-              style="color: #667eea"
               :class="[
                 isActive
-                  ? 'text-green-500 hover:text-green-600'
+                  ? 'button-active hover:button-active'
                   : 'text-gray-800 hover:text-gray-600',
               ]"
             >
@@ -116,10 +115,9 @@
                 :href="href"
                 @click="navigate"
                 class="text-xs uppercase py-3 font-bold block"
-                style="color: #667eea"
                 :class="[
                   isActive
-                    ? 'text-green-500 hover:text-green-600'
+                    ? 'button-active hover:button-active'
                     : 'text-gray-800 hover:text-gray-600',
                 ]"
               >
@@ -141,10 +139,9 @@
                 :href="href"
                 @click="navigate"
                 class="text-xs uppercase py-3 font-bold block"
-                style="color: #667eea"
                 :class="[
                   isActive
-                    ? 'text-green-500 hover:text-green-600'
+                    ? 'button-active hover:button-active'
                     : 'text-gray-800 hover:text-gray-600',
                 ]"
               >
@@ -166,10 +163,9 @@
                 :href="href"
                 @click="navigate"
                 class="text-xs uppercase py-3 font-bold block"
-                style="color: #667eea"
                 :class="[
                   isActive
-                    ? 'text-green-500 hover:text-green-600'
+                    ? 'button-active hover:button-active'
                     : 'text-gray-800 hover:text-gray-600',
                 ]"
               >
@@ -191,10 +187,9 @@
                 :href="href"
                 @click="navigate"
                 class="text-xs uppercase py-3 font-bold block"
-                style="color: #667eea"
                 :class="[
                   isActive
-                    ? 'text-green-500 hover:text-green-600' 
+                    ? 'button-active hover:button-active'
                     : 'text-gray-800 hover:text-gray-600',
                 ]"
               >
@@ -211,7 +206,6 @@
           <li class="items-center">
             <router-link
               class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
-              style="color: #667eea"
               to="/landing"
             >
               <i class="fas fa-newspaper text-gray-400 mr-2 text-sm"></i>
@@ -228,10 +222,9 @@
                 :href="href"
                 @click="navigate"
                 class="text-xs uppercase py-3 font-bold block"
-                style="color: #667eea"
                 :class="[
                   isActive
-                    ? 'text-green-500 hover:text-green-600'
+                    ? 'button-active hover:button-active'
                     : 'text-gray-800 hover:text-gray-600',
                 ]"
               >
@@ -316,3 +309,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  .button-active {
+    color: #667eea;
+  }
+</style>
