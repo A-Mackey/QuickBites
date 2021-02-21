@@ -149,31 +149,6 @@
                 ]"
               >
                 <i
-                  class="fas fa-table mr-2 text-sm"
-                  :class="[isActive ? 'opacity-75' : 'text-gray-400']"
-                ></i>
-                Order
-              </a>
-            </router-link>
-          </li>
-
-          <li class="items-center">
-            <router-link
-              to="/admin/settings"
-              v-slot="{ href, route, navigate, isActive }"
-            >
-              <a
-                :href="href"
-                @click="navigate"
-                class="text-xs uppercase py-3 font-bold block"
-                style="color: #667eea"
-                :class="[
-                  isActive
-                    ? 'text-green-500 hover:text-green-600'
-                    : 'text-gray-800 hover:text-gray-600',
-                ]"
-              >
-                <i
                   class="fas fa-shopping-cart mr-2 text-sm"
                   :class="[isActive ? 'opacity-75' : 'text-gray-400']"
                 ></i>
