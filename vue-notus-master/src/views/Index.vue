@@ -267,10 +267,6 @@
           <div class="w-full md:w-6/12 px-4 mr-auto ml-auto mt-32">
             <div class="justify-center flex flex-wrap relative">
               <div class="my-4 w-full lg:w-6/12 px-4">
-                <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/svelte/alerts/notus?ref=vn-index"
-                  target="_blank"
-                >
                   <div class="bg-red-600 shadow-lg rounded-lg text-center p-8">
                     <img
                       alt="..."
@@ -281,11 +277,6 @@
                       Sourdough French Toast
                     </p>
                   </div>
-                </a>
-                <a
-                  href="https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-pan-500x500.jpg"
-                  target="_blank"
-                >
                   <div
                     class="bg-blue-500 shadow-lg rounded-lg text-center p-8 mt-8"
                   >
@@ -298,13 +289,8 @@
                       Creamy Cajun Chicken Pasta
                     </p>
                   </div>
-                </a>
               </div>
               <div class="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
-                <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/js/alerts/notus?ref=vn-index"
-                  target="_blank"
-                >
                   <div
                     class="bg-yellow-500 shadow-lg rounded-lg text-center p-8"
                   >
@@ -317,11 +303,6 @@
                       Greek Salad Nachos
                     </p>
                   </div>
-                </a>
-                <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vn-index"
-                  target="_blank"
-                >
                   <div
                     class="bg-green-500 shadow-lg rounded-lg text-center p-8 mt-8"
                   >
@@ -334,7 +315,6 @@
                       Red Wine Ribeye
                     </p>
                   </div>
-                </a>
               </div>
             </div>
           </div>

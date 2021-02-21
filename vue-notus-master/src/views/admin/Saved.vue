@@ -69,12 +69,10 @@
         </div>
       </section>
     </main>
-    <footer-component />
   </div>
 </template>
 <script>
 
-import FooterComponent from "@/components/Footers/Footer.vue";
 import CardRecipe from "@/components/Cards/CardRecipe.vue";
 
 import chunk from 'chunk';
@@ -108,7 +106,6 @@ export default {
     };
   },
   components: {
-    FooterComponent,
     CardRecipe
   },
 
