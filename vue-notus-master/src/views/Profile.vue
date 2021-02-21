@@ -197,6 +197,13 @@ export default {
           time:"30",
           people:"-4",
         },
+        {
+          href:"https://www.budgetbytes.com/wp-content/uploads/2021/02/Vegetable-Tofu-Scramble-bowl.jpg",
+          name:"Vegetable Tofu Scramble",
+          price:"14.00",
+          time:"35",
+          people:"-4",
+        }
       ],
     };
   },
