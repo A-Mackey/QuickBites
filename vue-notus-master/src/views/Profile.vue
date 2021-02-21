@@ -114,7 +114,7 @@
                 </div>
               </div>
 
-              <div class="mt-10 py-10 mb-12 border-t border-gray-300 text-center">
+              <div class="mt-10 py-10 border-t border-gray-300 text-center">
                 <div class="flex flex-wrap justify-center">
                   <div class="w-full lg:w-9/12 px-4">
                     <p class="mb-4 text-lg leading-relaxed text-gray-800">
