@@ -16,7 +16,7 @@
         <div v-for="recipeRows in chunkedRecipes()" :key="recipeRows" class="inline-flex" style="width: 100%;">
             <div v-for="recipe in recipeRows" :key="recipe.index" class="inline-flex justify-center text-center" style="width: 100%;">
             <CardRecipe 
-                :image="recipe.Equipment"
+                :image="recipe.Img"
                 :name="recipe.Includes"
                 :price="recipe.MaxBudget"
                 :time="recipe.MaxTime"
@@ -89,11 +89,12 @@ export default {
           Equipment: JSON.parse(JSON.stringify(data.data[i].Equipment)),
           MaxBudget: Number(JSON.parse(JSON.stringify(data.data[i].MaxBudget))),
           MinPeople: Number(JSON.parse(JSON.stringify(data.data[i].MinPeople))),
-          Img: Number(JSON.parse(JSON.stringify(data.data[i].Img)))
+          Img: (JSON.parse(JSON.stringify(data.data[i].Img)))
         }
-        if (!arr[i].Includes.Search(this.props.Includes))
-          i--;
-          n--;
+        // if (!arr[i].Includes.Search(this.props.Includes)) {
+        //   i--;
+        //   n--;
+        // }
       }
       return arr;
     },
