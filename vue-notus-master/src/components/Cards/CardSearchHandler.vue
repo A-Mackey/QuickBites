@@ -2,7 +2,7 @@
   <div
     class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
   >
-    <button style="margin-top: 10px" v-on:click="queryDatabase()">
+    <button style="margin-top: 10px" v-on:click="controller()">
       <p>Search</p>
     </button>
     <p>Query: {{ query }}</p>
@@ -12,15 +12,13 @@
 
     <p>Meals:</p>
     <ul>
-        <li v-for="item in items" :key="item.id">
-            {{item.Includes}}
-        </li>
+      <li v-for="item in items" :key="item.id">
+        {{ item }}
+      </li>
     </ul>
-
   </div>
 </template>
 <script>
-
 export default {
   name: "CardSearchHandler",
 
@@ -32,39 +30,43 @@ export default {
   },
 
   data() {
-        return{
-            items: [
-                { Equipment: "Oven", Includes: "Cookies", MaxBudget: "10", MaxTime: "1 hour", MinPeople: "5", id: "0000" }
-            ]
-        }
-    },
+    return {
+      items: [
+        []
+      ],
+    };
+  },
 
-
-  mounted() {
-      this.queryDatabase();
+  async mounted() {
+    this.items = await this.controller();
   },
 
   methods: {
+    async controller() {
+      var data = await this.queryDatabase();
+      var out = await this.parseArray(data);
+      console.log(out);
+      return out;
+    },
     async queryDatabase() {
-    //   fetch("http://localhost:9078/api/products")
-    //     .then((response) => response.json())
-    //     .then((data) => json(data)
-    //     .then((response) => this.items = response);
-
-    Vue.prototype.$axios = axios;
-
-        this.$axios
-        .get('http://localhost:9078/api/products')
-
-        .then(response => {
-            this.items = response.data.results
-        })
-
-        .catch(error => {
-            console.log(error)
-        })
-
-        .finally(() => this.loading = false)
+      var jsondata = fetch("http://localhost:9078/api/products")
+        .then(function (u) {
+          return u.json();
+        });
+      return jsondata;
+    },
+    parseArray(data) {
+      var arr = new Array(data.data.length);
+      for (var i=0; i<data.data.length;i++){
+        arr[i] = {
+          Includes: JSON.parse(JSON.stringify(data.data[i].Includes)),
+          MaxTime: JSON.parse(JSON.stringify(data.data[i].MaxTime)),
+          Equipment: JSON.parse(JSON.stringify(data.data[i].Equipment)),
+          MaxBudget: JSON.parse(JSON.stringify(data.data[i].MaxBudget)),
+          MinPeople: JSON.parse(JSON.stringify(data.data[i].MinPeople))
+        }
+      }
+      return arr;
     },
   },
 };
