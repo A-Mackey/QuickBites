@@ -6,7 +6,8 @@
       <div class="text-center flex justify-between">
         <h6 class="text-gray-800 text-xl font-bold">My account</h6>
         <button
-          class="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
+          class="text-white font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
+          style="background-color: #667eea"
           type="button"
         >
           Settings
@@ -30,7 +31,7 @@
               <input
                 type="text"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="lucky.jesse"
+                value="stacy.reeves"
               />
             </div>
           </div>
@@ -45,7 +46,7 @@
               <input
                 type="email"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="jesse@example.com"
+                value="s.reeves@gmail.com"
               />
             </div>
           </div>
@@ -60,7 +61,7 @@
               <input
                 type="text"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="Lucky"
+                value="Stacy"
               />
             </div>
           </div>
@@ -75,7 +76,7 @@
               <input
                 type="text"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="Jesse"
+                value="Reeves"
               />
             </div>
           </div>
@@ -98,7 +99,7 @@
               <input
                 type="text"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
+                value="Lincoln Place Apartments, Apt. 09"
               />
             </div>
           </div>
@@ -113,7 +114,7 @@
               <input
                 type="email"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="New York"
+                value="Los Angeles"
               />
             </div>
           </div>
@@ -143,7 +144,7 @@
               <input
                 type="text"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                value="Postal Code"
+                value="90052"
               />
             </div>
           </div>
@@ -168,8 +169,9 @@
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                 rows="4"
               >
-                    A beautiful UI Kit and Admin for VueJS & Tailwind CSS. It is Free
-                    and Open Source.
+                  Single-mother of three.  As a working mom, providing my children with inexpensive, 
+                   quality meals is one of my top priorities.  I hope these recipes can help you and
+                   your busy lives!
                   </textarea
               >
             </div>

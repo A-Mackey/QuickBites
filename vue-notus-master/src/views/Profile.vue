@@ -119,7 +119,7 @@
                   <div class="w-full lg:w-9/12 px-4">
                     <p class="mb-4 text-lg leading-relaxed text-gray-800">
                       Single-mother of three.  As a working mom, providing my children with inexpensive, 
-                      quality meals is one of my top priorities.  I hope these recipies can help you and
+                      quality meals is one of my top priorities.  I hope these recipes can help you and
                       your busy lives!
                     </p>
                   </div>
