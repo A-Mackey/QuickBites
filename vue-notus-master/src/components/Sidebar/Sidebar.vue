@@ -132,8 +132,8 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/settings"
-              v-slot="{ href, navigate, isActive }"
+              to="/admin/cart"
+              v-slot="{ href, route, navigate, isActive }"
             >
               <a
                 :href="href"
@@ -179,15 +179,6 @@
           </li>
 
           <ul class="md:flex-col md:min-w-full flex flex-col list-none">
-          <li class="items-center">
-            <router-link
-              class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
-              to="/landing"
-            >
-              <i class="fas fa-newspaper text-gray-400 mr-2 text-sm"></i>
-              About Us
-            </router-link>
-          </li>
 
           <li class="items-center">
             <router-link
@@ -255,6 +246,22 @@
             </router-link>
           </li>
         </ul>
+        <hr class="my-4 md:min-w-full" />
+        <!-- Heading -->
+        <h6
+          class="md:min-w-full text-gray-600 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
+        >
+          Connect
+        </h6>
+        <li class="items-center">
+            <router-link
+              class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
+              to="/aboutus"
+            >
+              <i class="fas fa-newspaper text-gray-400 mr-2 text-sm"></i>
+              About Us
+            </router-link>
+          </li>
         </ul>
       </div>
     </div>

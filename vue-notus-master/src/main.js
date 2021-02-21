@@ -21,6 +21,7 @@ import Donate from "@/views/admin/Donate.vue";
 import Settings from "@/views/admin/Settings.vue";
 import Search from "@/views/admin/Search.vue";
 import Saved from "@/views/admin/Saved.vue";
+import Cart from "@/views/admin/Cart.vue";
 
 // views for Auth layout
 
@@ -29,7 +30,7 @@ import Register from "@/views/auth/Register.vue";
 
 // views without layouts
 
-import Landing from "@/views/Landing.vue";
+import AboutUs from "@/views/AboutUs.vue";
 import Profile from "@/views/Profile.vue";
 import Index from "@/views/Index.vue";
 import Recipe from "@/views/Recipe.vue";
@@ -88,6 +89,10 @@ const routes = [
         path: "/admin/saved",
         component: Saved,
       },
+      {
+        path: "/admin/cart",
+        component: Cart,
+      }
     ],
   },
   {
@@ -106,8 +111,8 @@ const routes = [
     ],
   },
   {
-    path: "/landing",
-    component: Landing,
+    path: "/aboutus",
+    component: AboutUs,
   },
   {
     path: "/profile",

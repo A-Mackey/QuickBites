@@ -5,6 +5,7 @@
         >
         <div
             class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-indigo-500"
+            style="display: block; max-height:600px"
         >
             <div v-if="includeIcon == true" style="position: absolute">
                 <i class="fas fa-heart fa-2x ml-2 mt-2 w-12 h-12" style="position: absolute; color: rgba(255,255,255,0.9); background-color: rgba(0,0,0,0.5); border-width: 8px; border-color: rgba(0,0,0,0); border-radius: 50%;"></i>

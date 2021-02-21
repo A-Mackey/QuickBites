@@ -3,14 +3,14 @@
     class="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow"
   >
     <div
-      class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      class="container pl-4 ml-auto mr-4 flex flex-wrap items-center justify-between"
     >
       <div
         class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
       >
         <router-link to="/">
           <a
-            class="text-gray-800 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
+            class="text-gray-800 text-md font-bold leading-relaxed inline-block mr-4 pr-4 py-2 whitespace-no-wrap uppercase"
             href="#pablo"
           >
             Quick Bites
@@ -31,13 +31,18 @@
       >
         <ul class="flex flex-col lg:flex-row list-none mr-auto">
           <li class="flex items-center">
-
+            <div class="mx-4" style="border-left:1px solid #000;height:40px"></div>
           </li>
+            <router-link to="/aboutus">
+              <a
+                class="text-gray-800 text-sm font-bold leading-relaxed inline-block mr-4 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
+                href="#pablo"
+              >
+                About Us
+              </a>
+            </router-link>
         </ul>
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-          <li class="flex items-center">
-            <index-dropdown />
-          </li>
 
           <li class="flex items-center">
             <router-link
@@ -56,6 +61,11 @@
             >
               <i class=""></i> Register
             </router-link>
+          </li>
+          <li class="flex items-center">
+            <div class="mx-4">
+              <index-dropdown />
+            </div>
           </li>
         </ul>
       </div>
