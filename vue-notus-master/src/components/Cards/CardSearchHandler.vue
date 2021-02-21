@@ -6,6 +6,11 @@
     <!-- <p>{{query}}</p> -->
 
     <div v-if="this.doneFetching" class="mt-6">
+      <p>{{query}}</p>
+      <p>{{price}}</p>
+      <p>{{people}}</p>
+      <p>{{time}}</p>
+      <div v-if="this.doneFetching" class="mt-6">
         <div v-for="(recipeRows, index) in chunkedRecipes()" :key="recipeRows[index].id" class="inline-flex" style="width: 100%;">
             <div v-for="recipe in recipeRows" :key="recipe.index" class="inline-flex justify-center text-center" style="width: 100%;">
             <CardRecipe 
@@ -17,6 +22,7 @@
             />
             </div>
         </div>
+      </div>
     </div>
     
   </div>
