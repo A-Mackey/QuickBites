@@ -48,18 +48,17 @@ export default {
   },
 
   async mounted() {
-    if (this.query != "") {
-        console.log("yoooo")
+    //if (!(this.query == "" && this.price == "" && this.people == "" && this.time == "")) {
         this.items = await this.controller()
         .then(this.doneFetching = true, console.log("Done Fetching"));
-    }
+    //}
   },
 
   methods: {
     async controller() {
       var data = await this.queryDatabase();
       var out = await this.parseArray(data);
-      console.log("Out:", out);
+      //console.log("Out:", out);
       return out;
     },
 
@@ -74,6 +73,7 @@ export default {
     parseArray(data) {
       var arr = new Array(data.data.length);
       var n = data.data.length;
+      var include = 1;
       for (var i=0; i<n;i++){
         arr[i] = {
           Includes: JSON.parse(JSON.stringify(data.data[i].Includes)),
@@ -81,19 +81,42 @@ export default {
           Equipment: JSON.parse(JSON.stringify(data.data[i].Equipment)),
           MaxBudget: (JSON.parse(JSON.stringify(data.data[i].MaxBudget))),
           MinPeople: (JSON.parse(JSON.stringify(data.data[i].MinPeople))),
-          Img: (JSON.parse(JSON.stringify(data.data[i].Img)))
+          Img: JSON.parse(JSON.stringify(data.data[i].Img))
         }
-        // if (!arr[i].Includes.Search(this.props.Includes)) {
-        //   i--;
-        //   n--;
-        // }
+        console.log(this.query);
+        console.log(arr[i].Includes.toLowerCase());
+        console.log(arr[i].Includes.search(this.query));
+
+        if (arr[i].Includes.toLowerCase().search(this.query.toLowerCase()) == -1 && this.Includes!="") {
+          include=0;
+          console.log("slot1");
+        }
+        if (arr[i].MaxBudget<Number(this.price) && this.price!=""){
+          include=0;
+          console.log("slot2");
+
+        }
+        if (arr[i].MinPeople<Number(this.people) && this.people!=""){
+          include=0;
+          console.log("slot3");
+
+        }
+        if (arr[i].MaxTime>Number(this.time) && this.time!=""){
+          include=0;
+          console.log("slot4");
+
+        }
+        if(!include){
+          i--;
+          n--;
+        }
       }
       return arr;
     },
 
     chunkedRecipes() {
         var arr = chunk(this.items, 3);
-        console.log("Chunked Array: ", arr);
+        //console.log("Chunked Array: ", arr);
         return arr;
     },
   },
