@@ -126,104 +126,19 @@
                 </div>
               </div>
 
-
-
-            <div class="inline-flex space-x-4">
-              <div
-                class="flex-1 w-10/12 md:w-6/12 lg:w-4/12 px-12 mr-10 md:px-4 -mt-6 mb-6"
-              >
-                <div
-                  class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-indigo-500"
-                >
-                  <img
-                    alt="..."
-                    src="https://everylittlecrumb.com/wp-content/uploads/2019/01/FrenchToastSourdough-500x500.jpg"
-                    class="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote class="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      class="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        class="fill-current"
-                        style="color: #667eea"
-                      ></polygon>
-                    </svg>
-                    <h4 class="text-center text-xl font-bold text-white">
-                      Sourdough French Toast
-                    </h4>
-                  </blockquote>
-                </div>
-              </div>
-
-              <div
-                class="flex-1 w-10/12 md:w-6/12 lg:w-4/12 px-12 mr-auto ml-auto md:px-4 -mt-6 mb-6"
-              >
-                <div
-                  class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-indigo-500"
-                >
-                  <img
-                    alt="..."
-                    src="https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-pan-500x500.jpg"
-                    class="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote class="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      class="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        class="fill-current"
-                        style="color: #667eea"
-                      ></polygon>
-                    </svg>
-                    <h4 class="text-center text-xl font-bold text-white">
-                      Creamy Cajun Chicken Pasta
-                    </h4>
-                  </blockquote>
-                </div>
-              </div>
-
-
-              <div
-                class="flex-1 w-10/12 md:w-6/12 lg:w-4/12 px-12 mr-10 ml-auto md:px-4 -mt-6 mb-6"
-              >
-                <div
-                  class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-indigo-500"
-                >
-                  <img
-                    alt="..."
-                    src="https://static.onecms.io/wp-content/uploads/sites/44/2019/08/26231058/4578875.jpg"
-                    class="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote class="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      class="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        class="fill-current"
-                        style="color: #667eea"
-                      ></polygon>
-                    </svg>
-                    <h4 class="text-center text-xl font-bold text-white">
-                      Greek Salad Nachos
-                    </h4>
-                  </blockquote>
-                </div>
+              <!-- CARDS -->
+              
+            <div v-for="recipeRows in chunkedRecipes()" :key="recipeRows" class="inline-flex" style="width: 100%;">
+              <div v-for="recipe in recipeRows" :key="recipe" class="inline-flex justify-center text-center" style="width: 100%;">
+                <CardRecipe 
+                  :image="recipe.href"
+                  :name="recipe.name"
+                  :price="recipe.price"
+                  :time="recipe.time"
+                  :people="recipe.people"
+                />
               </div>
             </div>
-
 
             </div>
           </div>
@@ -236,18 +151,69 @@
 <script>
 import Navbar from "@/components/Navbars/AuthNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
+import CardRecipe from "@/components/Cards/CardRecipe.vue";
 
 import team2 from "@/assets/img/team-2-800x800.jpg";
+
+import chunk from 'chunk';
 
 export default {
   data() {
     return {
       team2,
+      recipes: [
+        {
+          href:"https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-pan-500x500.jpg",
+          name:"Stuff on Pasta",
+          price:"10,000",
+          time:"45 mins",
+          people:"-12",
+        },
+        {
+          href:"https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-pan-500x500.jpg",
+          name:"More Stuff on Pasta",
+          price:"10,001",
+          time:"1 mins",
+          people:"-12",
+        },
+        {
+          href:"https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-pan-500x500.jpg",
+          name:"Even More Stuff on Pasta",
+          price:"10,002",
+          time:"20 mins",
+          people:"-12",
+        },
+        {
+          href:"https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-pan-500x500.jpg",
+          name:"Even More Stuff on Pasta",
+          price:"10,002",
+          time:"20 mins",
+          people:"-12",
+        },
+        {
+          href:"https://www.budgetbytes.com/wp-content/uploads/2018/10/One-Pot-Creamy-Cajun-Chicken-Pasta-pan-500x500.jpg",
+          name:"Even More Stuff on Pasta",
+          price:"10,002",
+          time:"20 mins",
+          people:"-12",
+        },
+      ],
     };
   },
   components: {
     Navbar,
     FooterComponent,
+    CardRecipe
   },
+
+  methods: {
+    chunkedRecipes() {
+      return chunk(this.recipes, 3);
+    }
+  },
+
+  mounted() {
+    console.log(this.chunkedRecipes());
+  }
 };
 </script>
