@@ -61,6 +61,15 @@
                     <i class="fas fa-heart"></i>
                       Save
                     </button>
+                    <router-link
+                      to="/admin/cart"
+                      style="background-color: #667eea"
+                      class="uppercase text-white font-bold hover:shadow-md shadow text-md px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                      type="button"
+                    >
+                    <i class="fas fa-shopping-cart"></i>
+                      Add to Cart
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -80,7 +89,7 @@
                 </div>
                 <div class="mb-2 text-gray-700 mt-10">
                   <i class="fas fa-money-bill-wave mr-2 text-lg text-gray-500"></i>
-                  Cost - $9.41
+                  Cost - $12.34
                 </div>
                 <div class="mb-6 text-gray-700 mt-10">
                   4-quart Deep Skillet・Cutting Board・Mixing Bowls
