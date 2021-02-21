@@ -6,7 +6,7 @@
     <div
       class="w-full mx-autp items-center flex justify-between md:flex-no-wrap flex-wrap md:px-4 px-4"
     >
-      <div class="py-2 ml-auto">
+      <div class="py-2 px-4 mx-4 ml-auto">
         <router-link
           to="/admin/cart"
           style="background-color: #667eea"

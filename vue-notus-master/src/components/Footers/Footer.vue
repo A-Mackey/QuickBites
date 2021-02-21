@@ -63,20 +63,14 @@
               </span>
               <ul class="list-unstyled">
                 <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://www.creative-tim.com/presentation?ref=vn-footer"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://blog.creative-tim.com?ref=vn-footer"
-                  >
-                    Blog
-                  </a>
+                  <router-link to="/aboutus">
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="#pablo"
+                    >
+                      About Us
+                    </a>
+                  </router-link>
                 </li>
                 <li>
                   <a
