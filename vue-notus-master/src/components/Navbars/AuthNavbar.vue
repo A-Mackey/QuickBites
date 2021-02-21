@@ -8,42 +8,57 @@
       <div
         class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
       >
-        <router-link
-          class="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
-          to="/"
-        >
-          Quick Bites
+        <router-link to="/">
+          <a
+            class="text-white text-md font-bold leading-relaxed inline-block mr-4 pr-4 py-2 whitespace-no-wrap uppercase"
+            href="#pablo"
+          >
+            Quick Bites
+          </a>
         </router-link>
         <button
           class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
           type="button"
           v-on:click="setNavbarOpen"
         >
-          <i class="text-white fas fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </button>
       </div>
       <div
-        class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none"
-        :class="[navbarOpen ? 'block rounded shadow-lg' : 'hidden']"
+        class="lg:flex flex-grow items-center"
+        :class="[navbarOpen ? 'block' : 'hidden']"
         id="example-navbar-warning"
       >
         <ul class="flex flex-col lg:flex-row list-none mr-auto">
           <li class="flex items-center">
-            <a
-              class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-auth-navbar"
-            >
-              <i
-                class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
-              />
-              Docs
-            </a>
+            <div class="mx-4" style="border-left:1px solid #FFF;height:40px"></div>
           </li>
+            <router-link to="/admin/search">
+              <a
+                class="text-white text-sm font-bold leading-relaxed inline-block mr-6 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
+                href="#pablo"
+              >
+                Search
+              </a>
+            </router-link>
+            <router-link to="/admin/donate">
+              <a
+                class="text-white text-sm font-bold leading-relaxed inline-block mr-6 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
+                href="#pablo"
+              >
+                Donate
+              </a>
+            </router-link>
+            <router-link to="/aboutus">
+              <a
+                class="text-white text-sm font-bold leading-relaxed inline-block mr-6 ml-6 px-6 py-2 whitespace-no-wrap uppercase"
+                href="#pablo"
+              >
+                About Us
+              </a>
+            </router-link>
         </ul>
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-          <li class="flex items-center">
-            <pages-dropdown />
-          </li>
 
           <li class="flex items-center">
             <router-link
@@ -61,6 +76,10 @@
             >
               <i class=""></i> Register
             </router-link>
+          </li>
+
+          <li class="flex items-center">
+            <pages-dropdown />
           </li>
         </ul>
       </div>
