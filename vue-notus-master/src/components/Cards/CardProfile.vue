@@ -35,7 +35,7 @@
               <span
                 class="text-xl font-bold block uppercase tracking-wide text-gray-700"
               >
-                3
+                5
               </span>
               <span class="text-sm text-gray-500">Recipes</span>
             </div>

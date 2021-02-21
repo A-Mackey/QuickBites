@@ -13,13 +13,6 @@
             </div>
             <div class="btn-wrapper text-center">
               <button
-                class="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                type="button"
-              >
-                <img alt="..." class="w-5 mr-1" :src="github" />
-                Github
-              </button>
-              <button
                 class="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
                 type="button"
               >
@@ -43,6 +36,7 @@
                 </label>
                 <input
                   type="email"
+                  v-model="form.email"
                   class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                   placeholder="Email"
                 />
@@ -57,6 +51,7 @@
                 </label>
                 <input
                   type="password"
+                  v-model="form.password"
                   class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                   placeholder="Password"
                 />
@@ -78,6 +73,7 @@
                 <button
                   class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                   type="button"
+                  v-on:click="submit"
                 >
                   Sign In
                 </button>
@@ -104,13 +100,40 @@
 <script>
 import github from "@/assets/img/github.svg";
 import google from "@/assets/img/google.svg";
+import firebase from "firebase";
+import 'firebase/auth'
+import 'firebase/firestore'
+require('firebase/auth')
 
 export default {
   data() {
     return {
       github,
       google,
+      firebase,
+      form: {
+        name: "",
+        email: "",
+        password: ""
+      },
+      error: null
     };
   },
+  
+   methods: {
+    submit() {
+      console.log("pressed")
+      firebase
+        .auth()
+        .signInWithEmailAndPassword(this.form.email, this.form.password)
+        .then(data => {
+          data.user; //this was so data was used but is a bad fix
+          this.$router.push({ name: "/admin/tables" });
+        })
+        .catch(err => {
+          this.error = err.message;
+        });
+    }
+  }
 };
 </script>

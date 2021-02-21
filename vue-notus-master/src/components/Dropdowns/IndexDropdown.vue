@@ -6,7 +6,7 @@
       ref="btnDropdownRef"
       v-on:click="toggleDropdown($event)"
     >
-      Demo Pages
+      Directory
     </a>
     <div
       ref="popoverDropdownRef"
@@ -19,13 +19,37 @@
       <span
         class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
       >
-        Admin Layout
+        General
       </span>
+      <router-link
+        to="/landing"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        About Us
+      </router-link>
+       <router-link
+        to="/admin/tables"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Order
+      </router-link>
+       <router-link
+        to="/admin/maps"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Cart
+       </router-link>
+      <router-link
+        to="/admin/settings"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Saved
+      </router-link>
       <router-link
         to="/admin/dashboard"
         class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
       >
-        Dashboard
+        Donate
       </router-link>
       <router-link
         to="/admin/settings"
@@ -33,23 +57,11 @@
       >
         Settings
       </router-link>
-      <router-link
-        to="/admin/tables"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-      >
-        Search
-      </router-link>
-      <router-link
-        to="/admin/maps"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-      >
-        Maps
-      </router-link>
       <div class="h-0 mx-4 my-2 border border-solid border-gray-200" />
       <span
         class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
       >
-        Auth Layout
+        User
       </span>
       <router-link
         to="/auth/login"
@@ -62,18 +74,6 @@
         class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
       >
         Register
-      </router-link>
-      <div class="h-0 mx-4 my-2 border border-solid border-gray-200" />
-      <span
-        class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
-      >
-        No Layout
-      </span>
-      <router-link
-        to="/landing"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-      >
-        Lading
       </router-link>
       <router-link
         to="/profile"
