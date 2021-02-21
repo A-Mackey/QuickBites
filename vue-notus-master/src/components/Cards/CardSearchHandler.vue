@@ -48,17 +48,14 @@ export default {
   },
 
   async mounted() {
-    //if (!(this.query == "" && this.price == "" && this.people == "" && this.time == "")) {
-        this.items = await this.controller()
-        .then(this.doneFetching = true, console.log("Done Fetching"));
-    //}
+    this.items = await this.controller()
+    .then(this.doneFetching = true, console.log("Done Fetching"));
   },
 
   methods: {
     async controller() {
       var data = await this.queryDatabase();
-      var out = await this.parseArray(data);
-      //console.log("Out:", out);
+      var out = this.parseArray(data);
       return out;
     },
 
@@ -83,33 +80,31 @@ export default {
           MinPeople: (JSON.parse(JSON.stringify(data.data[i].MinPeople))),
           Img: JSON.parse(JSON.stringify(data.data[i].Img))
         }
-        console.log(this.query);
-        console.log(arr[i].Includes.toLowerCase());
-        console.log(arr[i].Includes.search(this.query));
+        // console.log(this.query);
+        // console.log(arr[i].Includes.toLowerCase());
+        // console.log(arr[i].Includes.search(this.query));
 
         if (arr[i].Includes.toLowerCase().search(this.query.toLowerCase()) == -1 && this.Includes!="") {
           include=0;
           console.log("slot1");
         }
-        if (arr[i].MaxBudget<Number(this.price) && this.price!=""){
+        if (arr[i].MaxBudget>Number(this.price) && this.price!=""){
           include=0;
           console.log("slot2");
-
         }
         if (arr[i].MinPeople<Number(this.people) && this.people!=""){
           include=0;
           console.log("slot3");
-
         }
         if (arr[i].MaxTime>Number(this.time) && this.time!=""){
           include=0;
           console.log("slot4");
-
         }
-        if(!include){
+        if(include==0){
           i--;
           n--;
         }
+        include=1;
       }
       return arr;
     },
