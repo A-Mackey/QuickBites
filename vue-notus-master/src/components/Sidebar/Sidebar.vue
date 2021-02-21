@@ -108,7 +108,7 @@
 
         <li class="items-center">
             <router-link
-              to="/admin/maps"
+              to="/admin/saved"
               v-slot="{ href, route, navigate, isActive }"
             >
               <a
