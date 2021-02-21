@@ -24,7 +24,7 @@
                   About Us
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                  More than 10% of households in the U.S. struggle to put food on the table. 
+                  More than 25% of households in the U.S. struggle to put food on the table. The Covid-19 has only made the matter worse.
                   Join us in our stand against food insecurity and help us subsidize meals for low-income families.
                 </p>
 
