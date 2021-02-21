@@ -3,6 +3,8 @@
     class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 mt-6 shadow-lg rounded"
   >
 
+    <!-- <p>{{query}}</p> -->
+
     <div v-if="this.doneFetching" class="mt-6">
         <div v-for="(recipeRows, index) in chunkedRecipes()" :key="recipeRows[index].id" class="inline-flex" style="width: 100%;">
             <div v-for="recipe in recipeRows" :key="recipe.index" class="inline-flex justify-center text-center" style="width: 100%;">

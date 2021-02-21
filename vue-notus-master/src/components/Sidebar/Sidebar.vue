@@ -85,7 +85,7 @@
           <li class="items-center">
           <router-link
             to="/admin/tables"
-            v-slot="{ href, route, navigate, isActive }"
+            v-slot="{ href, navigate, isActive }"
           >
             <a
               :href="href"
@@ -110,7 +110,7 @@
         <li class="items-center">
             <router-link
               to="/admin/saved"
-              v-slot="{ href, route, navigate, isActive }"
+              v-slot="{ href, navigate, isActive }"
             >
               <a
                 :href="href"
@@ -135,7 +135,7 @@
           <li class="items-center">
             <router-link
               to="/admin/settings"
-              v-slot="{ href, route, navigate, isActive }"
+              v-slot="{ href, navigate, isActive }"
             >
               <a
                 :href="href"
@@ -160,7 +160,7 @@
           <li class="items-center">
             <router-link
               to="/admin/settings"
-              v-slot="{ href, route, navigate, isActive }"
+              v-slot="{ href, navigate, isActive }"
             >
               <a
                 :href="href"
@@ -185,7 +185,7 @@
           <li class="items-center">
             <router-link
               to="/admin/dashboard"
-              v-slot="{ href, route, navigate, isActive }"
+              v-slot="{ href, navigate, isActive }"
             >
               <a
                 :href="href"
@@ -207,22 +207,10 @@
             </router-link>
           </li>
 
-          <ul class="md:flex-col md:min-w-full flex flex-col list-none">
-          <li class="items-center">
-            <router-link
-              class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
-              style="color: #667eea"
-              to="/landing"
-            >
-              <i class="fas fa-newspaper text-gray-400 mr-2 text-sm"></i>
-              About Us
-            </router-link>
-          </li>
-
           <li class="items-center">
             <router-link
               to="/admin/settings"
-              v-slot="{ href, route, navigate, isActive }"
+              v-slot="{ href, navigate, isActive }"
             >
               <a
                 :href="href"
@@ -243,9 +231,6 @@
               </a>
             </router-link>
           </li>
-
-
-        </ul>
 
         <!-- Divider -->
         <hr class="my-4 md:min-w-full" />
