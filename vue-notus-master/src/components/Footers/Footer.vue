@@ -72,14 +72,6 @@
                     </a>
                   </router-link>
                 </li>
-                <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://www.creative-tim.com/bootstrap-themes/free?ref=vn-footer"
-                  >
-                    Free Products
-                  </a>
-                </li>
               </ul>
             </div>
             <div class="w-full lg:w-4/12 px-4">
