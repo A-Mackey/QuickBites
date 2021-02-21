@@ -108,6 +108,13 @@
                   ONE POT CREAMY CAJUN CHICKEN PASTA
                 </h3>
                 <div class="mb-2 text-gray-700 mt-10">
+                  <i class="fas fa-utensils mr-2 text-lg text-gray-500"></i>
+                  Prep Time - 10 min
+                  <i class="mr-4"></i>
+                  <i class="fas fa-stopwatch mr-2 text-lg text-gray-500"></i>
+                  Cook Time - 20 min
+                </div>
+                <div class="mb-2 text-gray-700 mt-10">
                   <i class="fas fa-money-bill-wave mr-2 text-lg text-gray-500"></i>
                   Cost - $9.41
                 </div>
@@ -117,7 +124,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> 
         
          <section class="pb-100 bg-gray-300 -mt-24">
         <div class="container mx-auto px-4 mt-16">
