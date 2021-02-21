@@ -31,7 +31,32 @@
           <div
             class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase text-right" style="float: right"
           >
-            $12.84
+            $12.34
+          </div>
+        </div>
+        <div style="display: inline-block; width: 100%;">
+          <div
+            class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase" style="float: left"
+          >
+            Tax:
+          </div>
+          <div
+            class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase text-right" style="float: right"
+          >
+            $1.11
+          </div>
+        </div>
+        <hr class="my-4 md:min-w-full" />
+        <div style="display: inline-block; width: 100%;">
+          <h3
+            class="text-xl font-semibold leading-normal mb-2 text-gray-800 mb-2" style="float: left"
+          >
+            Total
+          </h3>
+          <div
+            class="text-xl leading-normal mt-0 mb-2 text-black-500 font-bold uppercase text-right" style="float: right"
+          >
+            $13.45
           </div>
         </div>
         <div style="display: inline-block; width: 100%;">
@@ -43,19 +68,30 @@
           <div
             class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase text-right" style="float: right"
           >
-            $0.16
+            $0.55
           </div>
         </div>
+        <div class="flex items-center ml-2">
+            <input type="checkbox" class="form-checkbox pl-4 ml-2 mr-2">
+            <span class="text-sm mr-4 pr-4">$1</span>
+            <input type="checkbox" class="form-checkbox pl-4 ml-2 mr-2">
+            <span class="text-sm mr-4 pr-4">$2</span>
+            <input type="checkbox" class="form-checkbox ml-2 mr-2 mr-2">
+            <span class="text-sm mr-4 pr-4">$3</span>
+            <input type="checkbox" class="form-checkbox ml-2 mr-2">
+            <span class="text-sm mr-4">$4</span>
+          </div>
+        <hr class="my-4 md:min-w-full" />
         <div style="display: inline-block; width: 100%;">
           <h3
-            class="text-xl font-semibold leading-normal mb-2 text-gray-800 mb-2" style="float: left"
+            class="text-xl font-semibold leading-normal mb-6 text-gray-800 mb-2" style="float: left"
           >
-            Total
+            Grand Total
           </h3>
           <div
-            class="text-xl leading-normal mt-0 mb-6 text-black-500 font-bold uppercase text-right" style="float: right"
+            class="text-xl leading-normal mt-0 mb-2 text-black-500 font-bold uppercase text-right" style="float: right"
           >
-            $13.00
+            $14.00
           </div>
         </div>
         </div>
