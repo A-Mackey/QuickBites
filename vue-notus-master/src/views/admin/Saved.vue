@@ -2,18 +2,7 @@
   <div>
     <navbar />
     <main class="profile-page">
-      <section class="relative block h-500-px">
-        <div
-          class="absolute top-0 w-full h-full bg-center bg-cover"
-          style="
-            background-image: url('https://i.ytimg.com/vi/jZXsSas4lcU/maxresdefault.jpg');
-          "
-        >
-          <span
-            id="blackOverlay"
-            class="w-full h-full absolute opacity-50 bg-black"
-          ></span>
-        </div>
+      <section class="relative block">
         <div
           class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
           style="transform: translateZ(0);"
@@ -37,7 +26,7 @@
       <section class="relative py-16 bg-gray-300">
         <div class="container mx-auto px-4">
           <div
-            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
+            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg"
           >
             <div class="px-6">
               <div class="flex flex-wrap justify-center">
