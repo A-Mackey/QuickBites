@@ -57,7 +57,8 @@ export class Dao {
 
     // 4.7. query to data
     async queryData() {
-      const query = 'SELECT * FROM root';
+        //SELECT VALUE r.children FROM root r WHERE r.lastName = @lastName
+      const query = 'SELECT * FROM root';// where Includes = cookies';
       if(!this.container){
           throw new Error('The specified collection is not present');
       }  
