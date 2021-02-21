@@ -37,7 +37,7 @@
       <section class="relative py-16 bg-gray-300">
         <div class="container mx-auto px-4">
           <div
-            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
+            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-3 shadow-xl rounded-lg -mt-64"
           >
             <div class="px-6">
               <div class="flex flex-wrap justify-center">
@@ -60,7 +60,7 @@
                       class="bg-green-500 active:bg-green-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
                       type="button"
                     >
-                      Connect
+                      Save
                     </button>
                   </div>
                 </div>
@@ -70,9 +70,17 @@
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
+                        Time:
+                      </span>
+                      <span class="text-sm text-gray-500">(minutes)</span>
+                    </div>
+                    <div class="mr-4 p-3 text-center">
+                      <span
+                        class="text-xl font-bold block uppercase tracking-wide text-gray-700"
+                      >
                         20
                       </span>
-                      <span class="text-sm text-gray-500">Cook Time (min)</span>
+                      <span class="text-sm text-gray-500">Cook Time</span>
                     </div>
                     <div class="mr-4 p-3 text-center">
                       <span
@@ -88,7 +96,7 @@
                       >
                         30
                       </span>
-                      <span class="text-sm text-gray-500">Total Time (min)</span>
+                      <span class="text-sm text-gray-500">Total Time</span>
                     </div>
                   </div>
                 </div>
@@ -103,29 +111,63 @@
                   <i class="fas fa-money-bill-wave mr-2 text-lg text-gray-500"></i>
                   Cost - $9.41
                 </div>
+                <div class="mb-2 text-gray-700 mt-10">
+                  4-quart Deep Skillet・Cutting Board・Mixing Bowls
+                </div>                
               </div>
-              <div class="mt-10 py-10 border-t border-gray-300 text-center">
-                <div class="flex flex-wrap justify-center">
-                  <div class="w-full lg:w-9/12 px-4">
-                    <p class="mb-4 text-lg leading-relaxed text-gray-800">
-                      An artist of considerable range, Jenna the name taken by
-                      Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                      performs and records all of his own music, giving it a
-                      warm, intimate feel with a solid groove structure. An
-                      artist of considerable range.
-                    </p>
-                    <a
-                      href="javascript:void(0)"
-                      class="font-normal text-green-500"
-                    >
-                      Show more
-                    </a>
+            </div>
+          </div>
+        </div>
+        
+         <section class="pb-100 bg-gray-300 -mt-24">
+        <div class="container mx-auto px-4 mt-16">
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <h6 class="text-2xl font-semibold text-center">Ingredients</h6>
+                  <p class="text-xl mt-6 mb-4 text-black-600">
+                    Cajun Seasoning:
+                  </p>
+                  <p class="mt-2 mb-2 text-black-600">
+                    ・2 tsp smoked paprika <br/>・1 tsp oregano<br/>・1 tsp thyme<br/>・1/2 tsp garlic powder<br/>・1/2 tsp onion powder<br/>・1/4 tsp cayenne pepper<br/>・1/4 tsp black pepper<br/>・1/4 tsp salt<br/>
+                  </p>
+                  <p class="text-xl mt-6 mb-4 text-black-600">
+                    Chicken Pasta:
+                  </p>
+                  <p class="mt-2 mb-2 text-black-600">
+                    ・1 Tbsp olive oil <br/>・1 Tbsp butter<br/>・1lb. boneless, skinless chicken breast<br/>・1 yellow onion, diced<br/>・1/2 lb. penne pasta<br/>・15 oz. fire roasted diced tomatoes<br/>・2 cups chicken broth<br/>・2 oz. cream cheese<br/>・3 green onions, sliced<br/>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full md:w-8/12 px-4 mt-12">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                  >
                   </div>
+                  <h6 class="text-2xl font-semibold text-center">Instructions</h6>
+                  <p class="mt-2 mb-2 text-black-600">
+                    <b>1.</b> Combine the ingredients for the Cajun seasoning in a small bowl. Cut the chicken into 1/2 to 3/4-inch cubes. Place the cubed chicken in a bowl, pour the Cajun seasoning over top, and stir to coat the chicken in spices.<br/><br/>
+                    <b>2.</b> Add the olive oil and butter to a large deep skillet. Heat the oil and butter over medium-high until the skillet is very hot and the butter is melted and foamy. Add the seasoned chicken to the skillet and cook for a couple minutes on each side, or just until the outside gets some color. The chicken does not need to be cooked through at this point.<br/><br/>
+                    <b>3.</b> Add the diced yellow onion to the skillet and continue to sauté for about 2 minutes more, or just until the onion begins to soften. Allow the moisture from the onion to dissolve any browned bits from the bottom of the skillet.<br/><br/>
+                    <b>4.</b> Next, add the pasta, fire roasted diced tomatoes (with the juices), and chicken broth to the skillet. Stir just until everything is evenly combined, then place a lid on top and allow the broth to come up to a boil<br/><br/>
+                    <b>5.</b> Once boiling, turn the heat down to medium-low and let the pasta simmer for about ten minutes, stirring every couple of minutes, until the pasta is tender and the liquid is thick and saucy.<br/><br/>
+                    <b>6.</b> Add the cream cheese to the skillet in chunks, then stir until it has melted into the sauce. Top the pasta with sliced green onions and serve.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
       </section>
     </div>
   </div>
@@ -148,3 +190,4 @@ export default {
   },
 };
 </script>
+
