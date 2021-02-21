@@ -43,13 +43,13 @@
               class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
               type="button"
             >
-              <i class="fab fa-dribbble"></i>
+              <i class="fab fa-instagram"></i>
             </button>
             <button
               class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
               type="button"
             >
-              <i class="fab fa-github"></i>
+              <i class="fab fa-snapchat"></i>
             </button>
           </div>
         </div>
@@ -81,14 +81,6 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://www.github.com/creativetimofficial?ref=vn-footer"
-                  >
-                    Github
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                     href="https://www.creative-tim.com/bootstrap-themes/free?ref=vn-footer"
                   >
                     Free Products
@@ -103,14 +95,6 @@
                 Other Resources
               </span>
               <ul class="list-unstyled">
-                <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://github.com/creativetimofficial/vue-notus/blob/master/LICENSE.md?ref=vn-footer"
-                  >
-                    MIT License
-                  </a>
-                </li>
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
@@ -146,14 +130,7 @@
       >
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
           <div class="text-sm text-gray-600 font-semibold py-1">
-            Copyright © {{ date }} Vue Notus by
-            <a
-              href="https://www.creative-tim.com?ref=vn-footer"
-              class="text-gray-600 hover:text-gray-900"
-            >
-              Creative Tim
-            </a>
-            .
+            Copyright © {{ date }} Meal Bites.
           </div>
         </div>
       </div>

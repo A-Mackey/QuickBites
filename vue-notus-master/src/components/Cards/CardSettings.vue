@@ -177,6 +177,43 @@
             </div>
           </div>
         </div>
+
+        <hr class="mt-6 border-b-1 border-gray-400" />
+
+        <h6 class="text-gray-500 text-sm mt-3 mb-6 font-bold uppercase">
+          Benefits Program
+        </h6>
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-12/12 px-4">
+            <div class="relative w-full mb-3">
+              <label
+                class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                htmlFor="grid-password"
+              >
+                Application
+              </label>
+              <div class="mt-3 py-3 mb-3 border-t border-gray-300">
+                <div class="flex flex-wrap">
+                  <div class="w-full lg:w-9/12 px-3">
+                    <p class="mb-3 text-sm leading-relaxed text-gray-800">
+                      For low income indviduals experiencing food insecurity, please apply to our benefits program that will 
+                      allow you to get discounts on the grocieries you order through our website.  This is made possible by 
+                      the generous donations of our users.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="text-white font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
+                style="background-color: #667eea"
+                type="button"
+              >
+                Apply Here
+              </button>
+
+            </div>
+          </div>
+        </div>
       </form>
     </div>
   </div>
