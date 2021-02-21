@@ -147,7 +147,7 @@
                   class="fas fa-table mr-2 text-sm"
                   :class="[isActive ? 'opacity-75' : 'text-gray-400']"
                 ></i>
-                Tables
+                Search
               </a>
             </router-link>
           </li>

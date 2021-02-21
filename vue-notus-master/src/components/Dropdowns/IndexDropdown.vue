@@ -37,7 +37,7 @@
         to="/admin/tables"
         class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
       >
-        Tables
+        Search
       </router-link>
       <router-link
         to="/admin/maps"

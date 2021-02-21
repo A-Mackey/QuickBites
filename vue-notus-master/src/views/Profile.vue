@@ -70,9 +70,9 @@
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-gray-700"
                       >
-                        22
+                        20
                       </span>
-                      <span class="text-sm text-gray-500">Friends</span>
+                      <span class="text-sm text-gray-500">Cook Time</span>
                     </div>
                     <div class="mr-4 p-3 text-center">
                       <span
@@ -80,7 +80,7 @@
                       >
                         10
                       </span>
-                      <span class="text-sm text-gray-500">Photos</span>
+                      <span class="text-sm text-gray-500">Prep</span>
                     </div>
                     <div class="lg:mr-4 p-3 text-center">
                       <span
