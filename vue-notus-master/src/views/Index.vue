@@ -82,7 +82,8 @@
                 >
                   <polygon
                     points="-30,95 583,95 583,65"
-                    class="bg-indigo-500 fill-current"
+                    class="fill-current"
+                    style="color: #667eea"
                   ></polygon>
                 </svg>
                 <h4 class="text-xl font-bold text-white">
@@ -164,64 +165,55 @@
         </div>
       </div>
 
-      <div class="container mx-auto overflow-hidden pb-20">
+      <div class="container mx-auto overflow-hidden pb-10">
         <div class="flex flex-wrap items-center">
-          <div class="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
-            <div
-              class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
-            >
-              <i class="fas fa-sitemap text-xl"></i>
-            </div>
+          <div class="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-12">
             <h3 class="text-3xl mb-2 font-semibold leading-normal">
-              CSS Components
+              Plentiful Recipies
             </h3>
             <p
               class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
             >
-              Every element that you need in a product comes built in as a
-              component. All components fit perfectly with each other and can
-              have different colours.
+              We believe that there is a recipe for every occassion. All featured 
+              recipies are hand-picked to ensure that the quality, healthiness, and 
+              flavor are unmatched. You won't be dissapointed. 
+
             </p>
             <div class="block pb-6">
               <span
                 class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
               >
-                Buttons
+                Red Meat
               </span>
               <span
                 class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
               >
-                Inputs
+                Seafood
               </span>
               <span
                 class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
               >
-                Labels
+                Pasta
               </span>
               <span
                 class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
               >
-                Menus
+                Vegetarian
               </span>
               <span
                 class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
               >
-                Navbars
+                Vegan
               </span>
               <span
                 class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
               >
-                Pagination
+                Keto
               </span>
               <span
                 class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
               >
-                Progressbars
-              </span>
-              <span
-                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-white uppercase last:mr-0 mr-2 mt-2"
-              >
-                Typography
+                Asian
               </span>
             </div>
             <a
@@ -234,39 +226,13 @@
             </a>
           </div>
 
-          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto mt-32">
+          <div class="w-full md:w-6/12 px-4 mr-auto ml-auto mt-12">
             <div
               class="relative flex flex-col min-w-0 w-full mb-6 mt-48 md:mt-0"
             >
               <img
                 alt="..."
-                :src="componentBtn"
-                class="w-full align-middle rounded absolute shadow-lg max-w-100-px left-145-px -top-29-px z-3"
-              />
-              <img
-                alt="..."
-                :src="componentProfileCard"
-                class="w-full align-middle rounded-lg absolute shadow-lg max-w-210-px left-260-px -top-160-px"
-              />
-              <img
-                alt="..."
-                :src="componentInfoCard"
-                class="w-full align-middle rounded-lg absolute shadow-lg max-w-180-px left-40-px -top-225-px z-2"
-              />
-              <img
-                alt="..."
-                :src="componentInfo2"
-                class="w-full align-middle rounded-lg absolute shadow-2xl max-w-200-px -left-50-px top-25-px"
-              />
-              <img
-                alt="..."
-                :src="componentMenu"
-                class="w-full align-middle rounded absolute shadow-lg max-w-580-px -left-20-px top-210-px"
-              />
-              <img
-                alt="..."
-                :src="componentBtnPink"
-                class="w-full align-middle rounded absolute shadow-xl max-w-120-px left-195-px top-95-px"
+                :src="breakfast"
               />
             </div>
           </div>
@@ -735,6 +701,7 @@
 import IndexNavbar from "@/components/Navbars/IndexNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
 
+import breakfast from "@/assets/resources/breakfast.svg";
 import tastingCupcake from "@/assets/resources/tastingCupcake.svg";
 import eatingTogether from "@/assets/resources/eatingTogether.svg";
 import patternVue from "@/assets/img/pattern_vue.png";
@@ -752,6 +719,7 @@ import landing from "@/assets/img/landing.jpg";
 export default {
   data() {
     return {
+      breakfast,
       tastingCupcake,
       eatingTogether,
       patternVue,
