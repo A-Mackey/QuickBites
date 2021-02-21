@@ -8,7 +8,7 @@
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
           style="
-            background-image: url('https://images.pexels.com/photos/4262002/pexels-photo-4262002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 ');
+            background-image: url('https://cdn.appthemes.com/wp-content/uploads/2016/09/veggies-cutting-board.jpeg');
           "
         >
           <span
