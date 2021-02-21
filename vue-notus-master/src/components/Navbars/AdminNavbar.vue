@@ -6,45 +6,20 @@
     <div
       class="w-full mx-autp items-center flex justify-between md:flex-no-wrap flex-wrap md:px-10 px-4"
     >
-      <!-- Brand -->
-      <a
-        class="text-black text-sm uppercase hidden lg:inline-block font-semibold"
-        href="javascript:void(0)"
-      >
-        Dashboard
-      </a>
-      <!-- Form -->
-      <form
-        class="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3"
-      >
-        <div class="relative flex w-full flex-wrap items-stretch">
-          <span
-            class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3"
-          >
-            <i class="fas fa-search"></i>
-          </span>
-          <input
-            type="text"
-            placeholder="Search here..."
-            class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10"
-          />
-        </div>
-      </form>
-      <!-- User -->
-      <ul class="flex-col md:flex-row list-none items-center hidden md:flex">
-        <user-dropdown />
-      </ul>
+      <div class="py-6 ml-auto">
+        <button
+          class="fas fa-shopping-cart text-white font-bold text-xs px-2 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+          style="color: #667eea"
+          type="button">
+        </button>
+        <button
+          style="background-color: #667eea"
+          class="uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+          type="button">
+          Cart
+        </button>
+      </div>
     </div>
   </nav>
   <!-- End Navbar -->
 </template>
-
-<script>
-import UserDropdown from "@/components/Dropdowns/UserDropdown.vue";
-
-export default {
-  components: {
-    UserDropdown,
-  },
-};
-</script>

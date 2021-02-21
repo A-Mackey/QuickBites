@@ -24,7 +24,7 @@
         <div class="w-full lg:w-6/12 px-4">
           <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
           <h5 class="text-lg mt-0 mb-2 text-gray-700">
-            Find us on any of these platforms, we respond 1-2 business days.
+            Find us on any of these platforms, we respond in 1-2 business days.
           </h5>
           <div class="mt-6 lg:mb-0 mb-6">
             <button
