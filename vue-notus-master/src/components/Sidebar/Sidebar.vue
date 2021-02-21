@@ -132,30 +132,6 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/cart"
-              v-slot="{ href, navigate, isActive }"
-            >
-              <a
-                :href="href"
-                @click="navigate"
-                class="text-xs uppercase py-3 font-bold block"
-                :class="[
-                  isActive
-                    ? 'button-active hover:button-active'
-                    : 'text-gray-800 hover:text-gray-600',
-                ]"
-              >
-                <i
-                  class="fas fa-shopping-cart mr-2 text-sm"
-                  :class="[isActive ? 'opacity-75' : 'text-gray-400']"
-                ></i>
-                Cart
-              </a>
-            </router-link>
-          </li>
-
-          <li class="items-center">
-            <router-link
               to="/admin/donate"
               v-slot="{ href, navigate, isActive }"
             >
