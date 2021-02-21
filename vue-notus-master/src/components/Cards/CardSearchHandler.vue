@@ -85,11 +85,11 @@ export default {
       for (var i=0; i<data.data.length;i++){
         arr[i] = {
           Includes: JSON.parse(JSON.stringify(data.data[i].Includes)),
-          MaxTime: number(JSON.parse(JSON.stringify(data.data[i].MaxTime))),
+          MaxTime: Number(JSON.parse(JSON.stringify(data.data[i].MaxTime))),
           Equipment: JSON.parse(JSON.stringify(data.data[i].Equipment)),
-          MaxBudget: number(JSON.parse(JSON.stringify(data.data[i].MaxBudget))),
-          MinPeople: number(JSON.parse(JSON.stringify(data.data[i].MinPeople))),
-          Img: number(JSON.parse(JSON.stringify(data.data[i].Img)))
+          MaxBudget: Number(JSON.parse(JSON.stringify(data.data[i].MaxBudget))),
+          MinPeople: Number(JSON.parse(JSON.stringify(data.data[i].MinPeople))),
+          Img: Number(JSON.parse(JSON.stringify(data.data[i].Img)))
         }
         if (!arr[i].Includes.Search(this.props.Includes))
           i--;
