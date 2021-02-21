@@ -30,7 +30,8 @@ export class AppController {
             body.MaxTime,
             body.Equipment,
             body.MaxBudget,
-            body.MinPeople
+            body.MinPeople,
+            body.Img
         );
         console.log(`Product ${JSON.stringify(product)}`);
         let data = await this.dao.addProduct(product);
@@ -46,7 +47,8 @@ export class AppController {
             body.MaxTime,
             body.Equipment,
             body.MaxBudget,
-            body.MinPeople
+            body.MinPeople,
+            body.Img
         );
         console.log(`Product ${JSON.stringify(product)}`);
         let data = await this.dao.updateProduct(id,product);

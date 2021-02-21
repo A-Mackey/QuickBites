@@ -2,7 +2,7 @@
   <div
     class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
   >
-    <button style="margin-top: 10px" v-on:click="controller(query)">
+    <button style="margin-top: 10px" v-on:click="controller(props)">
       <p>Search</p>
     </button>
     <p>Query: {{ query }}</p>
@@ -42,13 +42,13 @@ export default {
   },
 
   methods: {
-    async controller(query) {
-      var data = await this.queryDatabase(query);
+    async controller() {
+      var data = await this.queryDatabase();
       var out = await this.parseArray(data);
       console.log(out);
       return out;
     },
-    async queryDatabase(query) {
+    async queryDatabase() {
       var jsondata = fetch("http://localhost:9078/api/products")
         .then(function (u) {
           return u.json();
@@ -60,11 +60,14 @@ export default {
       for (var i=0; i<data.data.length;i++){
         arr[i] = {
           Includes: JSON.parse(JSON.stringify(data.data[i].Includes)),
-          MaxTime: JSON.parse(JSON.stringify(data.data[i].MaxTime)),
+          MaxTime: number(JSON.parse(JSON.stringify(data.data[i].MaxTime))),
           Equipment: JSON.parse(JSON.stringify(data.data[i].Equipment)),
-          MaxBudget: JSON.parse(JSON.stringify(data.data[i].MaxBudget)),
-          MinPeople: JSON.parse(JSON.stringify(data.data[i].MinPeople))
+          MaxBudget: number(JSON.parse(JSON.stringify(data.data[i].MaxBudget))),
+          MinPeople: number(JSON.parse(JSON.stringify(data.data[i].MinPeople))),
+          Img: number(JSON.parse(JSON.stringify(data.data[i].Img)))
         }
+        if (!arr[i].Includes.Search(this.props.Includes))
+          i--;
       }
       return arr;
     },
