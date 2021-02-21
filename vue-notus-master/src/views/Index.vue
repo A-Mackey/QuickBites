@@ -23,7 +23,7 @@
             </p>
             <div class="mt-12">
               <router-link
-                to="/admin/dashboard"
+                to="/admin/search"
                 class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 Get Started
@@ -54,7 +54,7 @@
             </p>
             <div class="sm:block flex flex-col mt-10">
               <router-link
-                to="/admin/dashboard"
+                to="/admin/donate"
                 class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-indigo-500 active:bg-indigo-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 Donate Now
@@ -243,7 +243,7 @@
               </span>
             </div>
             <router-link
-                to="/admin/tables"
+                to="/admin/search"
                 class="gfont-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
               >
                 View All
@@ -398,7 +398,7 @@
               </span>
             </div>
             <router-link
-                to="/admin/tables"
+                to="/admin/search"
                 class="gfont-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
               >
                 View All

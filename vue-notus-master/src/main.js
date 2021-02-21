@@ -19,7 +19,7 @@ import Auth from "@/layouts/Auth.vue";
 
 import Donate from "@/views/admin/Donate.vue";
 import Settings from "@/views/admin/Settings.vue";
-import Tables from "@/views/admin/Tables.vue";
+import Search from "@/views/admin/Search.vue";
 import Saved from "@/views/admin/Saved.vue";
 
 // views for Auth layout
@@ -81,8 +81,8 @@ const routes = [
         component: Settings,
       },
       {
-        path: "/admin/tables",
-        component: Tables,
+        path: "/admin/search",
+        component: Search,
       },
       {
         path: "/admin/saved",

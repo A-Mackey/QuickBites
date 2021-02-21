@@ -5,9 +5,7 @@
       <section class="relative block h-500-px">
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
-          style="
-            background-image: url('https://t4.ftcdn.net/jpg/03/70/49/87/360_F_370498716_dLsaHESFAHnEV3a6aOqXTBV6fvslMgGq.jpg');
-          "
+          style="background-image: url('https://t4.ftcdn.net/jpg/02/82/13/07/360_F_282130761_a38cMan7H8qJBgeAXXs5b4LSAPu3G38g.jpg');"
         >
           <span
             id="blackOverlay"

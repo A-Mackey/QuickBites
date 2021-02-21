@@ -84,7 +84,7 @@
 
           <li class="items-center">
           <router-link
-            to="/admin/tables"
+            to="/admin/search"
             v-slot="{ href, navigate, isActive }"
           >
             <a
@@ -109,7 +109,7 @@
         <li class="items-center">
             <router-link
               to="/admin/saved"
-              v-slot="{ href, route, navigate, isActive }"
+              v-slot="{ href, navigate, isActive }"
             >
               <a
                 :href="href"
@@ -133,7 +133,7 @@
           <li class="items-center">
             <router-link
               to="/admin/settings"
-              v-slot="{ href, route, navigate, isActive }"
+              v-slot="{ href, navigate, isActive }"
             >
               <a
                 :href="href"
@@ -156,8 +156,8 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/dashboard"
-              v-slot="{ href, route, navigate, isActive }"
+              to="/admin/donate"
+              v-slot="{ href, navigate, isActive }"
             >
               <a
                 :href="href"
@@ -192,7 +192,7 @@
           <li class="items-center">
             <router-link
               to="/admin/settings"
-              v-slot="{ href, route, navigate, isActive }"
+              v-slot="{ href, navigate, isActive }"
             >
               <a
                 :href="href"
@@ -212,9 +212,7 @@
               </a>
             </router-link>
           </li>
-
-
-        </ul>
+          </ul>
 
         <!-- Divider -->
         <hr class="my-4 md:min-w-full" />
